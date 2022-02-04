@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hophy/static/css/main.073c9b0a.css",
+    "main.js": "/hophy/static/js/main.a8e46ec1.js",
+    "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
+    "index.html": "/hophy/index.html",
+    "main.073c9b0a.css.map": "/hophy/static/css/main.073c9b0a.css.map",
+    "main.a8e46ec1.js.map": "/hophy/static/js/main.a8e46ec1.js.map",
+    "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a8e46ec1.js"
+  ]
+}
