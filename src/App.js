@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
+import { MainComponents } from './MainComponents';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hophy <br/>Health Care at Home</h1>
+      <MainComponents/>
+     
     </div>
   );
 }
