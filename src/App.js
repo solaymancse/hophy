@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import { MainComponents } from './MainComponents';
+import { PreLoader } from './Components/PreLoader/PreLoader';
+
 
 function App() {
   return (
     <div className="App">
-      <MainComponents/>
+      <PreLoader/>
      
     </div>
   );

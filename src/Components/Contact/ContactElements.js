@@ -14,7 +14,7 @@ export const Div = styled.div`
 
 `;
 export const Location = styled(ImLocation2)`
-    Color: #CACCCC;
+    Color: #333;
     margin-right: 15px;
 
 
@@ -22,23 +22,23 @@ export const Location = styled(ImLocation2)`
 `;
 
 export const Title = styled.p`
-    color: #333;
-    font-family: 'Playfair Display', serif;
+    color: #fff;
+    
 
 
 `;
 export const Icons = styled.div`
-   color: #333;
+   color: #fff;
    display: flex;
    gap: 10px;
 `;
 
 export const Links = styled.a`
     text-decoration:none;
-    color: #333;
+    color: #fff;
 
     &:hover{
-        color: #fff;
+        color: #333;
         transition: 0.2s;
     }
 
