@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-    margin: 0px 400px;
-
+    margin: 0px 350px;
 
 `;

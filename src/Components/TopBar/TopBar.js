@@ -19,15 +19,15 @@ export const TopBar = () => {
                       <H1>SAT - FRI : 9.00 - 10.00</H1></div>
                       </Col>
                       <Col>
-                      <Icon><AiOutlineMail/></Icon>
+                      <Icon><BsTelephoneFill/></Icon>
                       <div><H3>HOTLINE 24/7</H3>
                       <H1>+0123-45-67-890</H1></div>
                       </Col>
-                      <Col>
-                      <Icon><BsTelephoneFill/></Icon>
+                      <Col>  
+                      <Icon><AiOutlineMail/></Icon>
                       <div>
                       <H3>EMAIL US</H3>
-                      <H1>HOPHY@GAMIL.COM</H1>
+                      <H1>HOPHY@GMAIL.COM</H1>
                       </div>
                       </Col>
                   </Row>

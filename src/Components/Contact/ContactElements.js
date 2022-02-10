@@ -7,6 +7,8 @@ export const Div = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
+
+    
     
     @media screen and (max-width: 768px){
         display: none;
@@ -23,6 +25,7 @@ export const Location = styled(ImLocation2)`
 
 export const Title = styled.p`
     color: #fff;
+    margin-top: 15px;
     
 
 
@@ -30,7 +33,7 @@ export const Title = styled.p`
 export const Icons = styled.div`
    color: #fff;
    display: flex;
-   gap: 10px;
+   gap: 15px;
 `;
 
 export const Links = styled.a`
