@@ -22,7 +22,7 @@ export const Col = styled.div`
 `;
 
 export const  Icon = styled.div`
-    margin-top: 13px;
+    margin-top: 5px;
     color: #fff;
     font-weight: 400px;
     font-size: 20px;
