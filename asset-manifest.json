@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hophy/static/css/main.68892607.css",
-    "main.js": "/hophy/static/js/main.9a371241.js",
+    "main.js": "/hophy/static/js/main.7623e716.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
     "static/media/brand3.png": "/hophy/static/media/brand3.f152f925083eda1f4f04.png",
     "index.html": "/hophy/index.html",
     "main.68892607.css.map": "/hophy/static/css/main.68892607.css.map",
-    "main.9a371241.js.map": "/hophy/static/js/main.9a371241.js.map",
+    "main.7623e716.js.map": "/hophy/static/js/main.7623e716.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68892607.css",
-    "static/js/main.9a371241.js"
+    "static/js/main.7623e716.js"
   ]
 }
