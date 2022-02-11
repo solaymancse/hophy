@@ -39,6 +39,10 @@ export const H1 = styled.h1`
     font-size: 18px;
     color: #fff;
     font-weight: 700px;
+
+    @media screen and (max-width: 1024px){
+        font-size: 10px;
+    }
 `;
 
 export const H2 = styled.h2`
@@ -51,6 +55,12 @@ export const Img = styled.img`
    height: 80px;
    width: 300px;
    margin-left: -30px;
+
+   @media screen and (max-width: 1024px){
+    height: 30px;
+   width: 100px;
+   margin-left: -6px;
+   }
    
 
 

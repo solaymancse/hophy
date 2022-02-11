@@ -34,6 +34,8 @@ export const Contact = () => {
           <BiMailSend />
         </Links>
       </Icons>
+     
     </Div>
+      
   );
 };

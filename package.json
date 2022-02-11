@@ -16,6 +16,7 @@
     "react-loader-spinner": "^5.1.2",
     "react-loading": "^2.0.3",
     "react-scripts": "5.0.0",
+    "react-spinkit": "^3.0.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },

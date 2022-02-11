@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
-import ReactLoading from 'react-loading';
 import { MainComponents } from "../../MainComponents";
 import "./PreLoader.css";
 
 export const PreLoader = () => {
+  var Spinner = require('react-spinkit');
   const [done, SetDone] = useState(undefined);
 
   useEffect(() => {
     setTimeout(() => {
       SetDone(true);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <>
       {!done ? (
-        <ReactLoading className='loading' type='spinningBubbles' color='#34ACE1' height={100} width={100} />
+        <Spinner className="loading" name="ball-scale-multiple" color="#34ACE1"/>
+
       ) : (
         <MainComponents />
       )}

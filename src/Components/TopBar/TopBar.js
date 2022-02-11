@@ -4,6 +4,7 @@ import { Div, Img, Row, Col, H3, H1,Icon} from './TopBarElements';
 import brand2 from '../../images/brand3.png'
 import { AiOutlineClockCircle, AiOutlineMail } from 'react-icons/ai'
 import { BsTelephoneFill } from 'react-icons/bs'
+
 export const TopBar = () => {
   return <div>
       <Container>
