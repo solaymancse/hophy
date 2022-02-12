@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/hophy/static/css/main.dca6a597.css",
-    "main.js": "/hophy/static/js/main.6b5dd8a1.js",
+    "main.css": "/hophy/static/css/main.2989207a.css",
+    "main.js": "/hophy/static/js/main.46d030f9.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
+    "static/media/doctor-01.png": "/hophy/static/media/doctor-01.ccd9bbe9c1fbd20d372f.png",
     "static/media/brand3.png": "/hophy/static/media/brand3.f152f925083eda1f4f04.png",
     "index.html": "/hophy/index.html",
-    "main.dca6a597.css.map": "/hophy/static/css/main.dca6a597.css.map",
-    "main.6b5dd8a1.js.map": "/hophy/static/js/main.6b5dd8a1.js.map",
+    "main.2989207a.css.map": "/hophy/static/css/main.2989207a.css.map",
+    "main.46d030f9.js.map": "/hophy/static/js/main.46d030f9.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dca6a597.css",
-    "static/js/main.6b5dd8a1.js"
+    "static/css/main.2989207a.css",
+    "static/js/main.46d030f9.js"
   ]
 }
