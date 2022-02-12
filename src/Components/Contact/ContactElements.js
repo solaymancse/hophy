@@ -40,7 +40,7 @@ export const Title = styled.p`
   margin-top: 15px;
 
   @media screen and (max-width: 1024px) {
-    font-size: 8px;
+    font-size: 15px;
   }
 `;
 export const Icons = styled.div`
