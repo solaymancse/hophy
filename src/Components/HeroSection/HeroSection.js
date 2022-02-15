@@ -6,7 +6,7 @@ import {
   Content,
   H1,
   Span,
-  Button,
+  BtnDiv,
   Links,
 } from "./HeroSectionElements";
 import Aos from "aos";
@@ -27,7 +27,7 @@ export const HeroSection = () => {
                 Your Heath Is <br />
                 <Span>Our Priority</Span>
               </H1>
-              <Button>
+              <BtnDiv>
                 <Links className="btn btn-danger me-3 animated delay1" href="/">
                   GET A QUOTE
                 </Links>
@@ -37,7 +37,7 @@ export const HeroSection = () => {
                 >
                   OUR SERVICES
                 </Links>
-              </Button>
+              </BtnDiv>
             </Content>
           </div>
         </div>

@@ -29,9 +29,11 @@ export const Bars = styled(GoThreeBars)`
   display: none;
 
   @media screen and (max-width: 575px) {
+    font-size: 24px;
     display: block;
-    margin-top: -50px;
-    margin-right: 20px;
+    margin-top: -40px;
+    margin-right: 40px;
+    
   }
 `;
 

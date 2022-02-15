@@ -79,7 +79,7 @@ export const Img = styled.img`
 
   @media screen and (max-width: 575px) {
     margin-top: 10px;
-    height: 60px;
+    height: 50px;
     width: 150px;
     margin-left: -6px;
   }

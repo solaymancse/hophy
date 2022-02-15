@@ -85,14 +85,15 @@ export const Span = styled.div`
     font-size: 40px;
   }
 `;
-export const Button = styled.div`
+export const BtnDiv = styled.div`
   display: flex;
   margin-left: 420px;
   margin-top: 50px;
 
   @media screen and (max-width: 575px) {
-    margin-left: 120px;
-  margin-top: 50px;
+    margin: auto;
+    padding: 0px 45px;
+  
   }
 `;
 
@@ -103,6 +104,8 @@ export const Links = styled.a`
 
   
   @media screen and (max-width: 575px) {
-  padding: 10px 15px;
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 14px;
   }
 `;

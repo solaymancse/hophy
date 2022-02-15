@@ -16,7 +16,7 @@ export const Div = styled.div`
     };
 
     @media screen and (max-width: 575px) {
-        height: 82px;
+        height: 80px;
   };
 
 `;
