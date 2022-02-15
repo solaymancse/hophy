@@ -9,6 +9,11 @@ import { Contact } from './Components/Contact/Contact';
 import { StaticMedia } from './Components/StaticMedia/StaticMedia';
 import { FeatureSection } from './Components/FeatureSection/FeatureSection';
 import { BookAppointment } from './Components/BookAppointment/BookAppointment';
+import { DoctorsArea } from './Components/DoctorsArea/DoctorsArea';
+import { Testomonial } from './Components/Testomonial/Testomonial';
+import { OurPartnar } from './Components/OurPartnar/OurPartnar';
+import { Footer } from './Components/Footer/Footer';
+import { FooterBottom } from './Components/FooterBottom/FooterBottom';
 
 
 export const MainComponents = () => {
@@ -28,6 +33,12 @@ export const MainComponents = () => {
       <StaticMedia/>
       <FeatureSection/>
       <BookAppointment/>
+      <DoctorsArea/>
+      <Testomonial/>
+      <OurPartnar/>
+      <Blog/>
+      <Footer/>
+      <FooterBottom/>
     
   </>;
 };

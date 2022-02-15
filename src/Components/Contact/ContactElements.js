@@ -1,30 +1,10 @@
 import styled from "styled-components";
 import { ImLocation2 } from "react-icons/im";
 
-export const Div = styled.div`
+export const Wrapper = styled.div`
   display: flex;
-  height: 50px;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  };
-
-  @media screen and (max-width: 1024px) {
-    width: 100%;
-    height: 40px;
-    justify-content: space-between;
-    
-  };
-
-  @media screen and (max-width: 1440px) {
-    width: 100%;
-    height: 40px;
-    justify-content: space-between;
-    
-  };
+  padding-top: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 `;
 export const Location = styled(ImLocation2)`
   color: #fff;
@@ -37,7 +17,6 @@ export const Location = styled(ImLocation2)`
 
 export const Title = styled.p`
   color: #fff;
-  margin-top: 15px;
 
   @media screen and (max-width: 1024px) {
     font-size: 15px;
@@ -47,16 +26,12 @@ export const Icons = styled.div`
   color: #fff;
   display: flex;
   gap: 15px;
-
-  @media screen and (max-width: 1024px) {
-    font-size: 15px;
-    gap: 10px;
-  }
 `;
 
 export const Links = styled.a`
   text-decoration: none;
   color: #fff;
+  padding: 0px 10px;
 
   &:hover {
     color: #333;

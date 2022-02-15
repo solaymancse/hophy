@@ -1,0 +1,27 @@
+import styled from "styled-components";
+
+export const Card = styled.div`
+  width: 700px;
+  height: 500px;
+  padding-top: 50px;
+  margin: auto;
+  text-align: center;
+
+  
+
+`;
+export const Img = styled.img`
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  outline: none;
+  
+`;
+export const P = styled.div`
+    font-size: 16px;
+    color: gray;
+    margin-top: 10%;
+`;
+export const Title = styled.div`
+   margin-top: 10%;
+`;

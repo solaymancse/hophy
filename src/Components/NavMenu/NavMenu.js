@@ -1,26 +1,46 @@
-import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import React, { useState } from "react";
+import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Login } from "../Login/Login";
+import { MobileViewNav } from "../MobileViewNav/MobileViewNav";
 import { SignUp } from "../SignUp/SignUp";
-import { NavLink } from 'react-router-dom';
-
-
+import { Links, Bars, Div,Tooglebar } from "./NavMenuElements";
 
 export const NavMenu = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
-    
-      <Navbar>
-          <Nav className="me-auto">
-            <NavLink exact to="/">HOME</NavLink>
-            <NavLink exact to="/services">SERVICES</NavLink>
-            <NavLink exact to="/blog">BLOG</NavLink>
-            <NavLink exact to="/about">ABOUT</NavLink>
-            <NavLink exact to="/contact">CONTACT</NavLink>
-          </Nav>
-          <Login/>
-          <SignUp/>
+    <Navbar>
+      <Nav className="me-auto">
+        <Links exact to="/">
+          HOME
+        </Links>
+        <Links exact to="/services">
+          SERVICES
+        </Links>
+        <Links exact to="/blog">
+          BLOG
+        </Links>
+        <Links exact to="/about">
+          ABOUT
+        </Links>
+        <Links exact to="/contact">
+          CONTACT
+        </Links>
+      </Nav>
+      <Div>
+        <Login />
+        <SignUp />
+      </Div>
+      <Tooglebar>
+        <Bars onClick={handleShow} />
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title></Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>{<MobileViewNav />}</Offcanvas.Body>
+        </Offcanvas>
+      </Tooglebar>
     </Navbar>
-   
-    
   );
 };

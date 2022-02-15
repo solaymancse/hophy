@@ -1,13 +1,22 @@
 import styled from "styled-components";
+import img from '../../images/slide1.jpg'
 
 export const Wrapper = styled.div`
-  background-image: url("https://hope-react.pages.dev/img/slider/slide1.jpg");
+  background-image: url(${img});
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   background-position: bottom;
   background-size: cover;
   text-align: center;
+
+  @media screen and (max-width: 575px) {
+    height: 380px;
+  }
+
+  /* @media screen and (max-width: 991px){
+    height: 500px;
+  };
 
   @media screen and (min-width: 1280px) {
     height: 775px;
@@ -24,16 +33,17 @@ export const Wrapper = styled.div`
     background-position: bottom;
     text-align: center;
     align-items: center;
-  } ;
+  } ; */
 `;
 
 export const Container = styled.div`
   margin: 0px 350px;
   position: relative;
 
-  @media screen and (max-width: 1024px) {
-    margin: 0px 150px;
+  @media screen and (max-width: 575px) {
+    margin: auto;
   }
+ 
 `;
 export const Content = styled.div`
   position: absolute;
@@ -42,8 +52,9 @@ export const Content = styled.div`
   height: 400px;
   text-align: center;
 
-  @media screen and (max-width: 1024px) {
-    width: 100%;
+  @media screen and (max-width: 575px) {
+   top: 55px;
+   height: 200px;
   }
 `;
 export const P = styled.div`
@@ -60,23 +71,28 @@ export const H1 = styled.div`
   margin-top: 0;
   line-height: 1.1;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 60px;
+  @media screen and (max-width: 575px) {
+    font-size: 40px;
   }
 `;
 export const Span = styled.div`
   font-size: 90px;
   color: #fff;
   font-weight: 300;
+
+  
+  @media screen and (max-width: 575px) {
+    font-size: 40px;
+  }
 `;
 export const Button = styled.div`
   display: flex;
   margin-left: 420px;
   margin-top: 50px;
 
-  @media screen and (max-width: 1440px) {
-    margin-left: 200px;
-    margin-top: 70px;
+  @media screen and (max-width: 575px) {
+    margin-left: 120px;
+  margin-top: 50px;
   }
 `;
 
@@ -84,4 +100,9 @@ export const Links = styled.a`
   padding: 15px 30px;
   color: #fff;
   font-weight: 700;
+
+  
+  @media screen and (max-width: 575px) {
+  padding: 10px 15px;
+  }
 `;

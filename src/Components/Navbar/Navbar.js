@@ -9,10 +9,7 @@ import { Div } from "./NavbarElements";
 export const Navbar = () => {
   return (
     <Div>
-      <Container>
       <Contact />
-      </Container>
-      <hr style={{color:'grey'}}/> 
       <TopBar/>
      <Container>
      

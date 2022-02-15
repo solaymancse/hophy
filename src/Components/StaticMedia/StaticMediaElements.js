@@ -18,12 +18,21 @@ export const Brain = styled(GiBrain)`
 
 `;
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+   @media screen and (max-width: 575px) {
+    padding-top: 50px;
+  }
+
+`;
 export const Media = styled.div`
   display: flex;
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 90px;
+  
+  @media screen and (max-width: 575px) {
+    padding-top: 20px;
+  }
 `;
 export const MediaBody = styled.div`
   flex: 1 1;
