@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/hophy/static/css/main.2989207a.css",
-    "main.js": "/hophy/static/js/main.46d030f9.js",
+    "main.css": "/hophy/static/css/main.e9410b7a.css",
+    "main.js": "/hophy/static/js/main.ee3cb1a7.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
     "static/media/doctor-01.png": "/hophy/static/media/doctor-01.ccd9bbe9c1fbd20d372f.png",
+    "static/media/slide1.jpg": "/hophy/static/media/slide1.902b310bb1687945ad89.jpg",
+    "static/media/testimonialBg1.jpg": "/hophy/static/media/testimonialBg1.8d6c7aa9c813846cc6ac.jpg",
+    "static/media/brand4.png": "/hophy/static/media/brand4.7b973fb1c7074e17f8d4.png",
+    "static/media/doc1.jpg": "/hophy/static/media/doc1.17e1c320bec701f8dc2c.jpg",
     "static/media/brand3.png": "/hophy/static/media/brand3.f152f925083eda1f4f04.png",
+    "static/media/doc2.jpg": "/hophy/static/media/doc2.aa586208539287293644.jpg",
+    "static/media/revicons.eot": "/hophy/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/hophy/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/hophy/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/hophy/index.html",
-    "main.2989207a.css.map": "/hophy/static/css/main.2989207a.css.map",
-    "main.46d030f9.js.map": "/hophy/static/js/main.46d030f9.js.map",
+    "main.e9410b7a.css.map": "/hophy/static/css/main.e9410b7a.css.map",
+    "main.ee3cb1a7.js.map": "/hophy/static/js/main.ee3cb1a7.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2989207a.css",
-    "static/js/main.46d030f9.js"
+    "static/css/main.e9410b7a.css",
+    "static/js/main.ee3cb1a7.js"
   ]
 }
