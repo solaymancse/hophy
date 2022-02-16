@@ -28,11 +28,11 @@ export const HeroSection = () => {
                 <Span>Our Priority</Span>
               </H1>
               <BtnDiv>
-                <Links className="btn btn-danger me-3 animated delay1" href="/">
+                <Links className="btn btn-danger me-3" href="/">
                   GET A QUOTE
                 </Links>
                 <Links
-                  className="btn btn-outline-info animated delay2"
+                  className="btn btn-outline-info"
                   href="/"
                 >
                   OUR SERVICES

@@ -5,11 +5,11 @@
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 575px) {
     .loading{
-        top: 40%;
-        left: 40%;
-        height: 70px;
-        width: 70px;
+        margin-top: 400px;
+      
     }
+   
+
 }

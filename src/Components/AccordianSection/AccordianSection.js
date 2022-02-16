@@ -17,7 +17,7 @@ export const AccordianSection = () => {
     <div>
         <Accordion defaultActiveKey="0" flush className="mb-5">
   <Accordion.Item eventKey="0">
-    <Accordion.Header >Can I Get A Divorce Without A Consultant?</Accordion.Header>
+    <Accordion.Header > জরুরী মুহূর্তে মানসস্মত স্বাস্থ্যসেবা আসলেই আপনি পাচ্ছেন?</Accordion.Header>
     <Accordion.Body>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -29,7 +29,9 @@ export const AccordianSection = () => {
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
-    <Accordion.Header>I Have A Technical Problem Or Support Issue I Need Resolved, Who Do I Email?</Accordion.Header>
+    <Accordion.Header>আপনি কি ডাক্তারের সিরিয়াল নেয়া নিয়ে কখনও ভোগান্তির স্বীকার হয়েছেন?
+
+    </Accordion.Header>
     <Accordion.Body>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -41,7 +43,7 @@ export const AccordianSection = () => {
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="2">
-    <Accordion.Header>What Other Services Are You Compatible With?</Accordion.Header>
+    <Accordion.Header>Hophy কি? কেন ? কিভাবে ?</Accordion.Header>
     <Accordion.Body>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

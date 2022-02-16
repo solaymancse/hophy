@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 575px) {
     height: 380px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* @media screen and (max-width: 991px){
@@ -50,11 +52,11 @@ export const Content = styled.div`
   width: 100%;
   top: 200px;
   height: 400px;
-  text-align: center;
+  align-items: center;
 
   @media screen and (max-width: 575px) {
-   top: 55px;
-   height: 200px;
+   top: 60px;
+   height: 300px;
   }
 `;
 export const P = styled.div`
@@ -87,12 +89,11 @@ export const Span = styled.div`
 `;
 export const BtnDiv = styled.div`
   display: flex;
-  margin-left: 420px;
-  margin-top: 50px;
+  margin: auto;
 
   @media screen and (max-width: 575px) {
     margin: auto;
-    padding: 0px 45px;
+    justify-content: center;
   
   }
 `;
@@ -105,7 +106,7 @@ export const Links = styled.a`
   
   @media screen and (max-width: 575px) {
     margin-top: 50px;
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-size: 14px;
   }
 `;
