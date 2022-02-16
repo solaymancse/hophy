@@ -18,7 +18,7 @@ export const PostCard = () => {
                     <A href='/'>Problems About Social Insurance For Truck Driver</A>
                   </Title>
                   <Meta>
-                  <A href='/'>December 14th, 2022</A><Span>By</Span>
+                  <A href='/'>December 14th, 2022</A><Span> By </Span>
                   <A href='/'>Admin</A>
                   </Meta>
                 </Content>

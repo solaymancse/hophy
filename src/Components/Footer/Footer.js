@@ -15,11 +15,12 @@ import {
 } from "./FooterElements";
 import logo from "../../images/brand4.png";
 import { Button } from "react-bootstrap";
-import { BsArrowRightShort, BsTwitter } from 'react-icons/bs'
+import { BsArrowRightShort } from 'react-icons/bs'
 import { Icons, Links } from "../Contact/ContactElements";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { BiMailSend } from "react-icons/bi";
+import { AiFillYoutube } from "react-icons/ai";
 
 export const Footer = () => {
   return (
@@ -115,21 +116,21 @@ export const Footer = () => {
             </WidgetNews>
           <WidgetSocial>
           <Icons>
-        <Links href="/">
+        <Links href="https://www.facebook.com/Hophystartup">
           <FaFacebookF />
         </Links>
-        <Links href="/">
+        <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
           {" "}
-          <BsTwitter />
+          <AiFillYoutube />
         </Links>
-        <Links href="/">
+        <Links href="https://www.instagram.com/hophystartup/">
           {" "}
           <IoLogoInstagram />
         </Links>
         <Links href="/">
           <FaWhatsapp />
         </Links>
-        <Links href="/">
+        <Links href="hophystartup@gmail.com">
           {" "}
           <BiMailSend />
         </Links>

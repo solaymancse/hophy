@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: #f3f3f3;
-
- 
-
 `;
 
 export const Appointment = styled.div`
@@ -17,11 +14,10 @@ export const Appointment = styled.div`
   text-align: center;
   top: -150px;
 
-
   @media screen and (max-width: 575px) {
     top: 80px;
   }
- 
+
   /* @media (min-width: 1200px) {
     max-width: 1100px;
   }
@@ -56,9 +52,7 @@ export const P = styled.div`
   @media screen and (max-width: 575px) {
     font-size: 12px;
     margin-bottom: 12px;
-}
-
-  
+  }
 `;
 export const H2 = styled.div`
   font-size: 48px;
@@ -69,20 +63,24 @@ export const H2 = styled.div`
 
   @media screen and (max-width: 575px) {
     font-size: 25px;
-    
-}
+  }
 `;
 
 export const Button = styled.button`
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: .428px;
-    margin-top: 40px;
-    min-height: 62px;
-    padding: 0 47.43px;
-    text-transform: uppercase;
-    color: #fff;
-    background: #34ACE1;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.428px;
+  margin-top: 40px;
+  min-height: 62px;
+  padding: 0 47.43px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #34ace1;
 
-
+  @media screen and (max-width: 575px) {
+    margin-top: -10px;
+    font-size: 16px;
+    min-height: 50px;
+    padding: 0 20px;
+  }
 `;

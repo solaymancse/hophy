@@ -106,7 +106,7 @@ export const Links = styled.a`
   
   @media screen and (max-width: 575px) {
     margin-top: 50px;
-    padding: 10px 10px;
+    padding: 10px 15px;
     font-size: 14px;
   }
 `;

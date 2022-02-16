@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   Wrapper,
   FormHead,
@@ -6,14 +8,17 @@ import {
   Appointment,
   P,
   H2,
-  Button
+  Button,
 } from "./BookAppointmentElements";
 import { Container } from "./../Container/ContainerElements";
 
 import { Span } from "../FeatureSection/FeatureSectionElements";
-import { AppointmentForm } from './../AppointmentForm/AppointmentForm';
+import { AppointmentForm } from "./../AppointmentForm/AppointmentForm";
 
 export const BookAppointment = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <Wrapper>
       <Container>
@@ -23,23 +28,19 @@ export const BookAppointment = () => {
               <FormHead>
                 <SecTitle>
                   <P>WE ALWAY READY HELPS YOU</P>
-                  <H2>
+                  <H2 data-aos="fade-up">
                     <Span>Book An</Span> Appointment
                   </H2>
                 </SecTitle>
-                {<AppointmentForm/>}
+                {<AppointmentForm />}
                 <div className="row">
-                    <div className="col-md-12">
-                        <div className="form-group mb-0">
-                            <Button className="btn" type="submit">
-                                Make An Appointment
-
-                            </Button>
-
-                        </div>
-
+                  <div className="col-md-12">
+                    <div className="form-group mb-0">
+                      <Button className="btn" type="submit">
+                        Make An Appointment
+                      </Button>
                     </div>
-
+                  </div>
                 </div>
               </FormHead>
             </div>

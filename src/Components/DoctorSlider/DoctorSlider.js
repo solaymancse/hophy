@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DoctorCard } from "../DoctorCard/DoctorCard";
+import { FlexBox } from "./DoctorSliderElements";
 
 
 export const DoctorSlider = () => {
@@ -24,11 +25,14 @@ export const DoctorSlider = () => {
   };
   return (
     <div>
-      <Carousel responsive={responsive}>
-        <div> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></div>
-        <div> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></div>
-        <div> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></div>
-        <div> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></div>
+      <Carousel className="d-flex gap-3" responsive={responsive}>
+       
+        <FlexBox> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></FlexBox>
+        <FlexBox> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></FlexBox>
+        <FlexBox> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></FlexBox>
+        <FlexBox> <DoctorCard name="Dr. Kristina Castle" deg="This is a wider card with supporting text below as a natural lead-in to additional content."/></FlexBox>
+        
+       
         
        
       </Carousel>

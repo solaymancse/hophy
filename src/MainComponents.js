@@ -14,6 +14,7 @@ import { Testomonial } from './Components/Testomonial/Testomonial';
 import { OurPartnar } from './Components/OurPartnar/OurPartnar';
 import { Footer } from './Components/Footer/Footer';
 import { FooterBottom } from './Components/FooterBottom/FooterBottom';
+import { ScrollBtn } from './Components/ScrollBtn/ScrollBtn';
 
 
 export const MainComponents = () => {
@@ -28,7 +29,7 @@ export const MainComponents = () => {
        <Route  path="/blog" element={ <Blog/>}/>
        <Route  path='/contact' element={ <Contact/> }/>
      </Routes>
-
+      <ScrollBtn/>
       <HeroSection/>
       <StaticMedia/>
       <FeatureSection/>

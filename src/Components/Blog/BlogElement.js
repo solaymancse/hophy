@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
         padding: 125px 0;
 
+        @media screen and (max-width: 575px){
+            padding: 50px 0;
+        }
+
 
 `;
 export const SecTitle = styled.div`
@@ -18,5 +22,9 @@ font-size: 48px;
     letter-spacing: -1.377px;
     line-height: 1.1;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 575px){
+        font-size: 25px;
+    }
 
 `;

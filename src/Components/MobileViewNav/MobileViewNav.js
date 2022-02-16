@@ -1,7 +1,12 @@
 import React from 'react'
+import { OffCanvas } from '../OffCanvas/OffCanvas'
+import { SocialLinks } from '../SocialLinks/SocialLinks'
 
 export const MobileViewNav = () => {
   return (
-    <div>This is mobile view</div>
+    <div>
+      <OffCanvas/>
+      <SocialLinks/>
+    </div>
   )
 }

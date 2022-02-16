@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   color: #707070;
   padding: 125px 0 100px;
   background: #333;
+
+  @media screen and (max-width: 575px){
+    padding: 70px 0 70px;
+  }
 `;
 export const FooterLogo = styled.div`
   display: inline-block;
@@ -55,6 +59,10 @@ export const H4 = styled.h4`
     margin: 15px 0 70px;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (max-width: 575px){
+      margin: 50px 0 20px;
+    }
 
 `;
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import img from '../../images/partnar1.png'
-import { Wrapper } from './PartnarSliderCardElements'
+import { Wrapper,Img } from './PartnarSliderCardElements'
 
 
 export const PartnarSlidercard = () => {
   return (
     <Wrapper>
-        <img src={img} alt='/' />
+        <Img src={img} alt='/' />
     </Wrapper>
   )
 }

@@ -19,22 +19,22 @@ export const Contact = () => {
           </div>
           <div className="col">
             <ul className=" text-end">
-              <Links href="/">
+              <Links href="https://www.facebook.com/Hophystartup">
                 <FaFacebookF />
               </Links>
               <Links href="/">
-                {" "}
+               
                 <BsTwitter />
               </Links>
-              <Links href="/">
-                {" "}
+              <Links href="https://www.instagram.com/hophystartup/">
+              
                 <IoLogoInstagram />
               </Links>
               <Links href="/">
                 <FaWhatsapp />
               </Links>
-              <Links href="/">
-                {" "}
+              <Links href="hophystartup@gmail.com">
+                
                 <BiMailSend />
               </Links>
             </ul>
