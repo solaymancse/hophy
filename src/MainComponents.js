@@ -1,45 +1,23 @@
 import React from 'react';
-import { HeroSection } from './Components/HeroSection/HeroSection';
-import { Navbar } from './Components/Navbar/Navbar';
-import { Route, Routes} from 'react-router-dom';
-import { About } from './Components/About/About';
-import { Services } from './Components/Services/Services';
-import { Blog } from './Components/Blog/Blog';
-import { Contact } from './Components/Contact/Contact';
-import { StaticMedia } from './Components/StaticMedia/StaticMedia';
-import { FeatureSection } from './Components/FeatureSection/FeatureSection';
-import { BookAppointment } from './Components/BookAppointment/BookAppointment';
-import { DoctorsArea } from './Components/DoctorsArea/DoctorsArea';
-import { Testomonial } from './Components/Testomonial/Testomonial';
-import { OurPartnar } from './Components/OurPartnar/OurPartnar';
-import { Footer } from './Components/Footer/Footer';
-import { FooterBottom } from './Components/FooterBottom/FooterBottom';
-import { ScrollBtn } from './Components/ScrollBtn/ScrollBtn';
+import { Route, Routes } from 'react-router-dom';
+import { HomeSection } from './pages/HomeSection';
+import { AboutSection } from './pages/AboutSection';
+import { ServicesSection } from './pages/ServicesSection';
+import { BlogSection } from './pages/BlogSection';
+import { ContactSection } from './pages/ContactSection';
+
 
 
 export const MainComponents = () => {
   return <>
-
-    <Navbar/>
-   
-     <Routes>
-       <Route  path='/'/>
-       <Route  path="/about" element={ <About/>}/>
-       <Route  path='/services' element={ <Services/> }/>
-       <Route  path="/blog" element={ <Blog/>}/>
-       <Route  path='/contact' element={ <Contact/> }/>
-     </Routes>
-      <ScrollBtn/>
-      <HeroSection/>
-      <StaticMedia/>
-      <FeatureSection/>
-      <BookAppointment/>
-      <DoctorsArea/>
-      <Testomonial/>
-      <OurPartnar/>
-      <Blog/>
-      <Footer/>
-      <FooterBottom/>
+  
+  <Routes>
+        <Route  path='/' element={ <HomeSection/>}/>
+        <Route  path="/about" element={ <AboutSection/>}/>
+        <Route  path='/services' element={ <ServicesSection/> }/>
+        <Route  path="/blog" element={ <BlogSection/>}/>
+        <Route  path='/contact' element={ <ContactSection/> }/>
+      </Routes>
     
   </>;
 };

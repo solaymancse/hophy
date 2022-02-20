@@ -33,7 +33,7 @@ export const HeroSection = () => {
                 </Links>
                 <Links
                   className="btn btn-outline-info"
-                  href="/"
+                  to="/services"
                 >
                   OUR SERVICES
                 </Links>

@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 export const Appointment = styled.div`
   position: relative;
   z-index: 2;
-  border: 1px solid #6d0101;
+  border: 1px solid #34ace3;
   background-color: #fff;
   box-shadow: 0 50px 120px 0 rgb(68 89 89 / 15%);
   margin: 0 auto;

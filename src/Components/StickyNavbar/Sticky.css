@@ -1,0 +1,17 @@
+.sticky-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+    transition: all .3s;
+};
+.sticky-header.sticky {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,.4);
+};

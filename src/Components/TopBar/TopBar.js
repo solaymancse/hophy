@@ -50,7 +50,7 @@ export const TopBar = () => {
                 </Icon>
                 <div>
                   <H3>EMAIL US</H3>
-                  <H1>HOPHY@GMAIL.COM</H1>
+                  <H1>HOPHYSTARTUP@GMAIL.COM</H1>
                 </div>
               </Col>
               </Media>

@@ -22,7 +22,7 @@ export const Login = () => {
               {<LoginForm/>}
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={props.onHide}>Close</Button>
+              <Button variant="danger" onClick={props.onHide}>Close</Button>
             </Modal.Footer>
           </Modal>
         );
@@ -30,8 +30,8 @@ export const Login = () => {
   return (
     <div>
 
-    <Button variant="danger" onClick={() => setModalShow(true)}>
-      Login In
+    <Button className="mx-3" variant="danger" onClick={() => setModalShow(true)}>
+      Login
       </Button>
 
       <LoginModal

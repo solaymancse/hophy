@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-top: 4px;
-  padding-bottom: 10px;
+
 
   /* @media (min-width: 992px) and (max-width: 1200px){
         height: 100px;
@@ -14,6 +14,10 @@ export const Wrapper = styled.div`
         height: 82px;
     }; */
 
+    @media (min-width: 576px) and (max-width: 767px){
+      padding-top: 10px;
+
+    };
     @media screen and (max-width: 575px) {
        margin: 0;
        padding: 0;
@@ -24,6 +28,13 @@ export const Content = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 576px) and (max-width: 767px){
+      padding:0;
+      margin: 0;
+
+    };
+
 `;
 export const Logo = styled.div``;
 export const Media = styled.div`
@@ -42,6 +53,7 @@ export const Row = styled.div`
 export const Col = styled.div`
   display: flex;
   gap: 0px 20px;
+  margin-left: 30px;
 `;
 
 export const Icon = styled.div`
@@ -77,6 +89,11 @@ export const Img = styled.img`
   width: 300px;
   margin-left: -30px;
 
+  @media (min-width: 576px) and (max-width: 767px){
+    height: 50px;
+  width: 150px;
+
+    };
   @media screen and (max-width: 575px) {
     margin-top: 10px;
     height: 50px;

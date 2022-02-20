@@ -10,14 +10,10 @@ export const Navbar = () => {
   return (
     <Div>
       <Contact />
-      <TopBar/>
-     <Container>
-     
-    <NavMenu/>
-     </Container>
-      
-        
-  
+      <TopBar />
+      <Container>
+        <NavMenu />
+      </Container>
     </Div>
   );
 };

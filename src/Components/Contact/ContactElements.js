@@ -10,17 +10,12 @@ export const Location = styled(ImLocation2)`
   color: #fff;
   margin-right: 15px;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 8px;
-  }
 `;
 
 export const Title = styled.p`
   color: #fff;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 15px;
-  }
+  
 `;
 export const Icons = styled.div`
   color: #fff;

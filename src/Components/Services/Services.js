@@ -3,7 +3,7 @@ import React from 'react'
 export const Services = () => {
   return (
     <div>
-        this is Service 
+        This is Service section
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { Wrapper, SecTitle, H2 } from "./BlogElement";
 import { Container } from "./../Container/ContainerElements";
 import { PostCard } from "../PostCard/PostCard";
