@@ -11,7 +11,9 @@ export const Wrapper = styled.div`
   text-align: center;
   display: block;
  
-
+  @media (min-width: 768px) and (max-width: 991px){
+    height: 465px;
+    };
   @media (min-width: 576px) and (max-width: 767px){
     height: 360px;
    
@@ -30,6 +32,9 @@ export const Container = styled.div`
   margin: 0px 350px;
   position: relative;
 
+  @media (min-width: 768px) and (max-width: 991px){
+        margin:auto;
+    };
   @media (min-width: 576px) and (max-width: 767px){
   margin: auto;
    
@@ -49,6 +54,9 @@ export const Content = styled.div`
   flex-direction: column;
 
 
+  @media (min-width: 768px) and (max-width: 991px){
+    top:50px;
+    };
   @media (min-width: 576px) and (max-width: 767px){
    top:60px;
    
@@ -65,6 +73,9 @@ export const P = styled.div`
   animation: fadeInLeft 1s ease-in-out;
   font-family: "Inter", sans-serif;
 
+  @media (min-width: 768px) and (max-width: 991px){
+    font-size: 12px;
+    };
   
   @media (min-width: 576px) and (max-width: 767px){
     font-size: 12px;
@@ -83,6 +94,10 @@ export const H1 = styled.div`
   margin-top: 0;
   line-height: 1.1;
 
+  @media (min-width: 768px) and (max-width: 991px){
+    font-size: 35px;
+    margin-bottom: -30px;
+    };
   @media (min-width: 576px) and (max-width: 767px){
     font-size: 40px;
     margin-bottom: -50px;

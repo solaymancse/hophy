@@ -121,12 +121,13 @@ export const Div = styled.div`
   }
 `;
 export const Items = styled.div`
-
+ 
 `;
 export const Content = styled.div`
   display: flex;
   margin-bottom: 70px;
   position: relative;
+  z-index: 999999999;
   @media screen and (max-width: 575px) {
     margin-bottom: 50px;
   }

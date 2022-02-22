@@ -30,7 +30,7 @@ export const Login = () => {
   return (
     <div>
 
-    <Button className="mx-3" variant="danger" onClick={() => setModalShow(true)}>
+    <Button  className="mx-3" variant="danger" onClick={() => setModalShow(true)}>
       Login
       </Button>
 

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import { HomeSection } from "../../pages/HomeSection";
+
 import "./PreLoader.css";
+import { MainComponents } from './../../MainComponents';
 
 export const PreLoader = () => {
   var Spinner = require("react-spinkit");
@@ -21,7 +22,7 @@ export const PreLoader = () => {
           color="#34ACE1"
         />
       ) : (
-        <HomeSection />
+        <MainComponents/>
       )}
     </>
   );

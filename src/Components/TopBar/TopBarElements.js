@@ -36,7 +36,15 @@ export const Content = styled.div`
     };
 
 `;
-export const Logo = styled.div``;
+export const Logo = styled.div`
+
+    @media (min-width: 576px) and (max-width: 767px){
+      padding:0;
+      margin: 0;
+
+    };
+
+`;
 export const Media = styled.div`
   display: flex;
   flex-wrap: wrap;
