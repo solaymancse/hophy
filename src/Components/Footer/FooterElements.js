@@ -20,7 +20,8 @@ export const Img = styled.img`
   height: 50px;
   width: 180px;
 `;
-export const List = styled.div`
+export const List = styled.a`
+    text-decoration: none;
     border-top: 1px solid rgba(255,255,255,.25);
     display: flex;
     font-size: 14px;
@@ -30,6 +31,10 @@ export const List = styled.div`
     transition: all .3s;
     align-items: center;
     color: #fff;
+
+    &:hover{
+      color: #34ace3;
+    }
 
 `;
 

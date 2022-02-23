@@ -11,6 +11,7 @@ export const Div = styled.div`
         height: 100px;
     };
     @media (min-width: 768px) and (max-width: 991px){
+        width: 100%;
         height: 82px;
     };
     @media (min-width: 576px) and (max-width: 767px){

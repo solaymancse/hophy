@@ -15,7 +15,7 @@ import {
 } from "./FooterElements";
 import logo from "../../images/brand4.png";
 import { Button } from "react-bootstrap";
-import { BsArrowRightShort } from 'react-icons/bs'
+import { BsArrowRightCircleFill, BsArrowRightShort } from 'react-icons/bs'
 import { Icons, Links } from "../Contact/ContactElements";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
@@ -23,6 +23,7 @@ import { BiMailSend } from "react-icons/bi";
 import { AiFillYoutube } from "react-icons/ai";
 
 export const Footer = () => {
+  const QuickList = [" World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"];
   return (
     <Wrapper>
       <Container>
@@ -82,24 +83,14 @@ export const Footer = () => {
           </div>
           <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
             <div className="widget-item">
-              <H4>RECENT POST</H4>
-              <List>
-                    <Map />
-                    Lorem ipsum is a placeholder text commonly
+              <H4>QUICK LINKS</H4>
+              {QuickList.map((list)=> 
+              <List href="https://www.who.int">
+                    <BsArrowRightCircleFill />
+                    {list}
                   </List>
-                  <List>
-                    <Mail />
-                    Lorem ipsum is a placeholder text commonly
-                  </List>
-                  <List>
-                    <Call />
-                    Lorem ipsum is a placeholder text commonly
-                  </List>
-                  <List>
-                    <Call />
-                    Lorem ipsum is a placeholder text commonly
-                  </List>
-                 
+             
+             )}
             </div>
           </div>
           <div className="col-sm-6 col-md-6 offset-md-1 col-lg-3 offset-lg-0 col-xl-3">

@@ -6,34 +6,23 @@ export const Wrapper = styled.div`
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 500px;
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-  position: relative;
-  display: block;
-  margin-bottom: 100px;
+ 
   
 `;
-export const Heading = styled.div`
+export const ContentItems = styled.div`
+
   position: absolute;
-  top: 100px;
-  width: 800px;
+  top: 10px;
+  width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  margin: auto;
-`;
-export const P = styled.p`
-    color: #fff;
-    font-size: 18px;
-    line-height: 1;
-    letter-spacing: .411px;
-    margin-bottom: 34px;
-    font-weight: 600;
-    text-transform: uppercase;
+  align-items: center;
+  
 `;
 export const Span = styled.span`
   color: #fff;
@@ -41,23 +30,49 @@ export const Span = styled.span`
   margin-right: 20px;
   
 `;
-export const H1 = styled.h1`
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 90px;
-  font-weight: 800;
-  letter-spacing: -2.04px;
-  line-height: 100px;
-  margin-bottom: 10px;
-  
-`;
 export const MainDiv = styled.div`
 
-`;
-export const H2 = styled.h2``;
-export const H3 = styled.h3``;
-export const H4 = styled.h4``;
-export const Items = styled.div``;
-export const List = styled.a``;
+margin-top: 50px;
 
-export const Div = styled.div``;
+`;
+export const H2 = styled.h2`
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 50px;
+`;
+export const H3 = styled.h3`
+  margin-top: 50px;
+  text-align: justify;
+`;
+export const H6 = styled.h6`
+  margin-top: 50px;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+`;
+export const H4 = styled.h4`
+   color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+`;
+export const Items = styled.div``;
+export const List = styled.a`
+text-decoration: none;
+color: #999;
+cursor: pointer;
+
+
+&:hover{
+  color: #34ace3;
+  
+}
+`;
+
+export const Div = styled.div`
+  margin-top: 100px;
+`;
