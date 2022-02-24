@@ -34,6 +34,11 @@ export const MainDiv = styled.div`
 
 margin-top: 50px;
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+ padding: 0 60px;
+}
+
 `;
 export const H2 = styled.h2`
   color: #333;

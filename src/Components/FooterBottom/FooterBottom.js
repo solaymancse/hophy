@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdOutlineCopyright } from 'react-icons/md';
-import { Container } from './../Container/ContainerElements';
+
 import { Wrapper,P } from './FooterBottomElements';
 import { Span } from './../FeatureSection/FeatureSectionElements';
 
@@ -8,7 +8,7 @@ import { Span } from './../FeatureSection/FeatureSectionElements';
 export const FooterBottom = () => {
   return (
     <Wrapper>
-        <Container>
+  
             <div className='row text-center'>
                 <div className='col-sm-12'>
                     <div className='widget-copyright'>
@@ -20,7 +20,6 @@ export const FooterBottom = () => {
 
             </div>
 
-        </Container>
 
     </Wrapper>
   )

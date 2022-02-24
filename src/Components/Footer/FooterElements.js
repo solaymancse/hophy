@@ -6,9 +6,32 @@ export const Wrapper = styled.div`
   color: #707070;
   padding: 125px 0 100px;
   background: #333;
+  width: 100%;
+  @media (min-width: 1281px) {
+  
+  padding: 0px 350px ;
+  
+}
 
-  @media screen and (max-width: 575px){
-    padding: 70px 0 70px;
+@media (min-width: 1025px) and (max-width: 1280px) {
+   
+   padding: 40px 50px;
+ }
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+   padding: 0 30px;
+  }
+ 
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    padding: 20px 10px;
+
+  
+}
+  @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
   }
 `;
 export const FooterLogo = styled.div`

@@ -2,6 +2,30 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: #f3f3f3;
+  width: 100%;
+  padding: 0 350px;
+  
+
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-top: 300px;
+    padding: 0 50px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+   
+    padding: 0 30px;
+    margin-top: 150px;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    padding: 0 30px;
+
+  
+}
+  @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
+  }
 `;
 
 export const Appointment = styled.div`
@@ -14,6 +38,9 @@ export const Appointment = styled.div`
   text-align: center;
   top: -150px;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    top: 0px;
+  }
   @media screen and (max-width: 575px) {
     top: 80px;
   }
@@ -61,9 +88,12 @@ export const H2 = styled.div`
   line-height: 1.1;
   margin-bottom: 25px;
 
-  @media screen and (max-width: 575px) {
-    font-size: 25px;
+  
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
   }
+  
+ 
 `;
 
 export const Button = styled.button`

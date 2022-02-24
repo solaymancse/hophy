@@ -7,6 +7,29 @@ import {
   FaFileMedicalAlt,
 } from "react-icons/fa";
 
+export const Wrapper = styled.div`
+  padding: 125px 350px;
+  position: relative;
+  width: 100%;
+
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin: 50px 0px;
+    padding: 0px 50px ;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 50px 30px;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    padding: 20px 30px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
+  }
+`;
 export const Notes = styled(FaFileMedicalAlt)`
   color: #34ace1;
   font-size: 72px;
@@ -104,14 +127,6 @@ export const Span = styled.div`
   font-weight: 700;
   display: inline;
 `;
-export const Wrapper = styled.div`
-  padding: 125px 0 180px;
-  position: relative;
-
-  @media screen and (max-width: 575px) {
-    padding: 80px 0px 20px 0px;
-  }
-`;
 
 export const Div = styled.div`
   margin-bottom: 100px;
@@ -122,18 +137,19 @@ export const Div = styled.div`
 `;
 export const Items = styled.div`
  
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 `;
 export const Content = styled.div`
   display: flex;
   margin-bottom: 70px;
   position: relative;
-  z-index: 999999999;
+  
   @media screen and (max-width: 575px) {
     margin-bottom: 50px;
   }
-
-
-  
 `;
 
 export const ConText = styled.p`
@@ -141,6 +157,7 @@ export const ConText = styled.p`
   line-height: 24px;
   transition: all 0.3s;
   color: gray;
+  
 `;
 
 export const Img = styled.img`
@@ -151,9 +168,9 @@ export const Thumb = styled.div`
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 1;
+ z-index: -1;
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -167,10 +184,14 @@ export const H1 = styled.h1`
   line-height: 1.1;
   margin-bottom: 10px;
   margin-top: 0;
+  
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+  }
   @media screen and (max-width: 575px) {
     font-size: 12px;
-}
+  }
 `;
 export const H2 = styled.h1`
   font-size: 48px;
@@ -180,7 +201,13 @@ export const H2 = styled.h1`
   margin-bottom: 25px;
   font-family: "Inter", sans-serif;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 40px;
+  }
   @media screen and (max-width: 575px) {
+    font-size: 25px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
     font-size: 25px;
   }
 `;

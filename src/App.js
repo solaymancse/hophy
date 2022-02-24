@@ -2,6 +2,7 @@
 import './App.css';
 import { PreLoader } from './Components/PreLoader/PreLoader';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { GlobalStyle } from './Components/GlobalStyle/Global.style';
 
 
 
@@ -10,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
+      <GlobalStyle/>
       <PreLoader/>
     
      

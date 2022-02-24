@@ -1,6 +1,5 @@
 import React from "react";
 import { Contact } from "../Contact/Contact";
-import { Container } from "../Container/ContainerElements";
 import { NavMenu } from "../NavMenu/NavMenu";
 import { TopBar } from "../TopBar/TopBar";
 
@@ -11,9 +10,7 @@ export const Navbar = () => {
     <Div>
       <Contact />
       <TopBar />
-      <Container>
-        <NavMenu />
-      </Container>
+      <NavMenu />
     </Div>
   );
 };

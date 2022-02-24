@@ -2,6 +2,28 @@ import styled from "styled-components";
 import { FaStethoscope, FaWheelchair } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 
+export const Wrapper = styled.div`
+  width: 100%;
+  padding: 0 350px;
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-top: 50px;
+    padding: 0 50px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    padding: 0 30px;
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
+  }
+`;
 export const Stethoscope = styled(FaStethoscope)`
   font-size: 50px;
   color: #34ace1;
@@ -27,17 +49,15 @@ export const Brain = styled(GiBrain)`
   }
 `;
 
-export const Wrapper = styled.div`
-  @media screen and (max-width: 575px) {
-    padding-top: 50px;
-  }
-`;
 export const Media = styled.div`
   display: flex;
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 90px;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 20px;
+  }
   @media screen and (max-width: 575px) {
     padding-top: 20px;
   }
@@ -53,6 +73,9 @@ export const Title = styled.div`
   color: #000;
   margin-bottom: 10px;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 18px;
+  }
   @media screen and (max-width: 575px) {
     font-size: 20px;
   }

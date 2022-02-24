@@ -1,6 +1,5 @@
 import React, {useEffect} from "react";
 import { Wrapper } from "./TestomonialElements";
-import { Container } from "./../Container/ContainerElements";
 import { H2, P, SecTitle } from "../DoctorsArea/DoctorsAreaElements";
 import { Span } from "../FeatureSection/FeatureSectionElements";
 import { TestimonialSlider } from "../TestimonialSlider/TestimonialSlider";
@@ -12,7 +11,7 @@ export const Testomonial = () => {
   }, []);
   return (
     <Wrapper>
-      <Container>
+ 
         <div className="row">
           <div className="col-lg-12">
             <SecTitle data-aos="fade-down">
@@ -28,7 +27,7 @@ export const Testomonial = () => {
             <TestimonialSlider />
           </div>
         </div>
-      </Container>
+  
     </Wrapper>
   );
 };

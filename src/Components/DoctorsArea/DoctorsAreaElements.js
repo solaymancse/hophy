@@ -1,12 +1,33 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-    padding: 125px 0;
+   
+   width: 100%;
+   padding: 50px 350px;
+  
 
+   @media (min-width: 1025px) and (max-width: 1280px) {
+   
+    padding: 50px 50px;
+  }
+    @media (min-width: 768px) and (max-width: 1024px) {
+   
+    padding: 50px 30px;
 
-    @media screen and (max-width: 575px){
-        padding: 150px 0px 60px 0px;
-    }
+  }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      padding: 0 10px;
+
+  
+}
+    @media (min-width: 320px) and (max-width: 480px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding: 0 10px;
+    margin-top: 100px;
+  }
+
 `;
 export const SecTitle = styled.div`
         margin-bottom: 64px;

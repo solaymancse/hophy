@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../Container/ContainerElements";
+
 import {
   Wrapper,
   FooterLogo,
@@ -26,7 +26,7 @@ export const Footer = () => {
   const QuickList = [" World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"," World Health Organization"];
   return (
     <Wrapper>
-      <Container>
+
         <div className="row">
           <div className="col-sm-6 col-md-5 col-lg-4 col-xl-3">
             <div className="widget-item">
@@ -130,7 +130,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-      </Container>
+ 
     </Wrapper>
   );
 };

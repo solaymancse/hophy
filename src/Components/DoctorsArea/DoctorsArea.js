@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { DoctorSlider } from "../DoctorSlider/DoctorSlider";
 
-import { Container } from "./../Container/ContainerElements";
+
 import { Span } from "./../FeatureSection/FeatureSectionElements";
 import { Wrapper, SecTitle, P, H2 } from "./DoctorsAreaElements";
 import Aos from "aos";
@@ -12,7 +12,7 @@ export const DoctorsArea = () => {
   }, []);
   return (
     <Wrapper>
-      <Container>
+
         <div className="row">
           <div className="col-lg-12">
             <SecTitle data-aos="fade-up">
@@ -26,7 +26,7 @@ export const DoctorsArea = () => {
         <div className="row">
           <div className="col-lg-12">{<DoctorSlider />}</div>
         </div>
-      </Container>
+   
     </Wrapper>
   );
 };

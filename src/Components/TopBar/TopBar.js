@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../Container/ContainerElements";
+
 import {
   Wrapper,
   Content,
@@ -18,7 +18,6 @@ import { BsTelephoneFill } from "react-icons/bs";
 export const TopBar = () => {
   return (
     <Wrapper className="mobile-sticky">
-      <Container>
         <div className="row">
           <div className="col-12">
             <Content>
@@ -57,7 +56,6 @@ export const TopBar = () => {
             </Content>
           </div>
         </div>
-      </Container>
     </Wrapper>
   );
 };

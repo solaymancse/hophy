@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding: 80px 80px;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding: 10px;
+  }
   @media screen and (max-width: 575px) {
     padding: 40px 20px;
   }

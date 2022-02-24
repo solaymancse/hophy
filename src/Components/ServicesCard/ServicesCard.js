@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "./../Container/ContainerElements";
+
 import {
   Wrapper,
   P,
@@ -16,7 +16,7 @@ import Data from '../../ServicesCardData.json'
 export const ServicesCard = () => {
 
   return (
-    <Container>
+   
       <Wrapper>
         <div className="row">
           <div className="col-lg-12">
@@ -36,6 +36,6 @@ export const ServicesCard = () => {
           </div>
         </div>
       </Wrapper>
-    </Container>
+    
   );
 };

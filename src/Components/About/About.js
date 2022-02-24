@@ -44,7 +44,7 @@ export const About = () => {
           </Content>
         </Container>
       </Wrapper>
-      <Container>
+     
         <MainDiv className="row">
           <Div className="col-lg-12">
             <H2>
@@ -98,7 +98,7 @@ export const About = () => {
           </Div>
           <Div className="col-lg-12"></Div>
         </MainDiv>
-      </Container>
+     
     </>
   );
 };

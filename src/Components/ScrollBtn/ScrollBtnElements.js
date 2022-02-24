@@ -20,4 +20,5 @@ export const Button = styled.div`
    z-index: 1000000;
    cursor: pointer;
    color: #34ace3;
+
 `

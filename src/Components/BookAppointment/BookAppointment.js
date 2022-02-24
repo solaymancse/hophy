@@ -10,10 +10,11 @@ import {
   H2,
   Button,
 } from "./BookAppointmentElements";
-import { Container } from "./../Container/ContainerElements";
+
 
 import { Span } from "../FeatureSection/FeatureSectionElements";
 import { AppointmentForm } from "./../AppointmentForm/AppointmentForm";
+
 
 export const BookAppointment = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ export const BookAppointment = () => {
   }, []);
   return (
     <Wrapper>
-      <Container>
+
         <Appointment>
           <div className="row">
             <div className="col-12">
@@ -46,7 +47,7 @@ export const BookAppointment = () => {
             </div>
           </div>
         </Appointment>
-      </Container>
+     
     </Wrapper>
   );
 };

@@ -3,25 +3,20 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding-top: 4px;
 
-
   /* @media (min-width: 992px) and (max-width: 1200px){
         height: 100px;
-    };
-    @media (min-width: 768px) and (max-width: 991px){
-        height: 82px;
-    };
-    @media (min-width: 576px) and (max-width: 767px){
-        height: 82px;
     }; */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 10px;
+  }
 
-    @media (min-width: 576px) and (max-width: 767px){
-      padding-top: 10px;
-
-    };
-    @media screen and (max-width: 575px) {
-       margin: 0;
-       padding: 0;
-  };
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 575px) {
+    margin: 0;
+    padding: 0;
+  } ;
 `;
 export const Content = styled.div`
   display: flex;
@@ -29,21 +24,51 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (min-width: 576px) and (max-width: 767px){
-      padding:0;
-      margin: 0;
 
-    };
-
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    padding: 0;
+    margin: 0;
+  
+}
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding: 0;
+    margin: 0;
+  } ;
 `;
 export const Logo = styled.div`
 
-    @media (min-width: 576px) and (max-width: 767px){
-      padding:0;
-      margin: 0;
 
-    };
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding: 0;
+    margin: 0;
+  } ;
+`;
+export const Img = styled.img`
+  height: 80px;
+  width: 300px;
+  margin-left: -30px;
 
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    height: 70px;
+    width: 160px;
+}
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 60px;
+    width: 140px;
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    height: 50px;
+    width: 150px;
+  }
+  @media screen and (max-width: 575px) {
+    margin-top: 10px;
+    height: 50px;
+    width: 150px;
+    margin-left: -6px;
+  }
 `;
 export const Media = styled.div`
   display: flex;
@@ -62,6 +87,8 @@ export const Col = styled.div`
   display: flex;
   gap: 0px 20px;
   margin-left: 30px;
+
+
 `;
 
 export const Icon = styled.div`
@@ -76,6 +103,17 @@ export const H3 = styled.h3`
   color: #ccc;
   line-height: 1;
   margin-bottom: 5px;
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+    font-size: 14px;
+}
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  
+  
+}
 `;
 
 export const H1 = styled.h1`
@@ -83,29 +121,20 @@ export const H1 = styled.h1`
   color: #fff;
   font-weight: 700px;
 
-  @media screen and (max-width: 1024px) {
-    font-size: 10px;
-  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+  font-size: 14px;
+}
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 14px;
+  
+  
+}
+
+  
 `;
 
 export const H2 = styled.h2`
   font-size: 24px;
 `;
 export const Span = styled.div``;
-export const Img = styled.img`
-  height: 80px;
-  width: 300px;
-  margin-left: -30px;
-
-  @media (min-width: 576px) and (max-width: 767px){
-    height: 50px;
-  width: 150px;
-
-    };
-  @media screen and (max-width: 575px) {
-    margin-top: 10px;
-    height: 50px;
-    width: 150px;
-    margin-left: -6px;
-  }
-`;
