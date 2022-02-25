@@ -7,26 +7,37 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  width: 100vw;
-  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+  width: 100%;
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 385px;
+    padding: 0 50px;
+  }
 `;
 export const Content = styled.div`
   position: relative;
+  background: red;
 
-  
-  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+  }
+
+
+
 `;
 export const ServiceArea = styled.div`
-margin-top: 150px;
- 
+  margin-top: 150px;
+  
   width: 100vw;
 
-
-  
-  
+  @media (min-width: 1281px) and (max-width: 1440px) {
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    padding: 0 10px;
+  }
 `;
 export const ContentItems = styled.div`
-
   position: absolute;
   top: 150px;
   width: 100%;
@@ -35,7 +46,6 @@ export const ContentItems = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 `;
 export const P = styled.div`
   color: #fff;
@@ -44,6 +54,11 @@ export const P = styled.div`
   letter-spacing: 0.411px;
   margin-bottom: 34px;
   text-transform: uppercase;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 `;
 export const H1 = styled.div`
   color: #fff;
@@ -55,4 +70,9 @@ export const H1 = styled.div`
   margin-bottom: 10px;
   text-align: center;
   word-spacing: 10px;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size: 25px;
+    letter-spacing: 0;
+  }
 `;

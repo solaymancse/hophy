@@ -28,8 +28,8 @@ export const HeroSection = () => {
                 <Span>Our Priority</Span>
               </H1>
               <BtnDiv>
-                <Links className="btn btn-danger me-3" href="/">
-                  GET A QUOTE
+                <Links className="btn btn-danger me-3" to="/t&c">
+                  GET A QUOTE 
                 </Links>
                 <Links
                   className="btn btn-outline-info"

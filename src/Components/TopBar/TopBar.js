@@ -25,31 +25,31 @@ export const TopBar = () => {
                 <Img src={brand2} alt="logo" />
               </Logo>
               <Media className="d-none d-lg-flex">
-              <Col>
-                <Icon>
+              <Col >
+                <Icon color="#fff">
                   <AiOutlineClockCircle />
                 </Icon>
                 <div>
-                  <H3>WORKING HOURS</H3>
-                  <H1>SAT - FRI : 9.00 - 10.00</H1>
+                  <H3 color="#ccc">WORKING HOURS</H3>
+                  <H1 color="#fff">SAT - FRI : 9.00 - 10.00</H1>
                 </div>
               </Col>
               <Col>
-                <Icon>
+                <Icon color="#fff">
                   <BsTelephoneFill />
                 </Icon>
                 <div>
-                  <H3>HOTLINE 24/7</H3>
-                  <H1>+0123-45-67-890</H1>
+                  <H3 color="#ccc">HOTLINE 24/7</H3>
+                  <H1 color="#fff">+0123-45-67-890</H1>
                 </div>
               </Col>
               <Col>
-                <Icon>
+                <Icon color="#fff">
                   <AiOutlineMail />
                 </Icon>
                 <div>
-                  <H3>EMAIL US</H3>
-                  <H1>HOPHYSTARTUP@GMAIL.COM</H1>
+                  <H3 color="#ccc">EMAIL US</H3>
+                  <H1 color="#fff">HOPHYSTARTUP@GMAIL.COM</H1>
                 </div>
               </Col>
               </Media>

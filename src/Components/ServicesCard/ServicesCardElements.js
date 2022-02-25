@@ -30,6 +30,7 @@ export const FlexBox = styled.div`
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 350px;
   
  
   

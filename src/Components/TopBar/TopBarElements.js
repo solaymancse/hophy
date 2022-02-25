@@ -90,14 +90,14 @@ export const Col = styled.div`
 
 export const Icon = styled.div`
   margin-top: 5px;
-  color: #fff;
+  color: ${(props)=>props.color};
   font-weight: 400px;
   font-size: 20px;
 `;
 
 export const H3 = styled.h3`
   font-size: 12px;
-  color: #ccc;
+  color: ${(props)=>props.color};
   line-height: 1;
   margin-bottom: 5px;
 
@@ -112,7 +112,7 @@ export const H3 = styled.h3`
 
 export const H1 = styled.h1`
   font-size: 18px;
-  color: #fff;
+  color: ${(props)=>props.color};
   font-weight: 700px;
 
   @media (min-width: 1025px) and (max-width: 1280px) {

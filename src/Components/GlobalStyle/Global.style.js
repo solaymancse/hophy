@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   
 }
 
-body{
+html{
   
   overflow-x: hidden;
 }

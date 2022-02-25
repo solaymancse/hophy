@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdCall, MdLocationOn } from "react-icons/md";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
 export const Wrapper = styled.div`
   color: #707070;
@@ -50,29 +51,32 @@ export const List = styled.a`
   font-size: 14px;
   line-height: 26px;
   margin-bottom: 12px;
-  padding-top: 4px;
+  padding-top: 5px;
   transition: all 0.3s;
   align-items: center;
-  color: #fff;
+  color: ${(props)=> props.color};
 
   &:hover {
     color: #34ace3;
   }
 `;
 
-export const Contact = styled.div``;
+export const Contact = styled.div`
+color: ${(props)=> props.color}
+
+`;
 export const Map = styled(MdLocationOn)`
-  color: #fff;
+  color: ${(props)=> props.color};
   font-size: 30px;
   margin-right: 15px;
 `;
 export const Mail = styled(AiOutlineMail)`
-  color: #fff;
+color: ${(props)=> props.color};
   font-size: 25px;
   margin-right: 15px;
 `;
 export const Call = styled(MdCall)`
-  color: #fff;
+color: ${(props)=> props.color};
   font-size: 25px;
   margin-right: 15px;
 `;
@@ -114,4 +118,7 @@ export const P = styled.p`
   letter-spacing: 0;
   line-height: 26px;
   margin-bottom: 24px;
+`;
+export const Arrow = styled(BsArrowRightCircleFill)`
+ margin-right: 20px;
 `;

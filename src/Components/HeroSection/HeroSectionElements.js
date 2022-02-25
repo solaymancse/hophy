@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import img from '../../images/hero_1.jpg'
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   background-image: url(${img});
@@ -9,32 +10,25 @@ export const Wrapper = styled.div`
   background-position: center;
   background-size: cover;
   text-align: center;
-  display: block;
-  overflow-x: hidden;
 
-  @media (min-width: 1281px) {
   
-  
-  
-}
+
  
   @media (min-width: 768px) and (max-width: 1280px){
     height: 580px;
     
     };
-  @media (min-width: 576px) and (max-width: 767px){
+  @media (min-width: 481px) and (max-width: 767px){
     height: 360px;
-    overflow-x: hidden;
+   
    
     };
-  @media screen and (max-width: 575px) {
-    height: 380px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    background-position: bottom;
-    overflow-x: hidden;
-  }
+  @media (min-width: 320px) and (max-width: 480px){
+    height: 360px;
+   
+   
+    };
+ 
 
 `;
 
@@ -146,7 +140,7 @@ export const BtnDiv = styled.div`
   }
 `;
 
-export const Links = styled.a`
+export const Links = styled(NavLink)`
   padding: 15px 30px;
   color: #fff;
   font-weight: 700;
