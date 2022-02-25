@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./../Components/Navbar/Navbar";
-// import { ScrollBtn } from "./../Components/ScrollBtn/ScrollBtn";
+import { ScrollBtn } from "./../Components/ScrollBtn/ScrollBtn";
 import { HeroSection } from "./../Components/HeroSection/HeroSection";
 import { StaticMedia } from "./../Components/StaticMedia/StaticMedia";
 import { FeatureSection } from "./../Components/FeatureSection/FeatureSection";
@@ -18,7 +18,7 @@ export const HomeSection = () => {
     <>
       {/* <StickyNavbar /> */}
       <Navbar />
-      {/* <ScrollBtn /> */}
+      <ScrollBtn />
       <HeroSection />
       <StaticMedia />
       <FeatureSection />

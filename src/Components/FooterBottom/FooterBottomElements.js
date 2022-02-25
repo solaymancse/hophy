@@ -5,6 +5,15 @@ export const Wrapper = styled.div`
   padding: 55px 0;
   position: relative;
 
+  
+  @media (min-width: 1281px) and (max-width: 1440px) {
+   
+   padding: 0 60px;
+ }
+  @media (min-width: 992px) and (max-width: 1280px) {
+   
+    padding: 0 30px;
+  }
   @media (min-width: 768px) and (max-width: 991px) {
     min-width: 768px;
     max-width: 991px;

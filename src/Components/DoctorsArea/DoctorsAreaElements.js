@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
    padding: 50px 350px;
   
 
+   @media (min-width: 1281px) and (max-width: 1440px) {
+   
+   padding: 60px 60px;
+ }
    @media (min-width: 1025px) and (max-width: 1280px) {
    
     padding: 50px 50px;
@@ -52,7 +56,7 @@ export const H2 = styled.h2`
     line-height: 1.1;
     margin-bottom: 25px;
 
-    @media screen and (max-width: 575px){
-        font-size: 25px;
+    @media screen and (max-width: 1199px){
+      font-size: 40px;
     }
 `;

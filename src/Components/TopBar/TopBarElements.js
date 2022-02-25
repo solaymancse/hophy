@@ -24,21 +24,16 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-
   @media (min-width: 1025px) and (max-width: 1280px) {
-  
     padding: 0;
     margin: 0;
-  
-}
+  }
   @media (min-width: 576px) and (max-width: 767px) {
     padding: 0;
     margin: 0;
   } ;
 `;
 export const Logo = styled.div`
-
-
   @media (min-width: 576px) and (max-width: 767px) {
     padding: 0;
     margin: 0;
@@ -49,11 +44,15 @@ export const Img = styled.img`
   width: 300px;
   margin-left: -30px;
 
+
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    height: 80px;
+    width: 160px;
+  }
   @media (min-width: 1025px) and (max-width: 1280px) {
-  
     height: 70px;
     width: 160px;
-}
+  }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 60px;
@@ -87,8 +86,6 @@ export const Col = styled.div`
   display: flex;
   gap: 0px 20px;
   margin-left: 30px;
-
-
 `;
 
 export const Icon = styled.div`
@@ -105,15 +102,12 @@ export const H3 = styled.h3`
   margin-bottom: 5px;
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-  
     font-size: 14px;
-}
+  }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 14px;
-  
-  
-}
+  }
 `;
 
 export const H1 = styled.h1`
@@ -122,16 +116,11 @@ export const H1 = styled.h1`
   font-weight: 700px;
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 14px;
-  
-  
-}
-
-  
+  }
 `;
 
 export const H2 = styled.h2`

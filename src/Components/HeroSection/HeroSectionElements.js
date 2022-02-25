@@ -5,13 +5,20 @@ export const Wrapper = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: 750px;
   background-position: center;
   background-size: cover;
   text-align: center;
   display: block;
+  overflow-x: hidden;
+
+  @media (min-width: 1281px) {
+  
+  
+  
+}
  
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px) and (max-width: 1280px){
     height: 580px;
     
     };
@@ -56,8 +63,10 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
-
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 1281px) and (max-width: 1440px){
+    top:150px;
+    };
+  @media (min-width: 768px) and (max-width: 1280px){
     top:150px;
     };
   @media (min-width: 576px) and (max-width: 767px){
@@ -76,7 +85,7 @@ export const P = styled.div`
   animation: fadeInLeft 1s ease-in-out;
   font-family: "Inter", sans-serif;
 
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px) and (max-width: 1280px){
     font-size: 12px;
     };
   
@@ -97,7 +106,7 @@ export const H1 = styled.div`
   margin-top: 0;
   line-height: 1.1;
 
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px) and (max-width: 1280px){
     font-size: 60px;
     margin-bottom: -30px;
     };
@@ -115,7 +124,7 @@ export const Span = styled.div`
   color: #333;
   font-weight: 300;
 
-  @media (min-width: 768px) and (max-width: 1024px){
+  @media (min-width: 768px) and (max-width: 1280px){
     font-size: 60px;
     };
   @media (min-width: 576px) and (max-width: 767px){
@@ -142,7 +151,7 @@ export const Links = styled.a`
   color: #fff;
   font-weight: 700;
 
-  @media (min-width: 768px) and (max-width: 991px){
+  @media (min-width: 768px) and (max-width: 1280px){
     padding: 10px 15px;
     font-size: 12px;
     };

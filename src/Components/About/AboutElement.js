@@ -31,9 +31,13 @@ export const Span = styled.span`
   
 `;
 export const MainDiv = styled.div`
-
+padding: 0 350px;
 margin-top: 50px;
 
+@media (min-width: 1281px) and (max-width: 1440px) {
+  
+  padding: 0 70px;
+ }
 @media (min-width: 1025px) and (max-width: 1280px) {
   
  padding: 0 60px;

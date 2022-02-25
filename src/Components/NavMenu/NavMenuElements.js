@@ -44,10 +44,12 @@ export const Bars = styled(GoThreeBars)`
   color: #fff;
   display: none;
 
+
+
   @media (min-width: 768px) and (max-width: 991px){
     display: block;
     font-size: 22px;
-    margin-top: -40px;
+    margin-top: -45px;
   };
   @media (min-width: 576px) and (max-width: 767px){
     display: block;
@@ -66,15 +68,9 @@ export const Bars = styled(GoThreeBars)`
 export const Div = styled.div`
   display: flex;
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media screen and (max-width: 991px){
      display: none;
   }
 
-  @media (min-width: 576px) and (max-width: 767px){
-    display: none;
-
-    };
-  @media screen and (max-width: 575px) {
-    display: none;
-  };
+  
 `;

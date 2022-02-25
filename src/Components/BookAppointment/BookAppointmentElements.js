@@ -7,14 +7,23 @@ export const Wrapper = styled.div`
   
 
   
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    margin-top: 300px;
+    padding: 0 60px;
+  }
   @media (min-width: 1025px) and (max-width: 1280px) {
     margin-top: 300px;
     padding: 0 50px;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-   
+
+  @media (min-width: 992px) and (max-width: 1024px) {
     padding: 0 30px;
     margin-top: 150px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+   
+    padding: 0 30px;
+    margin-top: 50px;
   }
   @media (min-width: 481px) and (max-width: 767px) {
     padding: 0 30px;
