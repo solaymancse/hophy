@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hophy/static/css/main.27eb3dda.css",
-    "main.js": "/hophy/static/js/main.cbd8db65.js",
+    "main.css": "/hophy/static/css/main.9b15a9eb.css",
+    "main.js": "/hophy/static/js/main.9e63bb19.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
     "static/media/hero_1.jpg": "/hophy/static/media/hero_1.d164e452c16ac7b96ebe.jpg",
     "static/media/about1.jpg": "/hophy/static/media/about1.5ff761781ac668d8ea3c.jpg",
@@ -16,12 +16,12 @@
     "static/media/revicons.ttf": "/hophy/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/hophy/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/hophy/index.html",
-    "main.27eb3dda.css.map": "/hophy/static/css/main.27eb3dda.css.map",
-    "main.cbd8db65.js.map": "/hophy/static/js/main.cbd8db65.js.map",
+    "main.9b15a9eb.css.map": "/hophy/static/css/main.9b15a9eb.css.map",
+    "main.9e63bb19.js.map": "/hophy/static/js/main.9e63bb19.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27eb3dda.css",
-    "static/js/main.cbd8db65.js"
+    "static/css/main.9b15a9eb.css",
+    "static/js/main.9e63bb19.js"
   ]
 }
