@@ -26,10 +26,9 @@ export const Wrapper = styled.div`
   
 }
     @media (min-width: 320px) and (max-width: 480px) {
-    min-width: 320px;
-    max-width: 480px;
+
     padding: 0 10px;
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
 `;
@@ -56,7 +55,7 @@ export const H2 = styled.h2`
     line-height: 1.1;
     margin-bottom: 25px;
 
-    @media screen and (max-width: 1199px){
-      font-size: 40px;
-    }
+    @media screen and (max-width: 575px){
+    font-size: 25px;
+  }
 `;

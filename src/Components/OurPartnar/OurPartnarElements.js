@@ -31,8 +31,7 @@ export const Wrapper = styled.div`
     padding: 0 30px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
-    min-width: 320px;
-    max-width: 480px;
+   
     padding: 0 10px;
   }
   

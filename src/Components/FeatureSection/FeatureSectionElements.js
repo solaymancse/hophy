@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
-   
+   margin-top: 30px;
     padding: 0 10px;
   }
 `;

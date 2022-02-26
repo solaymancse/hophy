@@ -9,6 +9,11 @@ export const Title = styled.div`
 export const Text = styled.div`
   width: 300px;
   margin: auto;
+
+  @media (min-width: 320px) and (max-width: 480px){
+    width: auto;
+    font-size: 14px;
+  }
 `;
 
 export const FlexBox = styled.div`

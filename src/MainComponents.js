@@ -5,6 +5,7 @@ import { AboutSection } from "./pages/AboutSection";
 import { ServicesSection } from "./pages/ServicesSection";
 import { BlogSection } from "./pages/BlogSection";
 import { ContactSection } from "./pages/ContactSection";
+// import { MobileLogin } from "./Components/MobileLogin/MobileLogin";
 
 export const MainComponents = () => {
   return (
@@ -16,6 +17,8 @@ export const MainComponents = () => {
         <Route path="/services" element={<ServicesSection />} />
         <Route path="/blog" element={<BlogSection />} />
         <Route path="/contact" element={<ContactSection />} />
+        {/* <Route path="/login" element={<MobileLogin/>} /> */}
+        
       </Routes>
     </>
   );

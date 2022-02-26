@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding: 125px 350px;
   width: 100%;
+  overflow-x: hidden;
 
   @media (min-width: 1281px) and (max-width: 1440px) {
    
@@ -23,13 +24,17 @@ export const Wrapper = styled.div`
     padding: 50px 30px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
-    min-width: 320px;
-    max-width: 480px;
+    margin-top: 30px;
     padding: 0 10px;
   }
 `;
 export const SecTitle = styled.div`
+width: 100%;
   margin-bottom: 70px;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const H2 = styled.div`

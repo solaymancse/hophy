@@ -21,6 +21,8 @@ export const OffCanvas = () => {
           <Links to="/t&c">Terms and Condition</Links>
         </Items>
         <Links to="/blog">Blog</Links>
+        <Links to="/login">Login</Links>
+        <Links to="/signup">Sign up</Links>
         <Links to="/contact">Contact</Links>
       </Navbar>
     </Wrapper>

@@ -97,10 +97,10 @@ export const H2 = styled.div`
   line-height: 1.1;
   margin-bottom: 25px;
 
-  
-  @media screen and (max-width: 1199px) {
-    font-size: 40px;
+  @media screen and (max-width: 575px){
+    font-size: 25px;
   }
+  
   
  
 `;
