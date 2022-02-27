@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
     text-align: center;
     margin-bottom: 150px;
 
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-bottom: 80px;
+  }
+
 `;
 export const P = styled.p`
   color: #999;
@@ -21,9 +25,9 @@ export const P = styled.p`
 
 `;
 export const H1 = styled.h1`
-   display: block;
+
  
-   width: 100%;
+  
 
 `;
 export const FlexBox = styled.div`
@@ -73,6 +77,7 @@ export const Content = styled.div`
   width: 100%;
   margin-top: 30px;
 `;
+
 export const H4 = styled.h4`
 font-size: 20px;
 color: #333;

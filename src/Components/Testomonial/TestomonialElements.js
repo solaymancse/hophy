@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   }
   @media (min-width: 768px) and (max-width: 991px) {
     
-    padding: 0px 30px;
+    padding: 50px 30px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
     margin-top: 30px;

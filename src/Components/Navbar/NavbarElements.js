@@ -6,6 +6,10 @@ export const Div = styled.div`
   width: 100%;
   padding: 0px 350px;
 
+
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    padding: 0px 200px;
+  }
   @media (min-width: 1281px) and (max-width: 1440px) {
     padding: 0px 150px;
   }

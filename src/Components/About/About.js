@@ -36,8 +36,8 @@ export const About = () => {
         <Container>
           <Content>
             <ContentItems>
-              <P>HOPHY MEDICAL CENTER</P>
-              <H1>
+              <P data-aos="fade-up">HOPHY MEDICAL CENTER</P>
+              <H1 data-aos="fade-up">
                 <Span>About</Span>HophyCare
               </H1>
             </ContentItems>

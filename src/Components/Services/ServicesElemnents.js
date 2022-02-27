@@ -34,6 +34,7 @@ export const ServiceArea = styled.div`
   @media (min-width: 1281px) and (max-width: 1440px) {
   }
   @media (min-width: 320px) and (max-width: 480px) {
+    margin-top: 50px;
     padding: 0 10px;
   }
 `;
@@ -46,6 +47,11 @@ export const ContentItems = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    top: 50px;
+  }
 `;
 export const P = styled.div`
   color: #fff;
@@ -55,6 +61,14 @@ export const P = styled.div`
   margin-bottom: 34px;
   text-transform: uppercase;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 12px;
     margin-bottom: 5px;
@@ -71,8 +85,20 @@ export const H1 = styled.div`
   text-align: center;
   word-spacing: 10px;
 
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 60px;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
   @media (min-width: 320px) and (max-width: 480px) {
     font-size: 25px;
     letter-spacing: 0;
+    line-height: 40px;
   }
 `;

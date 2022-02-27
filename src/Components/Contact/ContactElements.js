@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   display: flex;
   padding-top: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+  @media (min-width: 992px) and (max-width: 1030px){
+
+  }
 `;
 export const Location = styled(ImLocation2)`
   color: #fff;
@@ -14,6 +18,9 @@ export const Location = styled(ImLocation2)`
 
 export const Title = styled.p`
   color: #fff;
+  @media (min-width: 992px) and (max-width: 1030px){
+    font-size: 14px;
+  }
 
   
 `;

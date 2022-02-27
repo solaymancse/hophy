@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap';
-import { LoginForm } from '../LoginForm/LoginForm';
+import { SignUpForm } from './../SignUpForm/SignUpForm';
 
 
 export const SignUp = () => {
@@ -19,7 +19,7 @@ export const SignUp = () => {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-             { <LoginForm/>}
+             { <SignUpForm/>}
             </Modal.Body>
             <Modal.Footer>
               <Button  variant="danger" onClick={props.onHide}>Close</Button>

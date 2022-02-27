@@ -11,10 +11,9 @@ export const Wrapper = styled.div`
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
 
   @media (min-width: 320px) and (max-width: 480px) {
-    height: 385px;
+    height: 345px;
     padding: 0;
-    min-width: 320px;
-    max-width: 480px;
+   
   }
 `;
 export const ContentItems = styled.div`
@@ -36,6 +35,10 @@ export const Span = styled.span`
   color: #fff;
   font-weight: 600;
   margin-right: 20px;
+
+  @media (min-width: 320px) and (max-width: 480px){
+    margin-right: 10px;
+  }
 `;
 export const MainDiv = styled.div`
   padding: 0 350px;
@@ -61,7 +64,7 @@ export const MainDiv = styled.div`
   }
   @media (min-width: 320px) and (max-width: 480px) {
     margin-top: 0px;
-    padding: 0px 10px;
+    padding:0 0 0 20px;
   }
 `;
 export const H2 = styled.h2`
@@ -73,8 +76,8 @@ export const H2 = styled.h2`
   margin-bottom: 50px;
 
   @media (min-width: 320px) and (max-width: 480px) {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 `;
 export const H3 = styled.h3`
@@ -107,4 +110,10 @@ export const List = styled.a`
 
 export const Div = styled.div`
   margin-top: 100px;
+
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-top: 70px;
+  
+  }
 `;

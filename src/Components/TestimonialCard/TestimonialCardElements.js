@@ -29,4 +29,9 @@ export const P = styled.div`
 `;
 export const Title = styled.div`
    margin-top: 10%;
+
+   @media (min-width: 320px) and (max-width: 480px) {
+    padding-bottom: 50px;
+    
+  }
 `;

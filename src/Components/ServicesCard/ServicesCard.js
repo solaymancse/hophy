@@ -5,13 +5,15 @@ import {
   Wrapper,
   P,
   H1,
-  FlexBox
+  FlexBox,
+  
  
 } from "./ServicesCardElements";
 
 import { Span } from "./../FeatureSection/FeatureSectionElements";
 import { ServiceCardItems } from './ServiceCardItems';
 import Data from '../../ServicesCardData.json'
+
 
 export const ServicesCard = () => {
 
