@@ -1,27 +1,26 @@
 {
   "files": {
     "main.css": "/hophy/static/css/main.9b15a9eb.css",
-    "main.js": "/hophy/static/js/main.0d8c1b1c.js",
+    "main.js": "/hophy/static/js/main.4915b04a.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
     "static/media/hero_4.jpg": "/hophy/static/media/hero_4.3124aeb8807ec03ce57f.jpg",
     "static/media/about1.jpg": "/hophy/static/media/about1.5ff761781ac668d8ea3c.jpg",
+    "static/media/doc_1.png": "/hophy/static/media/doc_1.1b34a2bf5ed5bd26c1eb.png",
     "static/media/serviceCover.jpg": "/hophy/static/media/serviceCover.8b0c685171400c9bed6d.jpg",
     "static/media/doctor-01.png": "/hophy/static/media/doctor-01.ccd9bbe9c1fbd20d372f.png",
+    "static/media/brand5.png": "/hophy/static/media/brand5.6903a62386142338807c.png",
     "static/media/testimonialBg1.jpg": "/hophy/static/media/testimonialBg1.8d6c7aa9c813846cc6ac.jpg",
-    "static/media/brand4.png": "/hophy/static/media/brand4.7b973fb1c7074e17f8d4.png",
-    "static/media/doc1.jpg": "/hophy/static/media/doc1.17e1c320bec701f8dc2c.jpg",
-    "static/media/brand3.png": "/hophy/static/media/brand3.f152f925083eda1f4f04.png",
     "static/media/doc2.jpg": "/hophy/static/media/doc2.aa586208539287293644.jpg",
     "static/media/revicons.eot": "/hophy/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/hophy/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/hophy/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/hophy/index.html",
     "main.9b15a9eb.css.map": "/hophy/static/css/main.9b15a9eb.css.map",
-    "main.0d8c1b1c.js.map": "/hophy/static/js/main.0d8c1b1c.js.map",
+    "main.4915b04a.js.map": "/hophy/static/js/main.4915b04a.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b15a9eb.css",
-    "static/js/main.0d8c1b1c.js"
+    "static/js/main.4915b04a.js"
   ]
 }
