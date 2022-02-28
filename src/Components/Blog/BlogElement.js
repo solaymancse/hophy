@@ -5,6 +5,11 @@ export const Wrapper = styled.div`
   width: 100%;
   overflow-x: hidden;
 
+
+  @media (min-width: 1441px) and (max-width: 1536px) {
+  
+  padding: 50px 150px;
+}
   @media (min-width: 1281px) and (max-width: 1440px) {
    
    padding: 50px 60px;

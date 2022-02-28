@@ -6,6 +6,8 @@ import { ServicesSection } from "./pages/ServicesSection";
 import { BlogSection } from "./pages/BlogSection";
 import { ContactSection } from "./pages/ContactSection";
 // import { MobileLogin } from "./Components/MobileLogin/MobileLogin";
+import { TermsAndCondition } from './Components/TermsAndCondition/TermsAndCondition';
+import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 
 export const MainComponents = () => {
   return (
@@ -17,7 +19,10 @@ export const MainComponents = () => {
         <Route path="/services" element={<ServicesSection />} />
         <Route path="/blog" element={<BlogSection />} />
         <Route path="/contact" element={<ContactSection />} />
+        <Route path="/terms&condition" element={<TermsAndCondition />} />
+        <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         {/* <Route path="/login" element={<MobileLogin/>} /> */}
+
         
       </Routes>
     </>

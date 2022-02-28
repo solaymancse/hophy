@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
   width: 100%;
 
 
+  
+  @media (min-width: 1441px) and (max-width: 1920px) {
+  
+  padding: 0px 150px;
+}
   @media (min-width: 1281px) and (max-width: 1440px) {
    
    padding: 0px 60px;

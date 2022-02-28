@@ -11,7 +11,7 @@ import {
   Icon,
   Logo
 } from "./TopBarElements";
-import brand2 from "../../images/brand3.png";
+import logo from "../../images/brand5.png";
 import { AiOutlineClockCircle, AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 
@@ -22,7 +22,7 @@ export const TopBar = () => {
           <div className="col-12">
             <Content>
               <Logo>
-                <Img src={brand2} alt="logo" />
+                <Img src={logo} alt="logo" />
               </Logo>
               <Media className="d-none d-lg-flex">
               <Col >

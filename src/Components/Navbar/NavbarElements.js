@@ -7,8 +7,8 @@ export const Div = styled.div`
   padding: 0px 350px;
 
 
-  @media (min-width: 1441px) and (max-width: 1920px) {
-    padding: 0px 200px;
+  @media (min-width: 1441px) and (max-width: 1536px) {
+    padding: 0px 150px;
   }
   @media (min-width: 1281px) and (max-width: 1440px) {
     padding: 0px 150px;
@@ -16,11 +16,11 @@ export const Div = styled.div`
 
   @media (min-width: 992px) and (max-width: 1280px) {
   
-    padding: 0px 60px;
+    padding: 5px 60px 0 60px;
   }
   @media (min-width: 768px) and (max-width: 991px) {
     height: 80px;
-    padding: 0px 60px;
+    padding: 5px 60px 0 60px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -30,6 +30,6 @@ export const Div = styled.div`
 
   @media (min-width: 320px) and (max-width: 480px) {
     height: 80px;
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 `;

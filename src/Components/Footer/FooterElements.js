@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdCall, MdLocationOn } from "react-icons/md";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   color: #707070;
@@ -10,6 +11,10 @@ export const Wrapper = styled.div`
   width: 100%;
 
 
+  @media (min-width: 1441px) and (max-width: 1536px) {
+  
+  padding: 50px 150px;
+}
   @media (min-width: 1281px) and (max-width: 1440px) {
    
    padding: 50px 60px;
@@ -43,7 +48,7 @@ export const Img = styled.img`
   height: 50px;
   width: 180px;
 `;
-export const List = styled.a`
+export const List = styled(NavLink)`
   text-decoration: none;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;

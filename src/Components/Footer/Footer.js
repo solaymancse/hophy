@@ -17,14 +17,13 @@ import {
   InputDiv,
   Arrow
 } from "./FooterElements";
-import logo from "../../images/brand4.png";
+import logo from "../../images/brand5.png";
 import { Button } from "react-bootstrap";
-import { BsArrowRightShort } from "react-icons/bs";
+import { BsArrowRightShort, BsYoutube } from "react-icons/bs";
 import { Icons, Links } from "../Contact/ContactElements";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF} from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
-import { BiMailSend } from "react-icons/bi";
-import { AiFillYoutube } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export const Footer = () => {
 
@@ -45,15 +44,15 @@ export const Footer = () => {
                 or a typeface without
               </p>
               <Contact >
-                <List color="#fff">
+                <List to="/" color="#fff">
                   <Map color="#fff"/>
                   Chattogram Software Technology Park, 4100, Chittagong
                 </List>
-                <List color="#fff">
+                <List to="/" color="#fff">
                   <Mail />
                   hophycare@gmail.com
                 </List>
-                <List color="#fff">
+                <List to="/" color="#fff">
                   <Call />
                   +0123-45-67-890
                 </List>
@@ -65,19 +64,19 @@ export const Footer = () => {
         <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
           <div className="widget-item">
             <H4>RECENT POST</H4>
-            <List color="#fff">
+            <List to="/" color="#fff">
               <Map />
               Lorem ipsum is a placeholder text commonly
             </List >
-            <List color="#fff">
+            <List to="/" color="#fff">
               <Mail />
               Lorem ipsum is a placeholder text commonly
             </List>
-            <List color="#fff">
+            <List to="/" color="#fff">
               <Call />
               Lorem ipsum is a placeholder text commonly
             </List>
-            <List color="#fff">
+            <List to="/" color="#fff">
               <Call />
               Lorem ipsum is a placeholder text commonly
             </List>
@@ -87,27 +86,27 @@ export const Footer = () => {
           <div className="widget-item">
             <H4>QUICK LINKS</H4>
            
-              <List href="https://www.who.int" color="#fff">
+              <List to="/terms&condition" color="#fff">
                 <Arrow />
                 Terms and Condition
               </List>
-                <List color="#fff">
+                <List to="/privacy&policy" color="#fff">
               <Arrow />
                 Privacy Policy
               </List>
-              <List color="#fff">
+              <List to="/" color="#fff">
                 <Arrow />
                 Refund Policy
               </List>
-              <List color="#fff">
+              <List to="/" color="#fff">
                 <Arrow />
                 Security
               </List>
-              <List color="#fff">
+              <List to="/" color="#fff">
                 <Arrow />
                 About Us
               </List>
-              <List color="#fff">
+              <List to="/" color="#fff">
                 <Arrow />
                 Contact Us
               </List>
@@ -144,24 +143,22 @@ export const Footer = () => {
             </WidgetNews>
             <WidgetSocial>
               <Icons>
-                <Links href="https://www.facebook.com/Hophystartup">
-                  <FaFacebookF />
-                </Links>
-                <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
-                  {" "}
-                  <AiFillYoutube />
-                </Links>
-                <Links href="https://www.instagram.com/hophystartup/">
-                  {" "}
-                  <IoLogoInstagram />
-                </Links>
-                <Links href="/">
-                  <FaWhatsapp />
-                </Links>
-                <Links href="hophystartup@gmail.com">
-                  {" "}
-                  <BiMailSend />
-                </Links>
+              <Links href="https://www.facebook.com/Hophycare">
+                <FaFacebookF />
+              </Links>
+              <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
+               
+                <BsYoutube />
+              </Links>
+              <Links href="https://www.instagram.com/hophystartup/">
+              
+                <IoLogoInstagram />
+              </Links>
+              
+              <Links href="https://www.linkedin.com/company/hophycare/?viewAsMember=true">
+                
+                <AiFillLinkedin />
+              </Links>
               </Icons>
             </WidgetSocial>
           </div>

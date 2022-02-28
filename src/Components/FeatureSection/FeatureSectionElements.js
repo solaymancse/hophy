@@ -13,6 +13,10 @@ export const Wrapper = styled.div`
   width: 100%;
 
 
+  @media (min-width: 1441px) and (max-width: 1536px) {
+    margin: 50px 0px;
+    padding: 0px 150px;
+  }
   @media (min-width: 1281px) and (max-width: 1440px){
     margin: 50px 0px;
     padding: 0px 60px;

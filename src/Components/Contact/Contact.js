@@ -1,10 +1,10 @@
 import React from "react";
 
 import { Wrapper, Location, Title, Links } from "./ContactElements";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { BsYoutube } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io";
-import { BiMailSend } from "react-icons/bi";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export const Contact = () => {
   return (
@@ -18,23 +18,21 @@ export const Contact = () => {
           </div>
           <div className="col">
             <ul className=" text-end">
-              <Links href="https://www.facebook.com/Hophystartup">
+              <Links href="https://www.facebook.com/Hophycare">
                 <FaFacebookF />
               </Links>
-              <Links href="/">
+              <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
                
-                <BsTwitter />
+                <BsYoutube />
               </Links>
               <Links href="https://www.instagram.com/hophystartup/">
               
                 <IoLogoInstagram />
               </Links>
-              <Links href="/">
-                <FaWhatsapp />
-              </Links>
-              <Links href="hophystartup@gmail.com">
+              
+              <Links href="https://www.linkedin.com/company/hophycare/?viewAsMember=true">
                 
-                <BiMailSend />
+                <AiFillLinkedin />
               </Links>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardGroup,Button} from "react-bootstrap";
-import img from '../../images/doc1.jpg'
+import img from '../../images/doc_1.png'
 import { Title,Text } from "./DoctorCardElements";
 
 
@@ -10,7 +10,7 @@ export const DoctorCard = (props) => {
     <div>
       <CardGroup>
         <Card >
-          <Card.Img variant="top" src={img} />
+          <Card.Img variant="top" style={{height:"300px",width:"100%"}} src={img} />
           <Card.Body>
             <Title>{name}</Title>
             <Text>{deg}</Text>

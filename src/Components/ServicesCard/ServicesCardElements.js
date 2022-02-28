@@ -35,6 +35,22 @@ export const FlexBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 0 350px;
+  justify-content: center;
+
+  @media (min-width: 1441px) and (max-width: 1536px){
+    padding: 0 200px;
+  }
+  @media (min-width: 1281px) and (max-width: 1440px){
+    padding: 0 150px;
+  }
+  @media (min-width: 992px) and (max-width: 1280px){
+    padding: 0 100px;
+  }
+  @media (min-width: 768px) and (max-width: 991px){
+    padding: 0 70px;
+  }
+  
+  
   
  
   

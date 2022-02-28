@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   }
   @media screen and (max-width: 575px) {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 20px;
   } ;
 `;
 export const Content = styled.div`
@@ -40,23 +40,23 @@ export const Logo = styled.div`
   } ;
 `;
 export const Img = styled.img`
-  height: 80px;
+  height: 70px;
   width: 300px;
-  margin-left: -30px;
+  
 
 
   
   @media (min-width: 1281px) and (max-width: 1440px) {
-    height: 80px;
-    width: 160px;
+    height: 70px;
+    width: 180px;
   }
   @media (min-width: 1025px) and (max-width: 1280px) {
-    height: 70px;
+    height: 60px;
     width: 160px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    height: 60px;
+    height: 50px;
     width: 140px;
   }
   @media (min-width: 576px) and (max-width: 767px) {
@@ -64,10 +64,10 @@ export const Img = styled.img`
     width: 150px;
   }
   @media screen and (max-width: 575px) {
-    margin-top: 10px;
-    height: 50px;
+    
+    height: 40px;
     width: 150px;
-    margin-left: -6px;
+  
   }
 `;
 export const Media = styled.div`

@@ -11,6 +11,7 @@ import {
 import { ServicesCard } from "./../ServicesCard/ServicesCard";
 import { Testomonial } from "./../Testomonial/Testomonial";
 import { OurPartnar } from "./../OurPartnar/OurPartnar";
+import { ServicesList } from "../ServicesList/ServicesList";
 
 export const Services = () => {
   return (
@@ -28,6 +29,7 @@ export const Services = () => {
       </Wrapper>
       <ServiceArea>
         <ServicesCard />
+        <ServicesList/>
         <Testomonial />
         <OurPartnar />
       </ServiceArea>
