@@ -102,9 +102,9 @@ export const Footer = () => {
                 <Arrow />
                 Security
               </List>
-              <List to="/" color="#fff">
+              <List to="/mission&vission" color="#fff">
                 <Arrow />
-                About Us
+               Mission & Vission
               </List>
               <List to="/" color="#fff">
                 <Arrow />

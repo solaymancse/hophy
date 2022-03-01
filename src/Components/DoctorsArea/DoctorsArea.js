@@ -16,7 +16,7 @@ export const DoctorsArea = () => {
         <div className="row">
           <div className="col-lg-12">
             <SecTitle data-aos="fade-up">
-              <P>MEET OUR DOCOTS</P>
+              <P>MEET OUR DOCTORS</P>
               <H2>
                 <Span>Professional & </Span> Enthusiastic
               </H2>
