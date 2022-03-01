@@ -3,7 +3,8 @@ import { P, SecTitle } from '../DoctorsArea/DoctorsAreaElements';
 import { Span } from '../FeatureSection/FeatureSectionElements';
 import { Wrapper} from './NurseAreaElements';
 import { H2 } from './../DoctorsArea/DoctorsAreaElements';
-import { DoctorSlider } from './../DoctorSlider/DoctorSlider';
+
+import { NurseSlider } from './../NurseSlider/NurseSlider';
 
 export const NurseArea = () => {
   return (
@@ -19,7 +20,7 @@ export const NurseArea = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-12">{<DoctorSlider />}</div>
+          <div className="col-lg-12">{<NurseSlider />}</div>
         </div>
         
    

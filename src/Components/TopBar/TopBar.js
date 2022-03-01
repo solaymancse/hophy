@@ -40,7 +40,7 @@ export const TopBar = () => {
                 </Icon>
                 <div>
                   <H3 color="#ccc">HOTLINE 24/7</H3>
-                  <H1 color="#fff">+0123-45-67-890</H1>
+                  <H1 color="#fff">+880193-40-61-718</H1>
                 </div>
               </Col>
               <Col>
