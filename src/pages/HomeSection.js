@@ -12,12 +12,13 @@ import { Blog } from "../Components/Blog/Blog";
 import { Footer } from "../Components/Footer/Footer";
 import { FooterBottom } from "./../Components/FooterBottom/FooterBottom";
 import { NurseArea } from "../Components/NurseArea/NurseArea";
-// import { StickyNavbar } from "../Components/StickyNavbar/StickyNavbar";
+import { StickyNavbar } from "../Components/StickyNavbar/StickyNavbar";
+
 
 export const HomeSection = () => {
   return (
     <>
-      {/* <StickyNavbar /> */}
+      <StickyNavbar/>
       <Navbar />
       <ScrollBtn />
       <HeroSection />

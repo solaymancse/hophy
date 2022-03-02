@@ -13,7 +13,7 @@ export const NavMenu = () => {
   return (
     <Navbar>
       <Nav className="me-auto">
-        <Links exact to="/">
+        <Links exact to="/" >
           HOME
         </Links>
         <Links exact to="/services">

@@ -4,6 +4,7 @@ import { Span } from '../FeatureSection/FeatureSectionElements';
 import { Wrapper} from './NurseAreaElements';
 import { H2 } from './../DoctorsArea/DoctorsAreaElements';
 
+
 import { NurseSlider } from './../NurseSlider/NurseSlider';
 
 export const NurseArea = () => {
