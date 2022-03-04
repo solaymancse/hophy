@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/hophy/static/css/main.7f319c61.css",
-    "main.js": "/hophy/static/js/main.14d2b14b.js",
+    "main.js": "/hophy/static/js/main.ef9f5782.js",
     "static/js/787.3cdba4cd.chunk.js": "/hophy/static/js/787.3cdba4cd.chunk.js",
     "static/media/hero_4.jpg": "/hophy/static/media/hero_4.3124aeb8807ec03ce57f.jpg",
     "static/media/about1.jpg": "/hophy/static/media/about1.5ff761781ac668d8ea3c.jpg",
     "static/media/doc_1.png": "/hophy/static/media/doc_1.1b34a2bf5ed5bd26c1eb.png",
     "static/media/nurse1.png": "/hophy/static/media/nurse1.7805dceca7c2cf9a27ec.png",
     "static/media/serviceCover.jpg": "/hophy/static/media/serviceCover.8b0c685171400c9bed6d.jpg",
+    "static/media/doc_2.png": "/hophy/static/media/doc_2.ab264e7b7d417e8059cf.png",
     "static/media/nurse2.png": "/hophy/static/media/nurse2.5682f20c437a1d392d6e.png",
     "static/media/doctor-01.png": "/hophy/static/media/doctor-01.ccd9bbe9c1fbd20d372f.png",
+    "static/media/nurse3.png": "/hophy/static/media/nurse3.a21b0d9b531aad4555ea.png",
     "static/media/brand5.png": "/hophy/static/media/brand5.6903a62386142338807c.png",
     "static/media/testimonialBg1.jpg": "/hophy/static/media/testimonialBg1.8d6c7aa9c813846cc6ac.jpg",
     "static/media/doc2.jpg": "/hophy/static/media/doc2.aa586208539287293644.jpg",
@@ -18,11 +20,11 @@
     "static/media/revicons.woff": "/hophy/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/hophy/index.html",
     "main.7f319c61.css.map": "/hophy/static/css/main.7f319c61.css.map",
-    "main.14d2b14b.js.map": "/hophy/static/js/main.14d2b14b.js.map",
+    "main.ef9f5782.js.map": "/hophy/static/js/main.ef9f5782.js.map",
     "787.3cdba4cd.chunk.js.map": "/hophy/static/js/787.3cdba4cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f319c61.css",
-    "static/js/main.14d2b14b.js"
+    "static/js/main.ef9f5782.js"
   ]
 }
