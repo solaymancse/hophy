@@ -1,7 +1,10 @@
 import React from "react";
-import { Container } from "../Container/ContainerElements";
+
+import { Container } from 'react-bootstrap';
 import { Content,P,H1 } from "../Services/ServicesElemnents";
 import {
+
+
   Wrapper,
   H4,
   H2,
@@ -10,7 +13,6 @@ import {
   List,
   Span,
   MainDiv,
-  Div,
   ContentItems,
   H6
 } from "./AboutElement";
@@ -33,7 +35,7 @@ export const About = () => {
   return (
     <>
       <Wrapper>
-        <Container>
+        <container>
           <Content>
             <ContentItems>
               <P data-aos="fade-up">HOPHY MEDICAL CENTER</P>
@@ -42,11 +44,13 @@ export const About = () => {
               </H1>
             </ContentItems>
           </Content>
-        </Container>
+        </container>
       </Wrapper>
      
+      <Container>
         <MainDiv className="row">
-          <Div className="col-lg-12">
+         
+          <div className="col-lg-12">
             <H2>
               Home+Physician+Care = HophyCare! Sounds Interesting right?<br/>
               HophyCare is a Bangladeshi HealthTech StartUp. For the first time,
@@ -72,8 +76,8 @@ export const About = () => {
               of one-to-one care and recovery at the same time. Now All
               HophyCare services at home in a single click.
             </H2>
-          </Div>
-          <Div className="col-lg-12">
+          </div>
+          <div className="col-lg-12">
             <H4>SERVICES</H4>
             <H3>
               It was a big, round room with a high arched roof, and the walls
@@ -88,17 +92,18 @@ export const About = () => {
               one, an honest clergyman of the town addressed a note to his
               Grace.
             </H6>
-          </Div>
-          <Div className="col-lg-12">
+          </div>
+          <div className="col-lg-12">
             {ListArray.map((item) => (
               <Items>
                 <List>{item}</List>
               </Items>
             ))}
-          </Div>
-          <Div className="col-lg-12"></Div>
+          </div>
+          <div className="col-lg-12"></div>
+        
         </MainDiv>
-     
+        </Container>
     </>
   );
 };

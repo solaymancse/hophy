@@ -6,9 +6,6 @@ export const Wrapper = styled.div`
   padding-top: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
-  @media (min-width: 992px) and (max-width: 1030px){
-
-  }
 `;
 export const Location = styled(ImLocation2)`
   color: #fff;
@@ -27,13 +24,14 @@ export const Title = styled.p`
 export const Icons = styled.div`
   color: #fff;
   display: flex;
-  gap: 15px;
+  
 `;
 
 export const Links = styled.a`
   text-decoration: none;
   color: #fff;
-  padding: 0px 10px;
+  padding-left: 20px;
+ 
 
   &:hover {
     color: #333;

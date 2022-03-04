@@ -41,31 +41,11 @@ export const Span = styled.span`
   }
 `;
 export const MainDiv = styled.div`
-  padding: 0 350px;
+
   margin-top: 50px;
   width: 100%;
 
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    padding: 0 70px;
-  }
  
-
-  @media (min-width: 992px) and (max-width: 1280px) {
-    margin-top: 0px;
-    padding: 0px 40px;
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    margin-top: 0px;
-    padding: 0px 30px;
-  }
-  @media (min-width: 481px) and (max-width: 767px) {
-    margin-top: 0px;
-    padding: 0px 10px;
-  }
-  @media (min-width: 320px) and (max-width: 480px) {
-    margin-top: 0px;
-    padding:0 0 0 20px;
-  }
 `;
 export const H2 = styled.h2`
   color: #333;

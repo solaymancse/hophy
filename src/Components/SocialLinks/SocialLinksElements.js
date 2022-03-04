@@ -8,7 +8,8 @@ export const Items = styled.div`
 
 
 `;
-export const List = styled.div`
+export const Links = styled.a`
+    text-decoration: none;
     border-radius: 50%;
     background: #34ace3;
     padding: 10px 13px;

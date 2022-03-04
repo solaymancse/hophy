@@ -2,8 +2,7 @@ import React from "react";
 
 import { MdLocationOn } from "react-icons/md";
 
-import { Wrapper, Div, P, Navbar, Items, Links} from "./OffCanvasElements";
-
+import { Wrapper, Div, P, Navbar, Items, Links } from "./OffCanvasElements";
 
 export const OffCanvas = () => {
   return (

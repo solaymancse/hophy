@@ -14,6 +14,7 @@ import {
 
 import { Span } from "../FeatureSection/FeatureSectionElements";
 import { AppointmentForm } from "./../AppointmentForm/AppointmentForm";
+import { Container } from 'react-bootstrap';
 
 
 export const BookAppointment = () => {
@@ -22,7 +23,7 @@ export const BookAppointment = () => {
   }, []);
   return (
     <Wrapper>
-
+      <Container>
         <Appointment>
           <div className="row">
             <div className="col-12">
@@ -47,7 +48,7 @@ export const BookAppointment = () => {
             </div>
           </div>
         </Appointment>
-     
+        </Container>
     </Wrapper>
   );
 };

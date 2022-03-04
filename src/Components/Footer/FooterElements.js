@@ -2,41 +2,38 @@ import styled from "styled-components";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdCall, MdLocationOn } from "react-icons/md";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.div`
   color: #707070;
-  padding: 125px 350px 100px;
+  padding: 125px 0px;
   background: #333;
   width: 100%;
 
-
   @media (min-width: 1441px) and (max-width: 1536px) {
-  
-  padding: 50px 150px;
-}
+    padding: 50px 0px;
+  }
   @media (min-width: 1281px) and (max-width: 1440px) {
-   
-   padding: 50px 60px;
- }
+    padding: 50px 0px;
+  }
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-    padding: 40px 50px;
+    padding: 40px 0px;
   }
 
   @media (min-width: 992px) and (max-width: 1024px) {
-    padding: 30px 30px;
+    padding: 30px 0px;
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    padding: 20px 30px;
+    padding: 20px 0px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
-    padding: 20px 10px;
+    padding: 20px 0px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
     margin-top: 30px;
-    padding: 20px 10px;
+    padding: 20px 0px;
   }
 `;
 export const FooterLogo = styled.div`
@@ -58,7 +55,7 @@ export const List = styled(NavLink)`
   padding-top: 5px;
   transition: all 0.3s;
   align-items: center;
-  color: ${(props)=> props.color};
+  color: ${(props) => props.color};
 
   &:hover {
     color: #34ace3;
@@ -66,21 +63,20 @@ export const List = styled(NavLink)`
 `;
 
 export const Contact = styled.div`
-color: ${(props)=> props.color}
-
+  color: ${(props) => props.color};
 `;
 export const Map = styled(MdLocationOn)`
-  color: ${(props)=> props.color};
+  color: ${(props) => props.color};
   font-size: 30px;
   margin-right: 15px;
 `;
 export const Mail = styled(AiOutlineMail)`
-color: ${(props)=> props.color};
+  color: ${(props) => props.color};
   font-size: 25px;
   margin-right: 15px;
 `;
 export const Call = styled(MdCall)`
-color: ${(props)=> props.color};
+  color: ${(props) => props.color};
   font-size: 25px;
   margin-right: 15px;
 `;
@@ -124,5 +120,5 @@ export const P = styled.p`
   margin-bottom: 24px;
 `;
 export const Arrow = styled(BsArrowRightCircleFill)`
- margin-right: 20px;
+  margin-right: 20px;
 `;

@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardGroup,Button} from "react-bootstrap";
-import img from '../../images/doc_1.png'
+
 import { Title,Text } from "./DoctorCardElements";
 
 
 export const DoctorCard = (props) => {
-    const { name,deg } = props;
+    const { name,deg,img } = props;
   return (
     <div>
       <CardGroup>

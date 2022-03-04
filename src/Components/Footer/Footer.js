@@ -1,5 +1,6 @@
 import React from "react";
 
+import {Container} from 'react-bootstrap'
 import {
   Wrapper,
   FooterLogo,
@@ -29,6 +30,7 @@ export const Footer = () => {
 
   return (
     <Wrapper>
+      <Container>
       <div className="row">
         <div className="col-sm-6 col-md-5 col-lg-4 col-xl-3">
           <div className="widget-item">
@@ -114,7 +116,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="col-sm-6 col-md-6 offset-md-1 col-lg-3 offset-lg-0 col-xl-3">
-          <div className="widget-item">
+          <div>
             <H4>NEWSLETTER</H4>
             <WidgetNews>
               <P>
@@ -164,6 +166,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      </Container>
     </Wrapper>
   );
 };

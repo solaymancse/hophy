@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import img1 from '../../images/nurse1.png'
 import img2 from '../../images/nurse2.png'
+import img3 from '../../images/nurse3.png'
 
 import { FlexBox } from './../DoctorSlider/DoctorSliderElements';
 import { NurseCard } from './../NurseCard/NurseCard';
@@ -30,7 +31,7 @@ export const NurseSlider = () => {
     <div>
       <Carousel className="d-flex gap-3" responsive={responsive}>
         <FlexBox>
-          {" "}
+      
           <NurseCard
             name="Ariful Islam"
             title="Nurse at Chattogram Medical College Hospital"
@@ -39,11 +40,19 @@ export const NurseSlider = () => {
           />
         </FlexBox>
         <FlexBox>
-          {" "}
+       
           <NurseCard
             name="Suptokoly Barua"
             title="Senior Nurse at Chattogram Medical College Hospital"
             img={img2}
+          />
+        </FlexBox>
+        <FlexBox>
+       
+          <NurseCard
+            name="Jupshi Barua"
+            title="Senior Nurse at Park view Hospital"
+            img={img3}
           />
         </FlexBox>
        

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+
 import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Login } from "../Login/Login";
-import { MobileViewNav } from "../MobileViewNav/MobileViewNav";
+
 import { SignUp } from "../SignUp/SignUp";
 import { Links, Bars, Div, Tooglebar } from "./NavMenuElements";
+import { MobileViewNav } from './../MobileViewNav/MobileViewNav';
 
 export const NavMenu = () => {
   const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 

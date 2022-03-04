@@ -2,17 +2,17 @@ import React from 'react'
 import { AiOutlineInstagram, AiOutlineWhatsApp, AiOutlineYoutube } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiFacebookFill } from 'react-icons/ri'
-import { Items,List } from './SocialLinksElements'
+import { Items,Links } from './SocialLinksElements'
 
 export const SocialLinks = () => {
   return (
     <div>
         <Items>
-            <List><RiFacebookFill/></List>
-            <List><AiOutlineYoutube/></List>
-            <List><AiOutlineInstagram/></List>
-            <List><AiOutlineWhatsApp/></List>
-            <List><FaLinkedinIn/></List>
+            <Links target="_blank" href="https://www.facebook.com/Hophycare"><RiFacebookFill/></Links>
+            <Links target="_blank" href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w"><AiOutlineYoutube/></Links>
+            <Links target="_blank" href="https://www.instagram.com/hophystartup/"><AiOutlineInstagram/></Links>
+            <Links target="_blank" href="https://www.facebook.com/Hophycare"><AiOutlineWhatsApp/></Links>
+            <Links target="_blank" href="https://www.linkedin.com/company/hophycare/?viewAsMember=true"><FaLinkedinIn/></Links>
         </Items>
     </div>
   )

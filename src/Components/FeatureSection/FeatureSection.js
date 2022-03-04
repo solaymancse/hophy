@@ -17,6 +17,7 @@ import doctor from "../../images/doctor-01.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FeatureData } from "./FeatureData";
+import { Container } from 'react-bootstrap';
 
 export const FeatureSection = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ export const FeatureSection = () => {
 
   return (
     <Wrapper>
+      <Container>
       <div className="row" data-aos="fade-up">
         <div className="col-lg-12">
           <Div>
@@ -59,6 +61,7 @@ export const FeatureSection = () => {
       <Thumb data-aos="fade-left">
         <Img src={doctor} />
       </Thumb>
+      </Container>
     </Wrapper>
   );
 };

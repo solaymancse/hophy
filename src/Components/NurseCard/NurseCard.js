@@ -11,7 +11,7 @@ export const NurseCard = (props) => {
     <div>
       <CardGroup>
         <Card >
-          <Card.Img variant="top" style={{height:"250px",width:"100%"}} src={img} />
+          <Card.Img variant="top" style={{height:"300px",width:"100%"}} src={img} />
           <Card.Body>
             <Title>{name}</Title>
             <Text>{title}</Text>

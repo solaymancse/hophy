@@ -9,6 +9,7 @@ import { ContactSection } from "./pages/ContactSection";
 import { TermsAndCondition } from './Components/TermsAndCondition/TermsAndCondition';
 import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 import { MissionAndVission } from "./Components/MissionAndVission/MissionAndVission";
+import { AdminDashBoard } from './Components/AdminDashboard/AdminDashBoard';
 
 export const MainComponents = () => {
   return (
@@ -23,6 +24,7 @@ export const MainComponents = () => {
         <Route path="/terms&condition" element={<TermsAndCondition />} />
         <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         <Route path="/mission&vission" element={<MissionAndVission />} />
+        <Route path="/admin" element={<AdminDashBoard />} />
         {/* <Route path="/login" element={<MobileLogin/>} /> */}
 
         

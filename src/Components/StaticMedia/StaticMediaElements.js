@@ -4,31 +4,23 @@ import { GiBrain } from "react-icons/gi";
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 0 350px;
-
-
-  @media (min-width: 1441px) and (max-width: 1536px) {
-    padding: 0px 150px;
-  }
-  @media (min-width: 1281px) and (max-width: 1440px){
-    padding: 0px 60px;
-  }
  
+
+
+
   @media (min-width: 1025px) and (max-width: 1280px) {
     margin-top: 50px;
-    padding: 0 50px;
+    
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     margin-top: 50px;
-    padding: 0 30px;
+   
   }
 
-  @media (min-width: 481px) and (max-width: 767px) {
-    padding: 0 30px;
-  }
+  
   @media (min-width: 320px) and (max-width: 480px) {
     margin-top: 30px;
-    padding: 0 10px;
+   
   }
 `;
 export const Stethoscope = styled(FaStethoscope)`

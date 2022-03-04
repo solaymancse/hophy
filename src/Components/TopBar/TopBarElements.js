@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding-top: 4px;
 
-  /* @media (min-width: 992px) and (max-width: 1200px){
-        height: 100px;
-    }; */
+
   @media (min-width: 768px) and (max-width: 1024px) {
     padding-top: 10px;
   }
@@ -47,28 +45,19 @@ export const Img = styled.img`
 
   
   @media (min-width: 1281px) and (max-width: 1440px) {
-    height: 70px;
-    width: 180px;
-  }
-  @media (min-width: 1025px) and (max-width: 1280px) {
     height: 60px;
-    width: 160px;
+    width: 210px;
+  }
+  @media (min-width: 992px) and (max-width: 1280px) {
+    height: 50px;
+    width: 190px;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: 50px;
+  @media screen and (max-width: 991px) {
+    height: 40px;
     width: 140px;
   }
-  @media (min-width: 576px) and (max-width: 767px) {
-    height: 50px;
-    width: 150px;
-  }
-  @media screen and (max-width: 575px) {
-    
-    height: 40px;
-    width: 150px;
   
-  }
 `;
 export const Media = styled.div`
   display: flex;

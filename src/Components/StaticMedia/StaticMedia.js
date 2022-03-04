@@ -1,7 +1,8 @@
 import React from "react";
 
-
+import { Container } from 'react-bootstrap';
 import {
+
   Wrapper,
   Media,
   MediaBody,
@@ -15,7 +16,7 @@ import {
 export const StaticMedia = () => {
   return (
     <Wrapper>
-  
+      <Container>
       <div className="row mb-n4">
         <div className="col-lg-4 col-sm-6 mb-4">
           <Media>
@@ -45,7 +46,7 @@ export const StaticMedia = () => {
           </Media>
         </div>
       </div>
-  
+      </Container>
     </Wrapper>
   );
 };

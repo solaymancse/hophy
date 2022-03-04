@@ -1,4 +1,7 @@
 import React from "react";
+
+import img1 from '../../images/doc_1.png'
+import img2 from '../../images/doc_2.png'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { DoctorCard } from "../DoctorCard/DoctorCard";
@@ -33,16 +36,15 @@ export const DoctorSlider = () => {
             PGPN(BOSTON, USA)
             CONSULTANT (CHILD HEALTH)
             "
+              img={img1}
           />
         </FlexBox>
         <FlexBox>
           {" "}
           <DoctorCard
-            name="Dr. Kristina Castle"
-            deg="MBBS, DCH(CU)
-            PGPN(BOSTON, USA)
-            CONSULTANT (CHILD HEALTH)
-            "
+            name="Dr. Promise Barua"
+            deg="Intern at BGC TRUST MEDICAL COLLEGE"
+            img={img2}
           />
         </FlexBox>
         <FlexBox>

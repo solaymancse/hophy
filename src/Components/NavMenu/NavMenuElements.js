@@ -11,20 +11,20 @@ export const Links = styled(NavLink)`
   font-weight: 700;
   font-size: 14px;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     color: #fff;
 
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       border-bottom: 1px solid #fff;
-      transform: translateX(.2);
+      transform: translateX(0.2);
       width: 10px;
     }
 
-  &:active{
-    border-bottom: 1px solid #fff;
-  }
+    &:active {
+      border-bottom: 1px solid #fff;
+    }
   }
 
   @media screen and (max-width: 991px) {
@@ -33,44 +33,26 @@ export const Links = styled(NavLink)`
 `;
 
 export const Tooglebar = styled.div`
-  @media screen and (max-width: 575px) {
-   
-    
-  };
+ margin-right: 20px;
+
 `;
 
 export const Bars = styled(GoThreeBars)`
-  font-size: 30px;
+  font-size: 22px;
   color: #fff;
   display: none;
 
-
-
-  @media (min-width: 768px) and (max-width: 991px){
-    display: block;
-    font-size: 22px;
-    margin-top: -45px;
-  };
-  @media (min-width: 576px) and (max-width: 767px){
-    display: block;
-    font-size: 22px;
-    margin-top: -40px;
-    };
-  @media screen and (max-width: 575px) {
-    font-size: 24px;
+  @media screen and (max-width: 991px) {
     display: block;
     margin-top: -40px;
-    margin-right: 40px;
-    
   }
 `;
 
 export const Div = styled.div`
   display: flex;
+  margin-right: -20px;
 
-  @media screen and (max-width: 991px){
-     display: none;
+  @media screen and (max-width: 991px) {
+    display: none;
   }
-
-  
 `;
