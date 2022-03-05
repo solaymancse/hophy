@@ -28,7 +28,7 @@ export const Left = styled.div`
 export const Right = styled.div`
    width: 50%;
     height: 100%;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
 
 `
@@ -42,6 +42,8 @@ margin-top: 40%;
 export const Button = styled.button`
 width: 100%;
 background-color: #34ace3;
+color: #fff;
+font-weight: 600 ;
 
 `
 export const Div = styled.div`

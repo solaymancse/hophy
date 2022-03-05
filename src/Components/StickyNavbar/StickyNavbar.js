@@ -39,7 +39,7 @@ export const StickyNavbar = () => {
               </nav>
               <div className="d-flex flex-wrap align-items-center">
                 <Login/>
-                <SignUp/>
+                <SignUp />
               </div>
             </div>
           </div>

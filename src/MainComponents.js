@@ -9,7 +9,8 @@ import { ContactSection } from "./pages/ContactSection";
 import { TermsAndCondition } from './Components/TermsAndCondition/TermsAndCondition';
 import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 import { MissionAndVission } from "./Components/MissionAndVission/MissionAndVission";
-import { AdminDashBoard } from './Components/AdminDashboard/AdminDashBoard';
+import { AdminLogin } from './Components/AdminLogin/AdminLogin';
+import { Dashboard } from './Components/Dashboard/Dashboard';
 
 export const MainComponents = () => {
   return (
@@ -24,7 +25,8 @@ export const MainComponents = () => {
         <Route path="/terms&condition" element={<TermsAndCondition />} />
         <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         <Route path="/mission&vission" element={<MissionAndVission />} />
-        <Route path="/admin" element={<AdminDashBoard />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         {/* <Route path="/login" element={<MobileLogin/>} /> */}
 
         
