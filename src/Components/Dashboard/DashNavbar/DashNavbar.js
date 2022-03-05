@@ -13,7 +13,7 @@ export const DashNavbar = () => {
       <NavWrap>
         <Button className=" d-lg-none" />
         <Left>
-          <Input type="text" placeholder="Type to Search" />
+          <Input autocomplete="off" aria-expanded="false" aria-autocomplete="list" type="search" placeholder="Type to Search" />
           <AiOutlineSearch />
         </Left>
         <Right>

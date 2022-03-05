@@ -36,6 +36,11 @@ export const Left = styled.div`
     justify-content: center ;
     align-items: center ;
     background-color: #EBEBEB ;
+
+    &:hover{
+        background-color:  #EBEBEB;
+        box-shadow: 10px;
+    }
 `;
 export const Right = styled.div`
     display: flex;
@@ -46,5 +51,17 @@ export const Right = styled.div`
 export const Input = styled.input`
     border: none;
     background-color: #EBEBEB ;
+    background: transparent!important;
+    border-radius: 20px!important;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    &:hover{
+        cursor: text ;
+        
+    }
+
+    
     
 `;
