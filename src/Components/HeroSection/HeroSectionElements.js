@@ -51,11 +51,12 @@ export const Container = styled.div`
 export const Content = styled.div`
   position: absolute;
   width: 100%;
-  top: 250px;
+  top: 150px;
   height: 400px;
   align-items: center;
   display: flex;
   flex-direction: column;
+
 
   @media (min-width: 1281px) and (max-width: 1440px){
     top:150px;

@@ -59,7 +59,7 @@ export const FlexBox = styled.div`
 export const Items = styled.div`
   padding: 40px;
   width: 305px;
-  height: 300px;
+  height: 400px;
   border: 0.5px solid lightgray;
 
   &:hover{
@@ -89,7 +89,7 @@ export const Icon = styled.div`
 
 `;
 export const Content = styled.div`
-  height: 100px;
+
   width: 100%;
   margin-top: 30px;
 `;

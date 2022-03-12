@@ -10,7 +10,8 @@ import { TermsAndCondition } from './Components/TermsAndCondition/TermsAndCondit
 import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 import { MissionAndVission } from "./Components/MissionAndVission/MissionAndVission";
 import { AdminLogin } from './Components/AdminLogin/AdminLogin';
-import { Dashboard } from './Components/Dashboard/Dashboard';
+import { Dashboard } from './Components/Dashboard2/Dashboard';
+
 
 export const MainComponents = () => {
   return (
@@ -27,6 +28,7 @@ export const MainComponents = () => {
         <Route path="/mission&vission" element={<MissionAndVission />} />
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />
+       
         {/* <Route path="/login" element={<MobileLogin/>} /> */}
 
         
