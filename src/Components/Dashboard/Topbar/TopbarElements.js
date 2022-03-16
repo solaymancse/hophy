@@ -7,6 +7,7 @@ export const Navbar = styled.div`
     justify-content: center ;
     width: 100%;
     padding: 0 30px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     
 `;
 
@@ -15,16 +16,18 @@ export const NavWrap = styled.div`
     width: 100%;
     height: 60px;
     display: flex ;
+    align-items: center;
     justify-content: space-between ;
-    padding: 20px 100px ;
+    padding: 20px ;
+   
 `;
 export const Button = styled.button`
     
 `;
 export const Img = styled.img`
 border-radius: 50%;
-width: 50px;
-height: 50px;
+width: 30px;
+height: 30px;
     
 `;
 export const Left = styled.div`
@@ -42,12 +45,12 @@ export const Left = styled.div`
         box-shadow: 10px;
     }
 `;
-export const Right = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 30px;
+export const Icon = styled.div`
+   font-size: 18px;
+   flex: 1;
     
 `;
+
 export const Input = styled.input`
     border: none;
     background-color: #EBEBEB ;
@@ -56,6 +59,8 @@ export const Input = styled.input`
     height: 100%;
     width: 100%;
     text-align: center;
+    flex: 6;
+    outline: none;
 
     &:hover{
         cursor: text ;
@@ -63,5 +68,11 @@ export const Input = styled.input`
     }
 
     
+    
+`;
+export const Right = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 30px;
     
 `;
