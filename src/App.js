@@ -15,7 +15,28 @@ function App() {
       <PreLoader />
       <Routes>
         <Route path="/">
-          <Route path="users">
+          <Route path="appointments">
+            <Route index element={<List />} />
+            <Route path=":userId" element={<Single />} />
+            <Route path="new" element={<New />} />
+          </Route>
+        </Route>
+        <Route path="/">
+          <Route path="doctors">
+            <Route index element={<List />} />
+            <Route path=":userId" element={<Single />} />
+            <Route path="new" element={<New />} />
+          </Route>
+        </Route>
+        <Route path="/">
+          <Route path="management">
+            <Route index element={<List />} />
+            <Route path=":userId" element={<Single />} />
+            <Route path="new" element={<New />} />
+          </Route>
+        </Route>
+        <Route path="/">
+          <Route path="content">
             <Route index element={<List />} />
             <Route path=":userId" element={<Single />} />
             <Route path="new" element={<New />} />

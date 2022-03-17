@@ -27,12 +27,15 @@ import { MdOutlineExitToApp } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 
 import { SidebarData } from "./../../../Data";
+import { Link } from "react-router-dom";
 
 export const DashSideBar = () => {
   return (
     <Wrapper>
       <Logo>
+        <Link to="/dashboard">
         <Img src={logo} alt="logo" />
+        </Link>
       </Logo>
 
       <List>
@@ -65,11 +68,11 @@ export const DashSideBar = () => {
               <H3>Team</H3>
             </Label>
             <div>
-              <Links exact to="/">
+              <Links  to="/management">
                <Icon> <SiGoogletagmanager/></Icon>
                 Management
               </Links>
-              <Links exact to="/">
+              <Links  to="/content">
                <Icon> <SiContentful/></Icon>
                 Content
               </Links>

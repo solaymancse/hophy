@@ -23,6 +23,7 @@ margin:  0 50px;
 `;
 export const ListTitle = styled.div`
 font-weight: 500;
+margin-bottom: 50px;
 color: gray;
    
    

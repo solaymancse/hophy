@@ -17,7 +17,7 @@ export const SidebarData = [
   },
   {
     title: "Doctors",
-    path:"/dcotors",
+    path:"/doctors",
     icon: <FaUserMd />,
   },
   {
@@ -31,3 +31,4 @@ export const SidebarData = [
     icon: <FaUserNurse />,
   },
 ];
+

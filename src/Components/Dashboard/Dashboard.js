@@ -3,6 +3,7 @@ import { DashSideBar } from "./DashSideBar/DashSideBar";
 import { Wrapper,Container,WidgetContainer,ListContainer,ListTitle } from './DashboardElements';
 import { Topbar } from './Topbar/Topbar';
 import { Widget } from "./Widget/Widget";
+import { ListTable } from './Table/ListTable';
 
 
 export const Dashboard = () => {
@@ -18,8 +19,8 @@ export const Dashboard = () => {
         <Widget type="appointment"/>
       </WidgetContainer>
       <ListContainer>
-        <ListTitle>All Doctor's</ListTitle>
-        {/* <Table/> */}
+        <ListTitle>All Appointment's</ListTitle>
+        <ListTable/>
       </ListContainer>
       </Container>
 
