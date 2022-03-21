@@ -9,9 +9,13 @@ export const PreLoader = () => {
 
   useEffect(() => {
     setTimeout(() => {
+     
       SetDone(true);
+      
+      
     }, 3000);
-  }, []);
+    
+  },[]);
   return (
     <>
       {!done ? (
@@ -23,6 +27,7 @@ export const PreLoader = () => {
           />
         </div>
       ) : (
+        
         <MainComponents />
       )}
     </>

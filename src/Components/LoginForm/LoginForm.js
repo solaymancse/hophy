@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+
+import logo from '../../images/brand5.png'
+import { Container,Left , Right,Img,Input,H1,Button,Div,Icon,Profile,Close} from './LoginFormElemenets'
+import { Form } from "react-bootstrap"
+import { GrFormClose } from 'react-icons/gr'
+
 
 export const LoginForm = () => {
   const [user, setUser] = useState({
@@ -16,39 +21,42 @@ export const LoginForm = () => {
     console.log(user);
   };
   return (
-    <div>
+    <Container>
+      <Left>
+        <Img src={logo} alt="logo"/>
+      </Left>
+      <Right>
+       <Div>
+       <H1>Log In</H1>
+       <Icon><Profile/></Icon>
+       </Div>
       <Form method="post" onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Phone Number</Form.Label>
-          <Form.Control
+       
+         
+          <Input
             type="number"
             placeholder="Phone Number"
             name='phone'
             value={phone}
             onChange={handleChange}
           />
-          <Form.Text className="text-muted">
-            We'll never share your phone number with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
+          
+          <Input
             type="password"
             placeholder="Password"
             name='password'
             value={password}
             onChange={handleChange}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
+
+   
+        <Button type="submit">
+          Login
         </Button>
+        <Close><GrFormClose/></Close>
       </Form>
-    </div>
+      </Right>
+    
+    </Container>
   );
 };

@@ -10,7 +10,7 @@ import { TermsAndCondition } from './Components/TermsAndCondition/TermsAndCondit
 import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 import { MissionAndVission } from "./Components/MissionAndVission/MissionAndVission";
 import { AdminLogin } from './Components/AdminLogin/AdminLogin';
-import { Dashboard } from './Components/Dashboard/Dashboard';
+// import { Dashboard } from './Components/Dashboard/Dashboard';
 
 
 
@@ -18,7 +18,7 @@ export const MainComponents = () => {
   return (
     <>
       <Routes>
-      <Route path="/hophy" element={<HomeSection />} />
+      <Route path="/hophy" element={<HomeSection /> } />
         <Route path="/" element={<HomeSection />} />
         <Route path="/about" element={<AboutSection />} />
         <Route path="/services" element={<ServicesSection />} />
@@ -28,7 +28,7 @@ export const MainComponents = () => {
         <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         <Route path="/mission&vission" element={<MissionAndVission />} />
         <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/dashboard" element={<Dashboard />}/>
+        {/* <Route path="/dashboard" element={<Dashboard />}/> */}
      
 
        

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "./../Components/Navbar/Navbar";
 import { ScrollBtn } from "./../Components/ScrollBtn/ScrollBtn";
 import { HeroSection } from "./../Components/HeroSection/HeroSection";
@@ -13,12 +13,39 @@ import { Footer } from "../Components/Footer/Footer";
 import { FooterBottom } from "./../Components/FooterBottom/FooterBottom";
 import { NurseArea } from "../Components/NurseArea/NurseArea";
 import { StickyNavbar } from "../Components/StickyNavbar/StickyNavbar";
+import styled from "styled-components";
 
+import { Annoucment } from "../Components/Annoucment/Annoucment";
+
+
+
+const Div = styled.div`
+  position: relative;
+`;
+const AnnoucmentContainer = styled.div`
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  z-index: 1;
+`;
 
 export const HomeSection = () => {
+  const [open, setOpen] = useState(true);
+
+ 
+
+ 
+
   return (
-    <>
-      <StickyNavbar/>
+    <Div>
+     { open &&  <AnnoucmentContainer>
+      <Annoucment closeModal={setOpen}/>
+      </AnnoucmentContainer>}
+      <StickyNavbar />
       <Navbar />
       <ScrollBtn />
       <HeroSection />
@@ -26,12 +53,12 @@ export const HomeSection = () => {
       <FeatureSection />
       <BookAppointment />
       <DoctorsArea />
-      <NurseArea/>
+      <NurseArea />
       <Testomonial />
       <OurPartnar />
       <Blog />
       <Footer />
       <FooterBottom />
-    </>
+    </Div>
   );
 };
