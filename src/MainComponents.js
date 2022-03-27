@@ -11,6 +11,7 @@ import { PrivacyPolicy } from "./Components/PrivacyPolicy/PrivacyPolicy";
 import { MissionAndVission } from "./Components/MissionAndVission/MissionAndVission";
 import { AdminLogin } from './Components/AdminLogin/AdminLogin';
 // import { Dashboard } from './Components/Dashboard/Dashboard';
+import { ErrorPage } from './pages/ErrorPage';
 
 
 
@@ -28,6 +29,7 @@ export const MainComponents = () => {
         <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         <Route path="/mission&vission" element={<MissionAndVission />} />
         <Route path="/admin" element={<AdminLogin />} />
+        <Route path="*" element={<ErrorPage />} />
         {/* <Route path="/dashboard" element={<Dashboard />}/> */}
      
 
