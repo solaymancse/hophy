@@ -2,29 +2,40 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 
+
+export const Item = styled.div`
+ margin-right: 20px;
+ position: relative;
+
+`;
 export const Links = styled(NavLink)`
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
-  padding-right: 30px;
+  padding-right: 20px;
   font-family: "Sarabun", sans-serif;
   font-weight: 700;
   font-size: 14px;
+  
 
-  &:hover {
-    cursor: pointer;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  &:hover{
     color: #fff;
+  }
+  &:hover:after {
+    
+    width: 100%;
 
-    &:after {
-      content: "";
-      border-bottom: 1px solid #fff;
-      transform: translateX(0.2);
-      width: 10px;
-    }
 
-    &:active {
-      border-bottom: 1px solid #fff;
-    }
+   
   }
 
   @media screen and (max-width: 991px) {

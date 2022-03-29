@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import { Nav, Navbar, Offcanvas } from "react-bootstrap";
+import { Nav,Navbar, Offcanvas } from "react-bootstrap";
 import { Login } from "../Login/Login";
 
 import { SignUp } from "../SignUp/SignUp";
-import { Links, Bars, Div, Tooglebar } from "./NavMenuElements";
+import { Links, Bars, Div, Tooglebar,Item } from "./NavMenuElements";
 import { MobileViewNav } from './../MobileViewNav/MobileViewNav';
 
 export const NavMenu = () => {
@@ -16,21 +16,35 @@ export const NavMenu = () => {
   return (
     <Navbar>
       <Nav className="me-auto">
-        <Links exact to="/" >
+       <Item>
+       <Links  to="/" >
           HOME
         </Links>
-        <Links exact to="/services">
+       </Item>
+       <Item>
+       <Links  to="/services">
           SERVICES
         </Links>
-        <Links exact to="/blog">
+       </Item>
+       <Item>
+       <Links  to="/blog">
           BLOG
         </Links>
-        <Links exact to="/about">
+       </Item>
+       <Item>
+       <Links  to="/about">
           ABOUT
         </Links>
-        <Links exact to="/contact">
+       </Item>
+       <Item>
+       <Links  to="/contact">
           CONTACT
         </Links>
+       </Item>
+       
+        
+        
+      
       </Nav>
       <Div>
         <Login />
