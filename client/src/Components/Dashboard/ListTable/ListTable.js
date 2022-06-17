@@ -1,27 +1,27 @@
-import React,{ useState,useEffect } from 'react'
+import React from 'react'
 
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import axios from 'axios';
 axios.defaults.withCredentials = true;
 
-export const ListTable = () => {
-    const [management, setManagement] = useState([]);
+export const ListTable = ({ data }) => {
+    // const [management, setManagement] = useState([]);
 
-    const sendRequest = async ()=> {
-      const res = await axios.get("http://localhost:5000/api/getallmanagements",{
-        withCredentials: true
-      })
-      .catch((err)=> console.log(err))
+    // const sendRequest = async ()=> {
+    //   const res = await axios.get("http://localhost:5000/api/getallmanagements",{
+    //     withCredentials: true
+    //   })
+    //   .catch((err)=> console.log(err))
 
-      const data = await res.data;
+    //   const data = await res.data;
       
-      return data;
+    //   return data;
 
-    }
-    useEffect(()=> {
-      sendRequest().then((data)=> setManagement(data));
+    // }
+    // useEffect(()=> {
+    //   sendRequest().then((data)=> setManagement(data));
 
-    },[]);
+    // },[]);
   return (
     <div>
         <TableContainer component={Paper}>
@@ -37,7 +37,7 @@ export const ListTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {management.map((row) => (
+            {data.map((row) => (
               <TableRow key={row._id}>
                 <TableCell component="th" scope="row">
                   {row._id}
