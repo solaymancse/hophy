@@ -3,17 +3,19 @@ import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.div`
   flex: 1;
-  padding: 10px 30px;
+  padding-left: 40px;
   min-height: 100vh;
   background-color: #34ace3;
 `;
 export const Logo = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 `;
 export const Img = styled.img`
-  width: 80%;
-  height: 50px;
+  width: 180px;
+  align-items: center;
 `;
 
 export const List = styled.div`
@@ -21,31 +23,37 @@ export const List = styled.div`
   flex-direction: column;
   margin-top: 50px;
   justify-content: start;
-  padding: 20px;
-
 `;
 export const Icon = styled.div`
-  display: flex;
-  font-size: 20px;
-  color: #fff;
-  margin-right: 10px;
+
 `;
 export const Title = styled.div``;
 export const Div = styled.div`
- 
-
-
+  width: 100%;
+  color: #fff;
+  
 `;
 
 export const Links = styled(NavLink)`
-  text-decoration: none;
+  padding: 12px 0 12px 10px;
   color: #fff;
+  text-decoration: none;
   font-weight: 600;
   display: flex;
-  padding: 12px 0;
-  &:hover{
+  gap: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  &:hover {
+    transition: .5s;
+    color: #fff;
+   
+  }
+  &.active{
+    background-color: #fff;
     color: #333;
   }
+ 
 `;
 export const DashLink = styled(NavLink)`
   text-decoration: none;
@@ -53,7 +61,7 @@ export const DashLink = styled(NavLink)`
   font-weight: 600;
   display: flex;
   padding: 12px 0;
-  &:hover{
+  &:hover {
     color: #333;
   }
 `;
@@ -63,19 +71,30 @@ export const Label = styled.div`
   align-items: center;
   border-bottom: 0.5px solid lightgray;
   margin-bottom: 20px;
+  padding-left: 10px;
+  color: #fff;
+  gap: 20px;
 `;
 export const H3 = styled.div`
   color: #f0f8ff;
   font-size: 20px;
 `;
 
-
 export const Center = styled.div`
   display: flex;
   flex-direction: column;
+
+  &:nth-child(1){
+    position: relative;
+    top: 20px;
+    height: 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+ 
 `;
 export const Bottom = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  margin-top: 20px;
 `;

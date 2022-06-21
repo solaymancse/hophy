@@ -5,6 +5,7 @@ import { BiSearchAlt2 } from 'react-icons/bi';
 import { ListTable } from '../../Dashboard/ListTable/ListTable';
 import { ModalBox } from './../../Modal/ModalBox';
 import axios from 'axios';
+
 axios.defaults.withCredentials = true;
 
 export const Management = () => {

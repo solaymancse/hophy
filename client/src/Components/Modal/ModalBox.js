@@ -4,6 +4,8 @@ import Modal from "react-modal";
 import { Form,Top } from './ModalElements'
 import { GrFormClose } from 'react-icons/gr';
 import axios from 'axios';
+import swal from 'sweetalert';
+import { useNavigate } from 'react-router-dom';
 
 Modal.setAppElement("#root");
 // modal style
@@ -20,28 +22,29 @@ const customStyles = {
   },
 };
 
-export const ModalBox = ({ modalIsOpen, closeModal, formTitle, url }) => {
+export const ModalBox = ({ modalIsOpen, closeModal, formTitle, url}) => {
+const history = useNavigate();
   const [user, setUser] = useState({
     name:'',
     email:'',
     password:'',
-    number:'',
+    phone:'',
     title:'',
     address:'',
     nid:''
 
   });
-  const { name,email,password,number,title,address,nid } = user;
+  const { name,email,password,phone,title,address,nid } = user;
   const handleChange = (e)=> {
     setUser({ ...user, [e.target.name]: e.target.value})
   }
 
   const sendRequest = async () => {
-    const res = await axios.post(`"http:://localhost:5000/api/${url}"`, {
+    const res = await axios.post(url, {
         name,
         email,
         password,
-        number,
+        phone,
         title, 
         address,
         nid
@@ -53,10 +56,19 @@ export const ModalBox = ({ modalIsOpen, closeModal, formTitle, url }) => {
     return data;
 
   }
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendRequest().then((data)=> setUser(data));
+    sendRequest().then((data)=> setUser(data), history("/dashboard/admin/adminDetails"))
+    swal({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      button: "nice"
+    })
+
+    
 
   }
 

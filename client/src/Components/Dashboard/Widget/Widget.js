@@ -17,6 +17,7 @@ export const Widget = ({backgroundColor,type}) => {
                 title: "Doctors",
                 isMoney: false,
                 link: 'See All Doctors',
+                links:'doctors'
             };
             break;
         case "patients":
@@ -24,6 +25,7 @@ export const Widget = ({backgroundColor,type}) => {
                 title: "Patients",
                 isMoney: false,
                 link: 'See All Patients',
+                links:'patients'
             };
             break;
         case "nurses":
@@ -31,6 +33,7 @@ export const Widget = ({backgroundColor,type}) => {
                 title: "Nurses",
                 isMoney: false,
                 link: 'See All Patients',
+                links:'nurses'
             };
             break;
         case "appointment":
@@ -38,6 +41,7 @@ export const Widget = ({backgroundColor,type}) => {
                 title: "Appointment",
                 isMoney: false,
                 link: 'See All Appointments',
+                links:'appointments'
             };
             break;
         default:
@@ -49,7 +53,7 @@ export const Widget = ({backgroundColor,type}) => {
         <Left>
             <Title>{data.title}</Title>
             <Counter>{data.isMoney && "$" } {amount}+</Counter>
-            <Link>{data.link}</Link>
+            <Link to={data.links}>{data.link}</Link>
         </Left>
         <Right>
             <Percentage>

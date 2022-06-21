@@ -19,6 +19,8 @@ import { DashHome } from './Components/Dashboard/DashHome/DashHome';
 import { Patient } from './Components/Patient/Patient';
 import { Doctor } from './Components/Doctor/Doctor';
 import { Nurse } from './Components/Nurse/Nurse';
+import { Profile } from './Components/Profile/Profile';
+
 
 
 
@@ -38,7 +40,7 @@ export const MainComponents = () => {
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="*" element={<ErrorPage />} />
 
-        <Route path="/dashboard/admin" element={<Dashboard />}>
+        <Route path="/dashboard/admin/*" element={<Dashboard />}>
           <Route index element={<DashHome/>}/>
           <Route path="adminDetails" element={<AdminDetails/>}/>
           <Route path="patients" element={<Patient/>}/>
@@ -46,6 +48,7 @@ export const MainComponents = () => {
           <Route path="nurses" element={<Nurse/>}/>
           <Route path="management" element={<Management/>}/>
           <Route path="content-team" element={<ContentTeam/>}/>
+          <Route path="profile" element={<Profile/>}/>
             
 
         </Route>

@@ -13,6 +13,7 @@ import { Management } from "../Team/Management/Management";
 import { Patient } from './../Patient/Patient';
 import { Doctor } from './../Doctor/Doctor';
 import { Nurse } from './../Nurse/Nurse';
+import { Profile } from './../Profile/Profile';
 
 export const Dashboard = () => {
   return (
@@ -28,6 +29,7 @@ export const Dashboard = () => {
             <Route path="patients" element={<Patient/>}/>
           <Route path="doctors" element={<Doctor/>}/>
           <Route path="nurses" element={<Nurse/>}/>
+          <Route path="profile" element={<Profile/>}/>
         </Routes>
       </Container>
     </Wrapper>

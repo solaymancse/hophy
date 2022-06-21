@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -24,15 +25,16 @@ flex-direction: column;
 justify-content: space-between;
 `;
 export const Title = styled.div`
-
+color: #fff;
   
 `;
 export const Counter = styled.h1`
 font-size: 40px;
+color: #fff;
 
 
 `;
-export const Link = styled.a`
+export const Link = styled(NavLink)`
 font-size: 12px;
 text-decoration: none;
 color: #fff;

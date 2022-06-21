@@ -5,10 +5,12 @@ import { ModalBox } from '../../Modal/ModalBox';
 import { ListTable } from './../../Dashboard/ListTable/ListTable';
 import { Top,Left,Button } from './AdminDetailsElement';
 import axios from 'axios';
+
 axios.defaults.withCredentials=true;
 
 export const AdminDetails = () => {
   const [admin, setAdmin] = useState([]);
+
   const [modalIsOpen, SetIsOpen] = useState(false);
 
   const openModal = () => {
@@ -18,6 +20,7 @@ export const AdminDetails = () => {
   const closeModal = () => {
     SetIsOpen(false);
   }
+  
   
   const sendRequest = async () => {
 
@@ -30,6 +33,8 @@ export const AdminDetails = () => {
 
     return data;
   }
+
+const url = "http://localhost:5000/api/adminSignup";
 
   useEffect(()=> {
     sendRequest().then((data)=> setAdmin(data));
@@ -44,7 +49,7 @@ export const AdminDetails = () => {
           <Button onClick={openModal}>Add Admin</Button>
       </Top>
       <ListTable data={admin}/>
-      <ModalBox modalIsOpen={modalIsOpen} closeModal={closeModal} />
+      <ModalBox modalIsOpen={modalIsOpen} formTitle="Add Admin" url={url} closeModal={closeModal}  />
     </>
   )
 }
