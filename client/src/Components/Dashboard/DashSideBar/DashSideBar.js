@@ -48,12 +48,9 @@ export const DashSideBar = () => {
             </Icon>
             <H3>Users</H3>
           </Label>
-          <b></b>
-          <b></b>
-          {SidebarData.map((item) => (
-            <Div>
-              <b></b>
-              <b></b>
+         
+          {SidebarData.map((item,index) => (
+            <Div key={index}>
               <Links to={item.path}>
                 <Icon>{item.icon}</Icon>
                 <Title>{item.title}</Title>
@@ -68,8 +65,8 @@ export const DashSideBar = () => {
               </Icon>
               <H3>Team</H3>
             </Label>
-              {dashSideData.map((sidedata) => (
-                <Div>
+              {dashSideData.map((sidedata, index) => (
+                <Div key={index}>
                 <Links to={sidedata.path}>
                   <Icon>{sidedata.icon}</Icon>
                   {sidedata.title}

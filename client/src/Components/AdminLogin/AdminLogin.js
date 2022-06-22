@@ -81,7 +81,7 @@ export const AdminLogin = () => {
                 </Button>
             </form>
 
-            <div class="text-center forgotpass">
+            <div className="text-center forgotpass">
               <a href="forgot-password.html">Forgot Password?</a>
             </div>
           </div>

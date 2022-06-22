@@ -41,9 +41,9 @@ export const FeatureSection = () => {
       <div className="row">
         <div className="col-lg-12 col-xl-8">
           <div className="row">
-            {FeatureData.map((data) => {
+            {FeatureData.map((data,index) => {
               return (
-                <div className="col-md-6" data-aos="fade-up">
+                <div key={index} className="col-md-6" data-aos="fade-up">
                   <Items>
                     {data.icon}
                     <H1>{data.title}</H1>

@@ -19,8 +19,8 @@ export const NavMenu = () => {
   return (
     <Navbar>
       <Nav className="me-auto">
-        {navMenuData.map((data) => (
-          <Item>
+        {navMenuData.map((data,index) => (
+          <Item key={index}>
             <Links to={data.link}>{data.title}</Links>
           </Item>
         ))}

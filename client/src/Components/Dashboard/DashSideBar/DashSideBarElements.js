@@ -31,7 +31,7 @@ export const Title = styled.div``;
 export const Div = styled.div`
   width: 100%;
   color: #fff;
-  
+ 
 `;
 
 export const Links = styled(NavLink)`
@@ -43,7 +43,7 @@ export const Links = styled(NavLink)`
   gap: 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-
+ 
   &:hover {
     transition: .5s;
     color: #fff;
@@ -52,7 +52,9 @@ export const Links = styled(NavLink)`
   &.active{
     background-color: #fff;
     color: #333;
+    
   }
+  
  
 `;
 export const DashLink = styled(NavLink)`

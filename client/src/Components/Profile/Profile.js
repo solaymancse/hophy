@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   Container,
@@ -36,8 +36,29 @@ import { MdLocationPin } from "react-icons/md";
 import { contactInfoData, rightDivData } from "../../Data";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { engagedData } from "./../../Data";
+import axios from "axios";
+
+axios.defaults.withCredentials = true;
 
 export const Profile = () => {
+  const [admin, setAdmin] = useState();
+  console.log(admin);
+
+  const sendRequest = async () => {
+    const res = await axios
+      .get("http://localhost:5000/api/user", {
+        withCredentials: true,
+      })
+      .catch(err => console.log(err));
+
+    const data = await res.data;
+    return data;
+
+    
+  };
+  useEffect(() => {
+    sendRequest().then((data) => setAdmin(data.user));
+  }, []);
   return (
     <Container>
       <Left>
@@ -50,10 +71,13 @@ export const Profile = () => {
           </ProfileImage>
           <Description>
             <div>
-              <H3>
-                Anik Barua <br />
-                <Span>CEO & Founder</Span>
-              </H3>
+            {admin && <H3>{admin.name}</H3>}
+                {/* <H3>
+                  sss
+                  <br />
+                  <Span>CEO & Founder</Span>
+                </H3> */}
+             
             </div>
             <div>
               <H5>
@@ -99,16 +123,14 @@ export const Profile = () => {
             </div>
             <div>
               <Title>Contact Information</Title>
-            {contactInfoData.map((data)=> (
-                <ContactDesc>
-                <H2>
-                  <Icon>
-                   {data.icon}
-                  </Icon>
-                  {data.title} :<Span>{data.value}</Span>
-                </H2>
-              </ContactDesc>
-            ))}
+              {contactInfoData.map((data) => (
+                <ContactDesc key={data._id}>
+                  <H2>
+                    <Icon>{data.icon}</Icon>
+                    {data.title} :<Span>{data.value}</Span>
+                  </H2>
+                </ContactDesc>
+              ))}
             </div>
             <div>
               <Title>Basic Information</Title>

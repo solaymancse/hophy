@@ -20,11 +20,14 @@ import { Patient } from './Components/Patient/Patient';
 import { Doctor } from './Components/Doctor/Doctor';
 import { Nurse } from './Components/Nurse/Nurse';
 import { Profile } from './Components/Profile/Profile';
-
+import { useSelector } from 'react-redux';
+import { CommonLoginPage } from './Components/CommonLoginPage/CommonLoginPage';
 
 
 
 export const MainComponents = () => {
+  const isLoggedIn = useSelector((state)=> state.isLoggedIn);
+  console.log(isLoggedIn);
   return (
     <>
       <Routes>
@@ -49,13 +52,12 @@ export const MainComponents = () => {
           <Route path="management" element={<Management/>}/>
           <Route path="content-team" element={<ContentTeam/>}/>
           <Route path="profile" element={<Profile/>}/>
-            
-
         </Route>
      
 
        
         <Route path="/patient/dashboard" element={<Dashboard/>} />
+        <Route path="/alllogin" element={<CommonLoginPage/>} />
 
         
       </Routes>
