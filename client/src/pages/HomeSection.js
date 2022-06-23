@@ -16,6 +16,8 @@ import { StickyNavbar } from "../Components/StickyNavbar/StickyNavbar";
 import styled from "styled-components";
 
 // import { Annoucment } from "../Components/Annoucment/Annoucment";
+import { TopColumn } from './../Components/TopColumn/TopColumn';
+
 
 
 
@@ -49,6 +51,7 @@ export const HomeSection = () => {
       <Navbar />
       <ScrollBtn />
       <HeroSection />
+      <TopColumn/>
       <StaticMedia />
       <FeatureSection />
       <BookAppointment />

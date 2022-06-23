@@ -1,5 +1,9 @@
-import React from "react";
+import React,{ useState } from "react";
 
+
+import { Offcanvas } from "react-bootstrap";
+
+import { MobileViewNav } from "../../MobileViewNav/MobileViewNav";
 import {
   Wrapper,
   Content,
@@ -11,13 +15,18 @@ import {
   Icon,
   Logo
 } from "./TopBarElements";
+import { Bars,Tooglebar } from "../NavMenu/NavMenuElements";
 import logo from "../../../images/brand5.png";
 import { AiOutlineClockCircle, AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 
 export const TopBar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
-    <Wrapper className="mobile-sticky">
+    <Wrapper>
         <div className="row">
           <div className="col-12">
             <Content>
@@ -53,7 +62,17 @@ export const TopBar = () => {
                 </div>
               </Col>
               </Media>
+              <Tooglebar>
+            <Bars onClick={handleShow} />
+            <Offcanvas show={show} onHide={handleClose}>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title></Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>{<MobileViewNav />}</Offcanvas.Body>
+            </Offcanvas>
+          </Tooglebar>
             </Content>
+  
           </div>
         </div>
     </Wrapper>

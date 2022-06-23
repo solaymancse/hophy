@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-  background: #34ace1;
+background: #34ace1;
   height: 150px;
   width: 100%;
 
@@ -9,7 +9,13 @@ export const Div = styled.div`
     height: 80px;
     align-items: center;
   }
-  @media screen and (max-width: 575px) {
-    padding-top: 20px;
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    z-index: 2;
   }
+  @media screen and (max-width: 575px) {
+    display: flex;
+    align-items: center;
+  }
+  
 `;

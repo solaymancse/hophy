@@ -3,8 +3,14 @@ import { NavLink } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 
 
-export const Navbar = styled.div`
+export const Wrapper = styled.div`
  background-color:#fff;
+
+ @media (max-width: 991px) {
+   display: none;
+   
+ }
+ 
 
 `;
 export const Item = styled.div`
@@ -30,11 +36,11 @@ export const Links = styled(NavLink)`
     bottom: -10px;
     width: 0;
     height: 3px;
-    background-color: #333;
+    background-color: #34ace3;
     transition: 0.3s;
   }
   &:hover{
-    color: #333;
+    color: #34ace3;
   }
   &:hover:after { 
     width: 100%;
@@ -51,19 +57,23 @@ export const Links = styled(NavLink)`
 `;
 
 export const Tooglebar = styled.div`
- margin-right: 20px;
+display: none;
+
+@media (max-width: 768px){
+  display: block;
+}
 
 `;
 
 export const Bars = styled(GoThreeBars)`
   font-size: 22px;
   color: #fff;
-  display: none;
 
+/* 
   @media screen and (max-width: 991px) {
     display: block;
     margin-top: -40px;
-  }
+  } */
 `;
 
 export const Div = styled.div`

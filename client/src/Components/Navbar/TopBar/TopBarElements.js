@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+background: #34ace1;
   padding-top: 4px;
   margin-bottom: 10px;
 
@@ -14,7 +15,7 @@ export const Wrapper = styled.div`
   }
   @media screen and (max-width: 575px) {
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0;
   } ;
 `;
 export const Content = styled.div`
@@ -34,7 +35,7 @@ export const Content = styled.div`
   } ;
 `;
 export const Logo = styled.div`
-  @media (min-width: 576px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     padding: 0;
     margin: 0;
   } ;
@@ -54,11 +55,12 @@ export const Img = styled.img`
     height: 50px;
     width: 190px;
   }
-
-  @media screen and (max-width: 991px) {
-    height: 40px;
-    width: 140px;
+  @media (min-width: 320px) and (max-width: 480px) {
+    height: 30px;
+    width: 135px;
   }
+
+
   
 `;
 export const Media = styled.div`

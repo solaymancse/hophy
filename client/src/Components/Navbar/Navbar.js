@@ -16,9 +16,7 @@ export const Navbar = () => {
           <TopBar />
         </Container>
       </Div>
-      <Container>
       <NavMenu />
-      </Container>
     </>
   );
 };

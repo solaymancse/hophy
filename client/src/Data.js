@@ -5,7 +5,7 @@ import { RiAppsFill } from "react-icons/ri";
 import {  FaUserMd, FaUserNurse, FaUserTie } from "react-icons/fa";
 import { BsPersonPlusFill } from "react-icons/bs";
 import { MdCall,MdMailOutline,MdWeb,MdLocationOn } from 'react-icons/md';
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail,AiOutlineCalendar,AiOutlineClockCircle } from "react-icons/ai";
 
 export const SidebarData = [
   {
@@ -219,3 +219,28 @@ export const footerLinkData = [
   }
 ];
 
+export const topColumnData = [
+  {
+    icon:"193-40-61-718",
+    title:"EMERGENCY SERVICE",
+    desc:"Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum. Integer dapibus ullamcorper est, ac",
+    link:"/",
+    linkTitle:"Read More"
+  },
+  {
+    icon:<AiOutlineCalendar/>,
+    title:"DO YOU WANT TO MAKE AN APPOINTMENT",
+    desc:"Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum.",
+    link:"/",
+    linkTitle:"Appoiment Now"
+  },
+  {
+    icon:<AiOutlineClockCircle/>,
+    title:"OPENING HOURS",
+    desc:"Monday – Friday",
+    desc2:"Saturtay – Sunday",
+    link:"/",
+    linkTitle:"Contact US"
+  },
+
+];
