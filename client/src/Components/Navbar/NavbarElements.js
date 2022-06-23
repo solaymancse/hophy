@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   background: #34ace1;
-  height: 195px;
+  height: 150px;
   width: 100%;
 
   @media screen and (max-width: 991px) {

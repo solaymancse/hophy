@@ -4,14 +4,15 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 5px;
-  border: none;
+  border: ${props=>props.borderColor};
   border-radius: 20px;
   padding: 10px 20px;
-  color: #fff;
-  background-color: #1f2b67;
+  color: #333;
+  background-color: #fff;
 
   &:hover{
-      background-color: #fff;
-      color: #333;
+      background-color: #34ace3;
+      color: #fff;
+      transition: .5s;
   }
 `;

@@ -4,7 +4,8 @@ import { SiContentful, SiGoogletagmanager, SiProxmox, SiStyleshare } from "react
 import { RiAppsFill } from "react-icons/ri";
 import {  FaUserMd, FaUserNurse, FaUserTie } from "react-icons/fa";
 import { BsPersonPlusFill } from "react-icons/bs";
-import { MdCall,MdMailOutline,MdWeb } from 'react-icons/md';
+import { MdCall,MdMailOutline,MdWeb,MdLocationOn } from 'react-icons/md';
+import { AiOutlineMail } from "react-icons/ai";
 
 export const SidebarData = [
   {
@@ -55,23 +56,31 @@ export const dashSideData = [
 export const navMenuData = [
   {
     link:"/",
-    title:"HOME"
+    title:"Home"
   },
   {
     link:"/services",
-    title:"SERVICES"
+    title:"Services"
   },
   {
     link:"/blog",
-    title:"BLOG"
+    title:"BLog"
   },
   {
     link:"/about",
-    title:"ABOUT"
+    title:"About"
+  },
+  {
+    link:"/about",
+    title:"Diagonestic"
+  },
+  {
+    link:"/about",
+    title:"Medicine"
   },
   {
     link:"/contact",
-    title:"CONTACT"
+    title:"Contact"
   }
 
 ];
@@ -135,4 +144,78 @@ export const contactInfoData = [
 
 ];
 
+export const footerData = [
+  {
+    icon: <MdLocationOn/>,
+    title:"Chattogram Software Technology Park, 4100, Chittagong",
+    link:"/"
+  },
+  {
+    icon: <AiOutlineMail />,
+    title:"hophystartup@gmail.com",
+    link:"/"
+  },
+  {
+    icon: <MdCall />,
+    title:"+880193-40-61-718",
+    link:"/"
+  },
+];
+export const footerPostData = [
+  {
+   
+    title:"Cancer Care",
+    link:"/"
+  },
+  {
+   
+    title:"Heart Care",
+    link:"/"
+  },
+  {
+    title:"Orthopedic Care",
+    link:"/"
+  },
+  {
+    
+    title:"Women's Health",
+    link:"/"
+  },
+  {
+    
+    title:"Emergency Services",
+    link:"/"
+  },
+  {
+    
+    title:"Urgent Care",
+    link:"/"
+  }
+];
+export const footerLinkData = [
+  {
+    title:"Terms and Condition",
+    link:"/terms&condition"
+  },
+  {
+    title:"Privacy Policy",
+    link:"/privacy&policy"
+  },
+  {
+    title:"Refund Policy",
+    link:"/"
+  },
+  {
+    title:"Security",
+    link:"/"
+  },
+  {
+    title:"Mission & Vission",
+    link:"/mission&vission"
+  },
+  {
+    title:"Contact Us",
+    link:"/"
+  }
+];
 

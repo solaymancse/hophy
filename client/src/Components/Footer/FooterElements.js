@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdCall, MdLocationOn } from "react-icons/md";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+
 import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.div`
@@ -39,23 +39,27 @@ export const Wrapper = styled.div`
 export const FooterLogo = styled.div`
   display: inline-block;
   margin-bottom: 50px;
+  width: 200px;
+  height: 50px;
 `;
 
 export const Img = styled.img`
-  height: 50px;
-  width: 180px;
+  height: 40px;
+  width: 160px;
 `;
 export const List = styled(NavLink)`
   text-decoration: none;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
+  align-items: center;
+  gap: 20px;
   font-size: 14px;
   line-height: 26px;
   margin-bottom: 12px;
   padding-top: 5px;
   transition: all 0.3s;
   align-items: center;
-  color: ${(props) => props.color};
+  color: #d5dadf;
 
   &:hover {
     color: #34ace3;
@@ -81,12 +85,12 @@ export const Call = styled(MdCall)`
   margin-right: 15px;
 `;
 export const H4 = styled.h4`
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.522px;
+  font-size: 11px;
+  font-weight: bold;
   margin: 15px 0 70px;
   text-transform: uppercase;
-  color: #fff;
+  color: #929aa3;
+
 
   @media screen and (max-width: 575px) {
     margin: 50px 0 20px;
@@ -119,6 +123,25 @@ export const P = styled.p`
   line-height: 26px;
   margin-bottom: 24px;
 `;
-export const Arrow = styled(BsArrowRightCircleFill)`
-  margin-right: 20px;
+
+export const H1 = styled.h1`
+  font-size: 14px;
+  color: #d5dadf;
+  font-weight: normal;
+
+  &:hover {
+    color: #34ace3;
+    transition: 0.5s;
+  }
+`;
+export const Links = styled.a`
+  text-decoration: none;
+  color: #929aa3;
+  padding-left: 20px;
+ 
+
+  &:hover {
+    color: #34ace3;
+    transition: 0.2s;
+  }
 `;

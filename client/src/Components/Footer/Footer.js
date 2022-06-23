@@ -1,14 +1,10 @@
 import React from "react";
 
-import {Container} from 'react-bootstrap'
+import { Container } from "react-bootstrap";
 import {
   Wrapper,
   FooterLogo,
-  Img,
   Contact,
-  Map,
-  Mail,
-  Call,
   List,
   H4,
   WidgetNews,
@@ -16,156 +12,112 @@ import {
   P,
   WidgetSocial,
   InputDiv,
-  Arrow
+  Links,
 } from "./FooterElements";
-import logo from "../../images/brand5.png";
 import { Button } from "react-bootstrap";
-import { BsArrowRightShort, BsYoutube } from "react-icons/bs";
-import { Icons, Links } from "../Navbar/Contact/ContactElements";
-import { FaFacebookF} from "react-icons/fa";
+import { BsArrowRightShort, BsYoutube,BsArrowRightCircleFill } from "react-icons/bs";
+import { Icons } from "../Navbar/Contact/ContactElements";
+import { FaFacebookF } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
+import { footerData, footerPostData, footerLinkData } from "./../../Data";
 
 export const Footer = () => {
-
   return (
     <Wrapper>
       <Container>
-      <div className="row">
-        <div className="col-sm-6 col-md-5 col-lg-4 col-xl-3">
-          <div className="widget-item">
-            <div className="about-widget">
-              <FooterLogo>
-                <a href="/">
-                  <Img src={logo} alt="logo" />
-                </a>
-              </FooterLogo>
-              <p className="mb-3">
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without
-              </p>
-              <Contact >
-                <List to="/" color="#fff">
-                  <Map color="#fff"/>
-                  Chattogram Software Technology Park, 4100, Chittagong
+        <div className="row">
+          <div className="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div className="widget-item">
+              <div className="about-widget">
+                <FooterLogo>
+                  <H4>Who are we</H4>
+                </FooterLogo>
+                <p className="mb-3">
+                HophyCare is a Bangladeshi HealthTech StartUp. For the first time, we are providing a complete healthcare ecosystem in your home.
+                </p>
+                <Contact>
+                  {footerData.map((data, index) => (
+                    <List key={index} to={data.link}>
+                      <icon>{data.icon}</icon>
+                      {data.title}
+                    </List>
+                  ))}
+                </Contact>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
+            <div className="widget-item">
+              <H4>Medical Services</H4>
+              {footerPostData.map((data, index) => (
+                <List key={index} to="/" color="#fff">
+                  <BsArrowRightCircleFill />
+                  {data.title}
                 </List>
-                <List to="/" color="#fff">
-                  <Mail />
-                  hophycare@gmail.com
+              ))}
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
+            <div className="widget-item">
+              <H4>QUICK LINKS</H4>
+              {footerLinkData.map((data) => (
+                <List to={data.link}>
+                  <BsArrowRightCircleFill />
+                  {data.title}
                 </List>
-                <List to="/" color="#fff">
-                  <Call />
-                  +0123-45-67-890
-                </List>
-              </Contact>
+              ))}
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-6 offset-md-1 col-lg-3 offset-lg-0 col-xl-3">
+            <div>
+              <H4>NEWSLETTER</H4>
+              <WidgetNews>
+                <P>
+                  Sign up for our mailing list to get latest updates and offers.
+                </P>
+                <NewsForm className="input-btn-group">
+                  <InputDiv>
+                    <input
+                      style={{ outLine: "none", border: "none" }}
+                      className="form-control"
+                      type="email"
+                      placeholder="Enter Your Email"
+                    ></input>
+                    <Button
+                      style={{
+                        marginRight: "-3px",
+                        background: "#34ACE1",
+                        outLine: "none",
+                        border: "none",
+                      }}
+                    >
+                      <BsArrowRightShort />
+                    </Button>
+                  </InputDiv>
+                </NewsForm>
+              </WidgetNews>
+              <WidgetSocial>
+                <Icons>
+                  <Links href="https://www.facebook.com/Hophycare">
+                    <FaFacebookF />
+                  </Links>
+                  <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
+                    <BsYoutube />
+                  </Links>
+                  <Links href="https://www.instagram.com/hophystartup/">
+                    <IoLogoInstagram />
+                  </Links>
+
+                  <Links href="https://www.linkedin.com/company/hophycare/?viewAsMember=true">
+                    <AiFillLinkedin />
+                  </Links>
+                </Icons>
+              </WidgetSocial>
             </div>
           </div>
         </div>
-
-        <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
-          <div className="widget-item">
-            <H4>RECENT POST</H4>
-            <List to="/" color="#fff">
-              <Map />
-              Lorem ipsum is a placeholder text commonly
-            </List >
-            <List to="/" color="#fff">
-              <Mail />
-              Lorem ipsum is a placeholder text commonly
-            </List>
-            <List to="/" color="#fff">
-              <Call />
-              Lorem ipsum is a placeholder text commonly
-            </List>
-            <List to="/" color="#fff">
-              <Call />
-              Lorem ipsum is a placeholder text commonly
-            </List>
-          </div>
-        </div>
-        <div className="col-sm-6 col-md-6 offset col-lg-4 col-xl-3">
-          <div className="widget-item">
-            <H4>QUICK LINKS</H4>
-           
-              <List to="/terms&condition" color="#fff">
-                <Arrow />
-                Terms and Condition
-              </List>
-                <List to="/privacy&policy" color="#fff">
-              <Arrow />
-                Privacy Policy
-              </List>
-              <List to="/" color="#fff">
-                <Arrow />
-                Refund Policy
-              </List>
-              <List to="/" color="#fff">
-                <Arrow />
-                Security
-              </List>
-              <List to="/mission&vission" color="#fff">
-                <Arrow />
-               Mission & Vission
-              </List>
-              <List to="/" color="#fff">
-                <Arrow />
-                Contact Us
-              </List>
-            
-          </div>
-        </div>
-        <div className="col-sm-6 col-md-6 offset-md-1 col-lg-3 offset-lg-0 col-xl-3">
-          <div>
-            <H4>NEWSLETTER</H4>
-            <WidgetNews>
-              <P>
-                Sign up for our mailing list to get latest updates and offers.
-              </P>
-              <NewsForm className="input-btn-group">
-                <InputDiv>
-                  <input
-                    style={{ outLine: "none", border: "none" }}
-                    className="form-control"
-                    type="email"
-                    placeholder="Enter Your Email"
-                  ></input>
-                  <Button
-                    style={{
-                      marginRight: "-3px",
-                      background: "#34ACE1",
-                      outLine: "none",
-                      border: "none",
-                    }}
-                  >
-                    <BsArrowRightShort />
-                  </Button>
-                </InputDiv>
-              </NewsForm>
-            </WidgetNews>
-            <WidgetSocial>
-              <Icons>
-              <Links href="https://www.facebook.com/Hophycare">
-                <FaFacebookF />
-              </Links>
-              <Links href="https://www.youtube.com/channel/UCYZXfIIJVO4ZDOfTBHbZ26w">
-               
-                <BsYoutube />
-              </Links>
-              <Links href="https://www.instagram.com/hophystartup/">
-              
-                <IoLogoInstagram />
-              </Links>
-              
-              <Links href="https://www.linkedin.com/company/hophycare/?viewAsMember=true">
-                
-                <AiFillLinkedin />
-              </Links>
-              </Icons>
-            </WidgetSocial>
-          </div>
-        </div>
-      </div>
       </Container>
     </Wrapper>
   );

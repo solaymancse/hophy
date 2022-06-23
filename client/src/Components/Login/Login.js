@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { LoginForm } from "../LoginForm/LoginForm";
 import { Button } from "./LoginElement";
-import { HiLockClosed } from "react-icons/hi";
+import { BiUserCircle } from "react-icons/bi";
 import  Modal from 'react-modal';
 Modal.setAppElement('#root');
 
@@ -32,10 +32,10 @@ export const Login = () => {
   
   return (
     <div>
-      <Button
+      <Button borderColor={"none"}
         onClick={openModal}
       >
-      <HiLockClosed/>
+     <BiUserCircle/>
         Login
       </Button>
 

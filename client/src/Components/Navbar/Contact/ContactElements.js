@@ -15,7 +15,7 @@ export const Location = styled(ImLocation2)`
 
 export const Title = styled.p`
   color: lightgray;
-  font-size: 14px;
+  font-size: 12px;
  
 
   

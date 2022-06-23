@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import { Button } from "./../Login/LoginElement";
-import { FaUnlock } from "react-icons/fa";
 import { SignUpForm } from "./../SignUpForm/SignUpForm";
 import Modal from "react-modal";
 Modal.setAppElement("#root");
@@ -32,8 +31,7 @@ export const SignUp = () => {
 
   return (
     <div>
-      <Button onClick={openModal}>
-        <FaUnlock />
+      <Button borderColor={"0.5px solid #34ace3"} onClick={openModal}>
         Sign Up
       </Button>
 

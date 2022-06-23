@@ -103,7 +103,7 @@ export const H3 = styled.h3`
 `;
 
 export const H1 = styled.h1`
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: 700px;
 

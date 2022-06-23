@@ -5,17 +5,20 @@ import { NavMenu } from "./NavMenu/NavMenu";
 import { TopBar } from "./TopBar/TopBar";
 
 import { Div } from "./NavbarElements";
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 
 export const Navbar = () => {
   return (
-    <Div>
-      <Contact />
+    <>
+      <Div>
+        <Contact />
+        <Container>
+          <TopBar />
+        </Container>
+      </Div>
       <Container>
-      <TopBar />
       <NavMenu />
       </Container>
-      
-    </Div>
+    </>
   );
 };
