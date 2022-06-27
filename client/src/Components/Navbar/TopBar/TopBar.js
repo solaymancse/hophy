@@ -1,5 +1,4 @@
-import React,{ useState } from "react";
-
+import React, { useState } from "react";
 
 import { Offcanvas } from "react-bootstrap";
 
@@ -13,9 +12,9 @@ import {
   H3,
   H1,
   Icon,
-  Logo
+  Logo,
 } from "./TopBarElements";
-import { Bars,Tooglebar } from "../NavMenu/NavMenuElements";
+import { Bars, Tooglebar } from "./TopBarElements";
 import logo from "../../../images/brand5.png";
 import { AiOutlineClockCircle, AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
@@ -27,14 +26,14 @@ export const TopBar = () => {
   const handleShow = () => setShow(true);
   return (
     <Wrapper>
-        <div className="row">
-          <div className="col-12">
-            <Content>
-              <Logo>
-                <Img src={logo} alt="logo" />
-              </Logo>
-              <Media className="d-none d-lg-flex">
-              <Col >
+      <div className="row">
+        <div className="col-12">
+          <Content>
+            <Logo>
+              <Img src={logo} alt="logo" />
+            </Logo>
+            <Media className="d-none d-lg-flex">
+              <Col>
                 <Icon>
                   <AiOutlineClockCircle />
                 </Icon>
@@ -44,12 +43,12 @@ export const TopBar = () => {
                 </div>
               </Col>
               <Col>
-                <Icon >
+                <Icon>
                   <BsTelephoneFill />
                 </Icon>
                 <div>
                   <H3>HOTLINE 24/7</H3>
-                  <H1 >+880193-40-61-718</H1>
+                  <H1>+880193-40-61-718</H1>
                 </div>
               </Col>
               <Col>
@@ -61,20 +60,19 @@ export const TopBar = () => {
                   <H1>HOPHYSTARTUP@GMAIL.COM</H1>
                 </div>
               </Col>
-              </Media>
-              <Tooglebar>
-            <Bars onClick={handleShow} />
-            <Offcanvas show={show} onHide={handleClose}>
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title></Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>{<MobileViewNav />}</Offcanvas.Body>
-            </Offcanvas>
-          </Tooglebar>
-            </Content>
-  
-          </div>
+            </Media>
+            <Tooglebar>
+              <Bars onClick={handleShow} />
+              <Offcanvas show={show} onHide={handleClose}>
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title></Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>{<MobileViewNav />}</Offcanvas.Body>
+              </Offcanvas>
+            </Tooglebar>
+          </Content>
         </div>
+      </div>
     </Wrapper>
   );
 };

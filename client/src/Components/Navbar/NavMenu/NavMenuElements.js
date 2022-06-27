@@ -1,23 +1,17 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import { GoThreeBars } from "react-icons/go";
-
 
 export const Wrapper = styled.div`
- background-color:#fff;
+  background-color: #fff;
 
- @media (max-width: 991px) {
-   display: none;
-   
- }
- 
-
+  @media (max-width: 991px) {
+    display: none;
+  }
 `;
 export const Item = styled.div`
- margin-right: 20px;
- position: relative;
- padding-bottom: 8px;
-
+  margin-right: 20px;
+  position: relative;
+  padding-bottom: 8px;
 `;
 export const Links = styled(NavLink)`
   text-decoration: none;
@@ -26,11 +20,9 @@ export const Links = styled(NavLink)`
   font-family: "Sarabun", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  
-  
 
-  &:after{
-    content: '';
+  &:after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -39,14 +31,14 @@ export const Links = styled(NavLink)`
     background-color: #34ace3;
     transition: 0.3s;
   }
-  &:hover{
+  &:hover {
     color: #34ace3;
   }
-  &:hover:after { 
+  &:hover:after {
     width: 100%;
   }
 
-  &.active{
+  &.active {
     color: #34ace3;
     padding-bottom: 20px;
     border-bottom: 3px solid #34ace3;
@@ -54,26 +46,6 @@ export const Links = styled(NavLink)`
   @media screen and (max-width: 991px) {
     display: none;
   }
-`;
-
-export const Tooglebar = styled.div`
-display: none;
-
-@media (max-width: 768px){
-  display: block;
-}
-
-`;
-
-export const Bars = styled(GoThreeBars)`
-  font-size: 22px;
-  color: #fff;
-
-/* 
-  @media screen and (max-width: 991px) {
-    display: block;
-    margin-top: -40px;
-  } */
 `;
 
 export const Div = styled.div`
@@ -85,4 +57,56 @@ export const Div = styled.div`
   @media screen and (max-width: 991px) {
     display: none;
   }
+`;
+export const Button = styled.button`
+  color: gray;
+  font-size: 25px;
+  border: none;
+  background-color: #fff;
+  transition: 0.5s all ease-in-out;
+`;
+export const InputBox = styled.div`
+z-index: 1;
+  display: flex;
+  padding: 10px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+  position: absolute;
+  top: -200px;
+  left: -10%;
+  transform: translate(-17%);
+  left: 0;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333;
+  opacity: 0.8;
+
+  input {
+    padding: 10px;
+    outline: none;
+    border: none;
+   
+    
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 11px;
+    background-color: #34ace1;
+    font-weight: bold;
+    font-size: 12px;
+  }
+`;
+export const InputBody = styled.div`
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  
+
+  
 `;

@@ -5,7 +5,6 @@ export const Button = styled.button`
   align-items: center;
   gap: 5px;
   border: ${props=>props.borderColor};
-  border-radius: 20px;
   padding: 10px 20px;
   color: #333;
   background-color: #fff;

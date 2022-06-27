@@ -232,7 +232,7 @@ export const topColumnData = [
     title:"DO YOU WANT TO MAKE AN APPOINTMENT",
     desc:"Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum.",
     link:"/",
-    linkTitle:"Appoiment Now"
+    linkTitle:"Appoiment"
   },
   {
     icon:<AiOutlineClockCircle/>,

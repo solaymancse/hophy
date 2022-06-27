@@ -1,22 +1,11 @@
 import styled from "styled-components";
+import { GoThreeBars } from "react-icons/go";
 
 export const Wrapper = styled.div`
-background: #34ace1;
-  padding-top: 4px;
-  margin-bottom: 10px;
+  background: #34ace1;
+  
 
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    padding-top: 10px;
-  }
-
-  @media (min-width: 576px) and (max-width: 767px) {
-    padding-top: 10px;
-  }
-  @media screen and (max-width: 575px) {
-    margin: 0;
-    padding: 0;
-  } ;
+  
 `;
 export const Content = styled.div`
   display: flex;
@@ -26,7 +15,7 @@ export const Content = styled.div`
   padding: 12px 0 6px;
 
   @media (min-width: 1025px) and (max-width: 1280px) {
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
   }
   @media (min-width: 576px) and (max-width: 767px) {
@@ -43,25 +32,24 @@ export const Logo = styled.div`
 export const Img = styled.img`
   height: 50px;
   width: 220px;
-  
 
-
-  
-  @media (min-width: 1281px) and (max-width: 1440px) {
-    height: 60px;
-    width: 210px;
-  }
-  @media (min-width: 992px) and (max-width: 1280px) {
+ 
+  @media (min-width: 992px) and (max-width: 1440px) {
     height: 50px;
     width: 190px;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    height: 40px;
+    width: 140px;
+  }
+  @media (min-width: 481px) and (max-width: 575px) {
+    height: 35px;
+    width: 134px;
   }
   @media (min-width: 320px) and (max-width: 480px) {
     height: 30px;
     width: 135px;
   }
-
-
-  
 `;
 export const Media = styled.div`
   display: flex;
@@ -121,3 +109,21 @@ export const H2 = styled.h2`
   font-size: 24px;
 `;
 export const Span = styled.div``;
+export const Tooglebar = styled.div`
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+`;
+
+export const Bars = styled(GoThreeBars)`
+  font-size: 22px;
+  color: #fff;
+
+  /* 
+  @media screen and (max-width: 991px) {
+    display: block;
+    margin-top: -40px;
+  } */
+`;
