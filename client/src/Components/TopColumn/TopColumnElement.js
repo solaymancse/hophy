@@ -2,9 +2,11 @@ import styled from "styled-components";
 import { Card } from "react-bootstrap";
 
 export const Wrapper = styled.div`
+position: relative;
   display: flex;
   gap: 5px;
   margin-top: -50px;
+  z-index: 1;
 
   @media (min-width: 320px) and (max-width: 800px) {
     width: 100%;

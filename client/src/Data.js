@@ -6,6 +6,8 @@ import {  FaUserMd, FaUserNurse, FaUserTie } from "react-icons/fa";
 import { BsPersonPlusFill } from "react-icons/bs";
 import { MdCall,MdMailOutline,MdWeb,MdLocationOn } from 'react-icons/md';
 import { AiOutlineMail,AiOutlineCalendar,AiOutlineClockCircle } from "react-icons/ai";
+import hero1  from './images/hero1.jpg'
+import hero2  from './images/hero2.jpg'
 
 export const SidebarData = [
   {
@@ -243,4 +245,15 @@ export const topColumnData = [
     linkTitle:"Contact US"
   },
 
+];
+
+export const heroData = [
+  {
+    img:`{${hero1}}`,
+    title:" Your Heath Is",
+    span:""
+  },
+  {
+    img:`{${hero2}}`
+  }
 ];
