@@ -257,3 +257,15 @@ export const heroData = [
     img:`{${hero2}}`
   }
 ];
+export const docDegree = [
+  {
+    title:"Breast Surgery",
+  },
+  {title:"Colorectal Surgery"},
+  {title:"Endocrinology"},
+  {title: "Cardiology"},
+  {title: "Cosmetic Dermatology"},
+  {title:"Mole checks and monitoring"},
+  {title:"Clinical Neurophysiology"},  
+ 
+];

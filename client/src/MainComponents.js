@@ -22,6 +22,7 @@ import { Nurse } from './Components/Nurse/Nurse';
 import { Profile } from './Components/Profile/Profile';
 import { useSelector } from 'react-redux';
 import { CommonLoginPage } from './Components/CommonLoginPage/CommonLoginPage';
+import { ViewProfile } from './Components/ViewProfile/ViewProfile';
 
 
 
@@ -41,6 +42,7 @@ export const MainComponents = () => {
         <Route path="/privacy&policy" element={<PrivacyPolicy />} />
         <Route path="/mission&vission" element={<MissionAndVission />} />
         <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/viewprofile" element={<ViewProfile />} />
         <Route path="*" element={<ErrorPage />} />
 
         <Route path="/dashboard/admin/*" element={<Dashboard />}>

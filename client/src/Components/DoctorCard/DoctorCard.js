@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardGroup,Button} from "react-bootstrap";
+import { Card, CardGroup} from "react-bootstrap";
 
-import { Title,Text } from "./DoctorCardElements";
+import { Title,Text,Button,Img } from "./DoctorCardElements";
 
 
 export const DoctorCard = (props) => {
@@ -9,14 +9,14 @@ export const DoctorCard = (props) => {
   return (
     <div>
       <CardGroup>
-        <Card >
-          <Card.Img variant="top" style={{height:"300px",width:"100%"}} src={img} />
+        <Card>
+          <Img variant="top"  src={img} />
           <Card.Body>
             <Title>{name}</Title>
             <Text>{deg}</Text>
           </Card.Body>
           
-            <Button style={{marginTop:"30px",backgroundColor: '#34ACE1',outLine:'none',border:'none'}}href="/">VIEW PROFILE</Button>
+            <Button to="/viewprofile">VIEW PROFILE</Button>
          
         </Card>
       </CardGroup>

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+import img from '../../images/background.jpg';
+
 export const Wrapper = styled.div`
-  background-color: #f3f3f3;
+  background-image: url(${img});
   width: 100%;
   padding: 50px 0;
 
