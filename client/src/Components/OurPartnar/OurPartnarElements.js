@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   background-image: url(${img});
   padding-bottom: 125px;
   width: 100%;
+
+  @media (max-width: 575px){
+    padding-bottom: 20px;
+  }
 `;
 export const LogoArea = styled.div`
   border-top: 1px solid #dfdfdf;

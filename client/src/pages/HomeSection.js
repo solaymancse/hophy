@@ -17,6 +17,7 @@ import styled from "styled-components";
 
 // import { Annoucment } from "../Components/Annoucment/Annoucment";
 import { TopColumn } from './../Components/TopColumn/TopColumn';
+import { GetInTouch } from './../Components/GetInTouch/GetInTouch';
 
 
 
@@ -59,6 +60,7 @@ export const HomeSection = () => {
       <NurseArea />
       <Testomonial />
       <OurPartnar />
+      <GetInTouch/>
       <Blog />
       <Footer />
       <FooterBottom />

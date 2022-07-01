@@ -4,8 +4,8 @@ import { Container } from "react-bootstrap";
 import "./Sticky.css";
 import { Login } from './../Login/Login';
 import { SignUp } from './../SignUp/SignUp';
-import { Links } from './StickyNavbarElements';
-
+import { Links,Img } from './StickyNavbarElements';
+import logo from '../../images/brand6.png'
 export const StickyNavbar = () => {
   const [show, setShow] = useState(false);
   const controllNavbar = () => {
@@ -30,6 +30,9 @@ export const StickyNavbar = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="d-flex flex-wrap align-items-center justify-content-between ">
+              <div>
+                <Img src={logo} alt=""/>
+              </div>
               <nav>
                 <Links to="/">Home</Links>
                 <Links to="/services">Services</Links>

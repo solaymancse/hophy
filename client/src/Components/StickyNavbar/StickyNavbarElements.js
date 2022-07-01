@@ -13,6 +13,18 @@ export const Links = styled(NavLink)`
     color: #333;
     margin-right: 20px;
     cursor: pointer;
-    font-weight: 600;
+    font-size: 14px;
+
+    &.active{
+        color: #34ace3;
+        border-bottom: 1px solid #34ace1;
+        padding-bottom: 10px;
+    }
+   
+
+`
+export const Img = styled.img`
+    width: 180px;
+    height: 40px;
 
 `
