@@ -102,7 +102,7 @@ export const H2 = styled.div`
 `;
 
 export const Button = styled.button`
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.428px;
   margin-top: 40px;
@@ -111,6 +111,11 @@ export const Button = styled.button`
   text-transform: uppercase;
   color: #fff;
   background: #34ace1;
+
+  &:hover{
+    background-color: #01D8DA;
+    color: #fff;
+  }
 
   @media screen and (max-width: 575px) {
     margin-top: -10px;
