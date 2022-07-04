@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   gap: 20px;
   padding: 50px 0;
 
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     padding: 10px 0;
   }
@@ -20,7 +20,7 @@ export const Left = styled.div`
   gap: 20px;
  
 
-  @media (min-width: 481px) and (max-width: 575px) {
+  @media (min-width: 481px) and (max-width: 768px) {
     flex-direction: column;
     padding: 0;
     
@@ -85,8 +85,20 @@ export const Div = styled.div`
     padding: 0 20%;
   }
 
-  @media (min-width: 481px) and (max-width: 575px) {
-   background-color: red;
+  @media (min-width: 769px) and (max-width: 991px) {
+    height: 65vh;
+    width: 100%;
+    img{
+        left: 15%;
+        top: 10%;
+    }
+    p{
+      top: 30%;
+    }
+    
+  
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
     height: 60vh;
     width: 100%;
     img{
@@ -110,11 +122,27 @@ export const Div = styled.div`
 export const Quote = styled(FaQuoteRight)`
   position: relative;
   top: 45%;
-  left: auto;
+  left: 10%;
+ 
   color: #fff;
   font-size: 40px;
   
 
+  @media (min-width: 1200px) and (max-width: 1399px) {
+   left:5%;
+   
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+   left:-2%;
+   
+  }
+  @media (min-width: 769px) and (max-width: 991px) {
+   left:-25%;
+   top:30%;
+  }
+  @media (min-width: 575px) and (max-width: 768px) {
+   left: 30%;
+  }
   @media (min-width: 481px) and (max-width: 575px) {
    left: 25%;
   }

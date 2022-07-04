@@ -8,6 +8,9 @@ import { MdCall,MdMailOutline,MdWeb,MdLocationOn } from 'react-icons/md';
 import { AiOutlineMail,AiOutlineCalendar,AiOutlineClockCircle } from "react-icons/ai";
 import hero1  from './images/hero1.jpg'
 import hero2  from './images/hero2.jpg'
+import img1  from './images/blog1.jpg'
+import img2  from './images/blog2.jpg'
+import img3  from './images/blog3.jpg'
 
 export const SidebarData = [
   {
@@ -268,4 +271,21 @@ export const docDegree = [
   {title:"Mole checks and monitoring"},
   {title:"Clinical Neurophysiology"},  
  
+];
+export const blogData = [
+  {
+    img:`${img1}`,
+    date:"February 11, 2022",
+    title:"Hand Washing: Why its really Important",
+  },
+  {
+    img:`${img2}`,
+    date:"February 11, 2022",
+    title:"Hand Washing: Why its really Important",
+  },
+  {
+    img:`${img3}`,
+    date:"February 11, 2022",
+    title:"Hand Washing: Why its really Important",
+  },
 ];

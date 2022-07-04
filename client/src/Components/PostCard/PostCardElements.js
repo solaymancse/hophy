@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-export const Card = styled.div``;
-
 export const PostItem = styled.div`
   padding-right: 69px;
 
@@ -14,13 +12,14 @@ export const Items = styled.div`
   border-bottom: 1px solid rgba(51, 51, 51, 0.15);
   margin-bottom: 27px;
   padding-bottom: 24px;
+  display: flex;
+  gap: 10px;
 
   @media screen and (max-width: 575px) {
     padding: 0;
   }
 `;
 export const Thumb = styled.div`
-  float: left;
   min-width: 138px;
   margin-right: 30px;
   overflow: hidden;
@@ -33,7 +32,10 @@ export const Thumb = styled.div`
     margin-bottom: 20px;
   }
 `;
-export const Content = styled.div``;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 export const A = styled.a`
   color: #333;
   text-decoration: none;
@@ -54,15 +56,15 @@ export const Title = styled.div`
   }
 `;
 export const Meta = styled.div`
-  display: flex;
-  align-items: center;
-
-  a{
+ 
+  a {
+   
+    width: 100%;
     display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
-
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    gap: 10px;
   }
   @media screen and (max-width: 575px) {
     padding-bottom: 15px;

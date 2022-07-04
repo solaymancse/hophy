@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.div`
   color: #707070;
+  margin-top: 50px;
   padding: 125px 0px;
   background: #333;
   width: 100%;
