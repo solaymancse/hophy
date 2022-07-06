@@ -11,38 +11,43 @@ import {
   Img,
   A,
 } from "./PostCardElements";
-import img from "../../images/post1.jpg";
+
 import { AiFillCalendar } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
+import { vlogData } from "../../Data";
 
 export const PostCard = () => {
   return (
     <>
       <PostItem>
-        <Items>
-          <Thumb>
-            <Links href="/">
-              <Img src={img} alt="/" />
-            </Links>
-          </Thumb>
-          <Content>
-            <Title>
-              <A href="/">Problems About Social Insurance For Truck Driver</A>
-            </Title>
-            <Meta>
-              <a href="/">
-                <Span>
-                  <AiFillCalendar />
-                </Span>
-                December 14th, 2022
-                <Span>
-                  <FaUserAlt />
-                </Span>
-                Admin
-              </a>
-            </Meta>
-          </Content>
-        </Items>
+        {vlogData.map((data) => (
+          <Items>
+            <Thumb>
+              <Links href="/">
+                <Img src={data.img} alt="/" />
+              </Links>
+            </Thumb>
+            <Content>
+              <Title>
+                <A href="/">{data.title}</A>
+              </Title>
+              <Meta>
+                <a href="/">
+                  <Span>
+                    <AiFillCalendar />
+                  </Span>
+                  December 14th, 2022
+                </a>
+                <a href="/">
+                  <Span>
+                    <FaUserAlt />
+                  </Span>
+                  Admin
+                </a>
+              </Meta>
+            </Content>
+          </Items>
+        ))}
       </PostItem>
     </>
   );

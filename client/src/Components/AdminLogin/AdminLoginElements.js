@@ -53,6 +53,7 @@ export const Img = styled.img`
   }
 `;
 export const Right = styled.div`
+background-color: #fff;
   width: 50%;
   height: 100%;
   padding: 50px;
@@ -62,6 +63,7 @@ export const Right = styled.div`
       margin-bottom: 20px;
   }
   p{
+    color: #7e7e7e;
       margin-bottom: 50px;
   }
    @media (min-width: 320px) and (max-width: 480px) {
@@ -78,6 +80,10 @@ export const Button = styled.button`
   color: #fff;
   font-weight: 600;
   margin-bottom: 20px;
+
+  &:hover{
+    background-color: #78E4CC;
+  }
 `;
 export const Div = styled.div`
   margin-top: 10px;

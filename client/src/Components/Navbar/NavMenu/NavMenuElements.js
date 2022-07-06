@@ -21,6 +21,11 @@ export const Links = styled(NavLink)`
   font-weight: normal;
   font-size: 14px;
 
+  &.active {
+    border-bottom: 2px solid #34ace1;
+    padding-bottom: 20px;
+    color: #34ace1;
+  }
   &:after {
     content: "";
     position: absolute;
@@ -51,8 +56,9 @@ export const Links = styled(NavLink)`
 export const Div = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -20px;
+  margin-left: 20px;
   gap: 10px;
+
 
   @media screen and (max-width: 991px) {
     display: none;
@@ -60,13 +66,13 @@ export const Div = styled.div`
 `;
 export const Button = styled.button`
   color: gray;
-  font-size: 25px;
+  font-size: 18px;
   border: none;
   background-color: #fff;
   transition: 0.5s all ease-in-out;
 `;
 export const InputBox = styled.div`
-z-index: 1;
+  z-index: 1;
   display: flex;
   padding: 10px 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -89,8 +95,6 @@ z-index: 1;
     padding: 10px;
     outline: none;
     border: none;
-   
-    
   }
 
   a {
@@ -106,7 +110,4 @@ export const InputBody = styled.div`
   display: flex;
   align-items: center;
   z-index: 9;
-  
-
-  
 `;

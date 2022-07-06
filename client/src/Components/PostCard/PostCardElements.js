@@ -13,16 +13,18 @@ export const Items = styled.div`
   margin-bottom: 27px;
   padding-bottom: 24px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
     padding: 0;
   }
 `;
 export const Thumb = styled.div`
-  min-width: 138px;
-  margin-right: 30px;
-  overflow: hidden;
+background-color: red;
+flex: 1;
+height: 150px;
+width:100%;
   position: relative;
   z-index: 1;
 
@@ -33,7 +35,9 @@ export const Thumb = styled.div`
   }
 `;
 export const Content = styled.div`
+flex: 2;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 `;
 export const A = styled.a`
@@ -77,6 +81,7 @@ export const Links = styled.a`
 `;
 export const Img = styled.img`
   width: 100%;
+  height: 100%;
 
   transition: all 0.3s;
 `;

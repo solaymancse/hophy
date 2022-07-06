@@ -3,16 +3,23 @@ import React from 'react'
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import axios from 'axios';
 import { AiFillEdit,AiFillDelete } from 'react-icons/ai'
+import styled from 'styled-components';
+
+import { PaginationMui } from './../../PaginationMui/PaginationMui';
 
 axios.defaults.withCredentials = true;
 
 
 export const ListTable = ({ data }) => {
 
+  const Wrapper = styled.div`
+    margin-top: -100px;
+    padding: 0 20px;
+  `
    
   
   return (
-    <div>
+    <Wrapper>
         <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
@@ -54,6 +61,9 @@ export const ListTable = ({ data }) => {
           </TableBody>
         </Table>
       </TableContainer>
-    </div>
+      <div> 
+        <PaginationMui/>
+      </div>
+    </Wrapper>
   )
 }

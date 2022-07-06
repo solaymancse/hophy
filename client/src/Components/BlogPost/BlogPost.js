@@ -44,7 +44,7 @@ export const BlogPost = () => {
           </Card>
         ))}
       </Wrapper>
-      <More>Read More</More>
+      <More to="/all-blog">Read More</More>
     </Container>
   );
 };

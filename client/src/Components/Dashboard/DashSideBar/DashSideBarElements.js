@@ -5,11 +5,11 @@ export const Wrapper = styled.div`
   flex: 1;
   padding-left: 40px;
   min-height: 100vh;
-  background-color: #34ace3;
+  background-color: #01d8da;
 `;
 export const Logo = styled.div`
   display: flex;
-  justify-content: center;
+ margin-left: 10px;
   align-items: center;
   margin-top: 20px;
 `;

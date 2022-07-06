@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   padding: 10px 0 50px 0;
@@ -108,18 +109,19 @@ export const Span = styled.span`
   align-items: center;
   gap: 5px;
 `;
-export const More = styled.div`
-width: 150px;
+export const More = styled(NavLink)`
+width: 100px;
 display: flex;
 justify-content: center;
 margin: auto;
 align-items: center;
   background-color: #fff;
   border: 1px solid #34ace3;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 12px;
   color: #333333;
+  text-decoration: none;
   
 
   &:hover{

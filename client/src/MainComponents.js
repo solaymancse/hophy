@@ -23,6 +23,11 @@ import { Profile } from './Components/Profile/Profile';
 import { useSelector } from 'react-redux';
 import { CommonLoginPage } from './Components/CommonLoginPage/CommonLoginPage';
 import { ViewProfile } from './Components/ViewProfile/ViewProfile';
+import { AllBlog } from './Components/AllBlog/AllBlog';
+import { DiagonesticCenter } from './Components/DiagonesticCenter/DiagonesticCenter';
+import { Medicine } from './Components/Medicine/Medicine';
+import { ManagementLogin } from "./Components/Team/Management/ManagementLogin";
+import { TeamLogin } from './Components/Team/TeamLogin';
 
 
 
@@ -43,6 +48,11 @@ export const MainComponents = () => {
         <Route path="/mission&vission" element={<MissionAndVission />} />
         <Route path="/admin" element={<AdminLogin />} />
         <Route path="/viewprofile" element={<ViewProfile />} />
+        <Route path="/all-blog" element={<AllBlog />} />
+        <Route path="/diagonestic" element={<DiagonesticCenter />} />
+        <Route path="/medicine" element={<Medicine />} />
+        <Route path="/Management/login" element={<ManagementLogin />} />
+        <Route path="/team/login" element={<TeamLogin />} />
         <Route path="*" element={<ErrorPage />} />
 
         <Route path="/dashboard/admin/*" element={<Dashboard />}>

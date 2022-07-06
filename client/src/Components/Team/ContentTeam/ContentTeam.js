@@ -1,6 +1,6 @@
 import React,{ useState,useEffect} from 'react'
+
 import { Top,Left,Button } from './../../Admin/AdminDetails/AdminDetailsElement';
-import { BiSearchAlt2 } from 'react-icons/bi';
 import { ListTable } from './../../Dashboard/ListTable/ListTable';
 import { ModalBox } from './../../Modal/ModalBox';
 import axios from 'axios';
@@ -40,10 +40,9 @@ export const ContentTeam = () => {
     <div>
        <Top>
         <Left>
-          <BiSearchAlt2/>
-          <input type="search" placeholder="Serach Admin"/>
+          <p>Content Team List</p>
         </Left>
-          <Button onClick={openModal}>Add Content Team</Button>
+          <Button onClick={openModal}>+</Button>
       </Top>
       <ListTable data={contentTeam}/>
       <ModalBox modalIsOpen={modalIsOpen} closeModal={closeModal} url="http://localhost:5000/api/contentSignup" formTitle="Add Content Team"/>

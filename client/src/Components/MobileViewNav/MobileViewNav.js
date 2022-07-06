@@ -27,7 +27,7 @@ export const MobileViewNav = () => {
               <H3 color="#333" style={{ fontSize: "12px" }}>
                 WORKING HOURS
               </H3>
-              <H1 color="#333">SAT - FRI : 9.00AM - 10.00PM</H1>
+              <H1 color="red">SAT - FRI : 9.00AM - 10.00PM</H1>
             </div>
           </List>
           <List color="#333">

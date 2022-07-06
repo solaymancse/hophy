@@ -1,12 +1,11 @@
-import React,{ useState,useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
-import { BiSearchAlt2 } from 'react-icons/bi';
-import { ModalBox } from '../../Modal/ModalBox';
-import { ListTable } from './../../Dashboard/ListTable/ListTable';
-import { Top,Left,Button } from './AdminDetailsElement';
-import axios from 'axios';
+import { ModalBox } from "../../Modal/ModalBox";
+import { ListTable } from "./../../Dashboard/ListTable/ListTable";
+import { Top, Left, Button } from "./AdminDetailsElement";
+import axios from "axios";
 
-axios.defaults.withCredentials=true;
+axios.defaults.withCredentials = true;
 
 export const AdminDetails = () => {
   const [admin, setAdmin] = useState([]);
@@ -15,41 +14,44 @@ export const AdminDetails = () => {
 
   const openModal = () => {
     SetIsOpen(true);
-  }
+  };
 
   const closeModal = () => {
     SetIsOpen(false);
-  }
-  
-  
-  const sendRequest = async () => {
+  };
 
-    const res = await axios.get("http://localhost:5000/api/getalladmins",{
-      withCredentials: true
-    })
-    .catch((err)=> console.log(err));
+  const sendRequest = async () => {
+    const res = await axios
+      .get("http://localhost:5000/api/getalladmins", {
+        withCredentials: true,
+      })
+      .catch((err) => console.log(err));
 
     const data = await res.data;
 
     return data;
-  }
+  };
 
-const url = "http://localhost:5000/api/adminSignup";
+  const url = "http://localhost:5000/api/adminSignup";
 
-  useEffect(()=> {
-    sendRequest().then((data)=> setAdmin(data));
+  useEffect(() => {
+    sendRequest().then((data) => setAdmin(data));
   });
   return (
     <>
       <Top>
         <Left>
-          <BiSearchAlt2/>
-          <input type="search" placeholder="Serach Admin"/>
+          <p>Admin List</p>
         </Left>
-          <Button onClick={openModal}>Add Admin</Button>
+        <Button onClick={openModal}>+</Button>
       </Top>
-      <ListTable data={admin}/>
-      <ModalBox modalIsOpen={modalIsOpen} formTitle="Add Admin" url={url} closeModal={closeModal}  />
+      <ListTable data={admin} />
+      <ModalBox
+        modalIsOpen={modalIsOpen}
+        formTitle="Add Admin"
+        url={url}
+        closeModal={closeModal}
+      />
     </>
-  )
-}
+  );
+};

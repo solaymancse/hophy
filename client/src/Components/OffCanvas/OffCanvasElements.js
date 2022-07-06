@@ -30,7 +30,7 @@ export const Links = styled(NavLink)`
   font-weight: 600;
 
   &:hover {
-    color: #34ace3;
+    color: #34ace1;
   }
 `;
 export const Items = styled.ul`
