@@ -34,12 +34,20 @@ const history = useNavigate();
     nid:''
 
   });
+
+  const [file,setFile] = useState(null);
+  const handleFileChange = (e) => {
+    const newFile = e.target.files[0];
+    setFile(newFile);
+  } 
   const { name,email,password,phone,title,address,nid } = user;
   const handleChange = (e)=> {
     setUser({ ...user, [e.target.name]: e.target.value})
   }
 
   const sendRequest = async () => {
+    const formData = new FormData();
+    formData.append('file',file);
     const res = await axios.post(url, {
         name,
         email,
@@ -92,6 +100,7 @@ const history = useNavigate();
           <input type="text" name="title" placeholder="Title"  onChange={handleChange}/>
           <input type="text" name="address" placeholder="Address"  onChange={handleChange}/>
           <input type="number" name="nid" placeholder="NID Number"  onChange={handleChange}/>
+          <input type="file" name="file" placeholder="Upload"  onChange={handleFileChange}/>
        
           <input type="submit" />
         </Form>

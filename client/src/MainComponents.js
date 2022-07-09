@@ -28,6 +28,7 @@ import { DiagonesticCenter } from './Components/DiagonesticCenter/DiagonesticCen
 import { Medicine } from './Components/Medicine/Medicine';
 import { ManagementLogin } from "./Components/Team/Management/ManagementLogin";
 import { TeamLogin } from './Components/Team/TeamLogin';
+import { Appointments } from "./Components/Appointments/Appointments";
 
 
 
@@ -60,8 +61,9 @@ export const MainComponents = () => {
           <Route path="adminDetails" element={<AdminDetails/>}/>
           <Route path="patients" element={<Patient/>}/>
           <Route path="doctors" element={<Doctor/>}/>
+          <Route path="appointments" element={<Appointments/>}/>
           <Route path="nurses" element={<Nurse/>}/>
-          <Route path="management" element={<Management/>}/>
+        { !isLoggedIn ||    (<Route path="management" element={<Management/>}/>)}
           <Route path="content-team" element={<ContentTeam/>}/>
           <Route path="profile" element={<Profile/>}/>
         </Route>

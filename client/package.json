@@ -19,6 +19,7 @@
     "material-ui-colors": "^1.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.2",
+    "react-calendar": "^3.7.0",
     "react-chartjs-2": "^4.0.1",
     "react-circular-progressbar": "^2.0.4",
     "react-collapse": "^5.1.1",

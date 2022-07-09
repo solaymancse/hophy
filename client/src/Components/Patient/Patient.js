@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { PaginationPage } from "./../Pagination/PaginationPage";
 import { ListTable } from './../Dashboard/ListTable/ListTable';
+import styled from 'styled-components';
 axios.defaults.withCredentials = true;
 
 export const Patient = () => {
@@ -33,19 +34,39 @@ export const Patient = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   // Search State
- 
+  const Wrapper = styled.div`
+
+`
+  const Div = styled.div`
+  margin-top: -50px;
+
+`
+  const H1 = styled.h1`
+  font-size: 16px;
+  background-color: #01D8DA;
+  width: 100%;
+  color: #fff;
+  height: 15vh;
+  font-weight: bold;
+  padding: 30px 0 0 20px;
+
+`
 
   return (
-    <div>
+    <Wrapper>
+      <H1>All Patient List</H1>
+      <Div>
+
       <ListTable data={currentPost}/>
 
       <PaginationPage
       loading={loading}
-        postPerPage={postPerPage}
-        totalPosts={patient.length}
-        paginate={paginate}
-        setPostPerPage={setPostPerPage}
+      postPerPage={postPerPage}
+      totalPosts={patient.length}
+      paginate={paginate}
+      setPostPerPage={setPostPerPage}
       />
-    </div>
+      </Div>
+    </Wrapper>
   );
 };

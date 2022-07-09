@@ -4,16 +4,13 @@ import React,{ useState } from "react";
 
 import img from "../../../images/profile1.png";
 import { AiOutlineSearch } from "react-icons/ai";
-// import { IoMdNotifications } from "react-icons/io";
-// import { BsChatLeft } from "react-icons/bs";
 import { FaUserTie } from 'react-icons/fa';
 import { FiEdit ,FiMail,FiHelpCircle} from 'react-icons/fi';
 import { AiFillSetting} from 'react-icons/ai';
 import { BiExit} from 'react-icons/bi';
+import axios from 'axios';
 import {
-
   Navbar,
-  NavWrap,
   Button,
   Left,
   Right,
@@ -25,20 +22,43 @@ import {
   List,
   H3,
   Span,
+  Notification,
+  NotiBadge,
+  Div
 } from "./HeaderElements";
 
-export const Header = () => {
+import { IoMdNotifications } from "react-icons/io";
+import { BsChatLeft } from "react-icons/bs";
+import { authActions } from './../../../Store/index';
+import { useDispatch } from 'react-redux'
+axios.defaults.withCredentials= true;
 
+
+export const Header = () => {
+const dispatch = useDispatch();
   const [show, setShow ] = useState(false);
 
   const menuShow = () => {
     setShow(!show);
   }
 
+  const sendLogoutReq = async () => {
+    const res = await axios.post("http://localhost:5000/api/adminLogout".null, {
+      withCredentials: true
+    });
+    if(res.status === 200){
+      return res
+    }
+    return new Error("Unable to Logout");
+  }
+  const handleLogout = () => {
+    sendLogoutReq().then(()=>dispatch(authActions.logout()))
+  }
+
   return (
     <Navbar>
-      <NavWrap>
-        <Button className=" d-lg-none" />
+    
+        <Button className="d-lg-none" />
         <Left>
           <Icon>
             <AiOutlineSearch />
@@ -46,18 +66,18 @@ export const Header = () => {
           <Input type="search" placeholder="Type to Search" />
         </Left>
         <Right>
-          {/* <div>
-            <Badge color="secondary" badgeContent={0} showZero>
+          <Notification>
+            <NotiBadge  color="primary" badgeContent={4} showZero>
               <IoMdNotifications />
-            </Badge>
-            <Badge color="secondary" badgeContent={0} showZero>
+            </NotiBadge>
+            <NotiBadge color="secondary" badgeContent={0} showZero>
               <BsChatLeft />
-            </Badge>
-          </div> */}
+            </NotiBadge>
+          </Notification>
           <Action>
-            <div onClick={menuShow}>
+            <Div onClick={menuShow}>
               <Img src={img} alt="" />
-            </div>
+            </Div>
            { show && (
               <Menu>
               <H3>
@@ -70,12 +90,12 @@ export const Header = () => {
               <List to="/"><FiMail/>Inbox</List>
               <List to="/"><AiFillSetting/>Setting</List>
               <List to="/"><FiHelpCircle/>Help</List>
-              <List to="/"><BiExit/>Log out</List>
+              <List to="/" onClick={handleLogout}><BiExit/>Log out</List>
             </Menu>
            )}
           </Action>
         </Right>
-      </NavWrap>
+     
     </Navbar>
   );
 };

@@ -14,6 +14,7 @@ import { Patient } from './../Patient/Patient';
 import { Doctor } from './../Doctor/Doctor';
 import { Nurse } from './../Nurse/Nurse';
 import { Profile } from './../Profile/Profile';
+import { Appointments } from './../Appointments/Appointments';
 
 export const Dashboard = () => {
   return (
@@ -28,6 +29,7 @@ export const Dashboard = () => {
             <Route path="content-team" element={<ContentTeam />} />
             <Route path="patients" element={<Patient/>}/>
           <Route path="doctors" element={<Doctor/>}/>
+          <Route path="appointments" element={<Appointments/>}/>
           <Route path="nurses" element={<Nurse/>}/>
           <Route path="profile" element={<Profile/>}/>
         </Routes>

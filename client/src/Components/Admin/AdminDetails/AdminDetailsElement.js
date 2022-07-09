@@ -33,3 +33,7 @@ export const Button = styled.button`
     transition: 0.3s ease-in-out;
   }
 `;
+export const Div = styled.div`
+margin-top: -100px;
+
+`

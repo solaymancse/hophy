@@ -1,54 +1,55 @@
 import styled from "styled-components";
 
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import { Badge } from "@material-ui/core";
 
 export const Navbar = styled.div`
-  background-color: rgb(255, 255, 255);
-  color: rgb(31, 32, 34);
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-`;
-
-export const NavWrap = styled.div`
-  width: 100%;
-  height: 60px;
+  background-color: #01d8da;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  z-index: 1;
 `;
 export const Button = styled.button``;
 export const Img = styled.img`
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   cursor: pointer;
 `;
 export const Left = styled.div`
   display: flex;
-  width: 300px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   align-items: center;
-  border-bottom: 0.5px solid lightgray;
+  border: 0.5px solid #fff;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 20px;
+
   &:hover {
     box-shadow: 10px;
+    background-color: #ebebeb;
+    transition: 0.5s ease-in-out;
+    color: #333;
   }
 `;
 export const Icon = styled.div`
   font-size: 18px;
   flex: 1;
+  color: #fff;
 `;
 
 export const Input = styled.input`
   border: none;
-  background-color: #ebebeb;
-  background: transparent;
-  border-radius: 20px;
-  height: 100%;
-
-  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  background-color: transparent;
   flex: 6;
   outline: none;
 
@@ -57,11 +58,19 @@ export const Input = styled.input`
   }
 `;
 export const Right = styled.div`
-  position: fixed;
-  top: 20px;
-  right: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
   z-index: 1;
   transition: 0.5s;
+  justify-content: space-between;
+`;
+export const Notification = styled.div`
+  display: flex;
+  gap: 20px;
+`;
+export const NotiBadge = styled(Badge)`
+  color: #fff;
 `;
 export const Action = styled.div`
   top: 10px;
@@ -70,7 +79,7 @@ export const Action = styled.div`
 `;
 export const Menu = styled.div`
   position: absolute;
-  top: 50px;
+  top: 70px;
   right: 0px;
   margin-top: 10px;
   padding: 30px;
@@ -81,7 +90,6 @@ export const Menu = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px;
   transition: 0.5s ease-in;
-  
 `;
 export const List = styled(NavLink)`
   text-decoration: none;
@@ -106,4 +114,16 @@ export const H3 = styled.h3`
 export const Span = styled.span`
   font-size: 14px;
   color: gray;
+`;
+export const Div = styled.div`
+border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  overflow: hidden;
+  object-fit: cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  
 `;

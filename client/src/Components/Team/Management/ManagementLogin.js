@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import swal from 'sweetalert';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import logo from "../../../images/brand5.png";
@@ -28,7 +29,7 @@ export const ManagementLogin = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .post("http://localhost:5000/api/adminlogin", {
+      .post("http://localhost:5000/api//management/login", {
         email: email,
         password: password,
       })
@@ -42,6 +43,12 @@ export const ManagementLogin = () => {
     e.preventDefault();
 
     sendRequest().then(() => history("/dashboard/admin"));
+    swal({
+      title: "Good job!",
+      text: "You clicked the button!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
   };
   return (
     <Wrapper>

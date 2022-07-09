@@ -13,7 +13,7 @@ axios.defaults.withCredentials = true;
 export const ListTable = ({ data }) => {
 
   const Wrapper = styled.div`
-    margin-top: -100px;
+  
     padding: 0 20px;
   `
    
@@ -47,9 +47,9 @@ export const ListTable = ({ data }) => {
                 </TableCell>
                 <TableCell align="left">{row.name}</TableCell>
                 <TableCell align="left">
-                  <cellWarapper>
+                  
                  {row.email}
-                  </cellWarapper>
+               
                 </TableCell>
                 <TableCell align="left">{row.phone}</TableCell>
                 <TableCell align="left">{row.engagedDate}</TableCell>

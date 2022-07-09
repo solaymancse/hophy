@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
+import swal from 'sweetalert';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/brand5.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosLock } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { authActions } from './../../Store/index';
 import {
+
   Wrapper,
   Login,
   Left,
@@ -16,6 +20,7 @@ import {
 } from "./AdminLoginElements";
 
 export const AdminLogin = () => {
+  const dispatch = useDispatch();
   const history = useNavigate();
   const [admin, setAdmin] = useState({
     email: "",
@@ -42,7 +47,13 @@ export const AdminLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendRequest().then(() => history("/dashboard/admin"));
+    sendRequest().then(()=>dispatch(authActions.login())).then(() => history("/dashboard/admin"));
+    swal({
+      title: "Welcome Admin",
+      text: "You Successfully Logged In",
+      icon: "success",
+      button: "Aww yiss!",
+    });
   };
   return (
     <Wrapper>

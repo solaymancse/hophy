@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { ModalBox } from "../../Modal/ModalBox";
 import { ListTable } from "./../../Dashboard/ListTable/ListTable";
-import { Top, Left, Button } from "./AdminDetailsElement";
+import { Top, Left, Button,Div } from "./AdminDetailsElement";
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
@@ -45,13 +45,16 @@ export const AdminDetails = () => {
         </Left>
         <Button onClick={openModal}>+</Button>
       </Top>
+      <Div>
+
       <ListTable data={admin} />
       <ModalBox
         modalIsOpen={modalIsOpen}
         formTitle="Add Admin"
         url={url}
         closeModal={closeModal}
-      />
+        />
+        </Div>
     </>
   );
 };
