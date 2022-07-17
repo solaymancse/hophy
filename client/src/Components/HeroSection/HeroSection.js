@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation,EffectFade } from "swiper";
-import hero1 from "../../images/hero1.jpg";
+import hero1 from "../../images/slide1.jpg";
 import hero2 from "../../images/hero2.jpg";
 import {
   Wrapper,
@@ -48,7 +48,7 @@ export const HeroSection = () => {
             <Img src={hero1} alt="" />
             <Content>
               <P>FEEL THE DIFFERENCE WITH US</P>
-              <H1 color="#333" data-aos="fade-right">
+              <H1 color="#fff" data-aos="fade-right">
                 Your Heath Is <br />
                 <Span>Our Priority</Span>
               </H1>
@@ -74,7 +74,7 @@ export const HeroSection = () => {
               <P>FEEL THE DIFFERENCE WITH US</P>
               <H1 color="#fff" data-aos="fade-right">
                Happy Life<br />
-                <Span style={{color:"#fff"}}>Brighter Smiles</Span>
+                <Span>Brighter Smiles</Span>
               </H1>
               <BtnDiv>
                 <Links className="btn me-3" to="/services">

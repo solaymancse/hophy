@@ -56,17 +56,17 @@ export const MainComponents = () => {
         <Route path="/team/login" element={<TeamLogin />} />
         <Route path="*" element={<ErrorPage />} />
 
-        <Route path="/dashboard/admin/*" element={<Dashboard />}>
+      {isLoggedIn &&  <Route path="/dashboard/admin/*" element={<Dashboard />}>
           <Route index element={<DashHome/>}/>
           <Route path="adminDetails" element={<AdminDetails/>}/>
           <Route path="patients" element={<Patient/>}/>
           <Route path="doctors" element={<Doctor/>}/>
           <Route path="appointments" element={<Appointments/>}/>
           <Route path="nurses" element={<Nurse/>}/>
-        { !isLoggedIn ||    (<Route path="management" element={<Management/>}/>)}
+       <Route path="management" element={<Management/>}/>
           <Route path="content-team" element={<ContentTeam/>}/>
           <Route path="profile" element={<Profile/>}/>
-        </Route>
+        </Route>}
      
 
        

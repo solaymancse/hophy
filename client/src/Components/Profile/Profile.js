@@ -49,12 +49,10 @@ export const Profile = () => {
       .get("http://localhost:5000/api/user", {
         withCredentials: true,
       })
-      .catch(err => console.log(err));
+      .catch((err) => console.log(err));
 
     const data = await res.data;
     return data;
-
-    
   };
   useEffect(() => {
     sendRequest().then((data) => setAdmin(data.user));
@@ -71,13 +69,8 @@ export const Profile = () => {
           </ProfileImage>
           <Description>
             <div>
-            {admin && <H3>{admin.name}</H3>}
-                {/* <H3>
-                  sss
-                  <br />
-                  <Span>CEO & Founder</Span>
-                </H3> */}
-             
+              {admin && <H3>{admin.name}</H3>}
+              {admin && <Span>{admin.title}</Span>}
             </div>
             <div>
               <H5>

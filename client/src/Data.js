@@ -15,7 +15,7 @@ import {
   AiOutlineCalendar,
   AiOutlineClockCircle,
 } from "react-icons/ai";
-import hero1 from "./images/hero1.jpg";
+import hero1 from "./images/hero3.jpg";
 import hero2 from "./images/hero2.jpg";
 import img1 from "./images/blog1.jpg";
 import img2 from "./images/blog2.jpg";

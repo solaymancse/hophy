@@ -87,7 +87,7 @@ export const H1 = styled.div`
 `;
 export const Span = styled.div`
   font-size: 90px;
-  color: #333;
+  color: #fff;
   font-weight: 300;
 
   @media (min-width: 768px) and (max-width: 1280px) {
