@@ -58,6 +58,11 @@ export const SidebarData = [
 
 export const dashSideData = [
   {
+    title: "Post",
+    path: "posts",
+    icon: <BsPersonPlusFill />,
+  },
+  {
     title: "Admin",
     path: "adminDetails",
     icon: <BsPersonPlusFill />,
@@ -102,6 +107,10 @@ export const navMenuData = [
   {
     link: "/contact",
     title: "Contact",
+  },
+  {
+    link: "/event",
+    title: "Events",
   },
 ];
 

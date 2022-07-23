@@ -19,6 +19,7 @@ import styled from "styled-components";
 import { TopColumn } from './../Components/TopColumn/TopColumn';
 import { GetInTouch } from './../Components/GetInTouch/GetInTouch';
 import { BlogPost } from './../Components/BlogPost/BlogPost';
+import { Event } from './../Components/Event/Event'
 
 
 
@@ -64,6 +65,7 @@ export const HomeSection = () => {
       <GetInTouch/>
       <Blog />
       <BlogPost/>
+      <Event/>
       <Footer />
       <FooterBottom />
     </Div>

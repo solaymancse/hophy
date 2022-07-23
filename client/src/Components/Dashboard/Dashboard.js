@@ -10,11 +10,12 @@ import { AdminDetails } from "./../Admin/AdminDetails/AdminDetails";
 
 import { ContentTeam } from "./../Team/ContentTeam/ContentTeam";
 import { Management } from "../Team/Management/Management";
-import { Patient } from './../Patient/Patient';
-import { Doctor } from './../Doctor/Doctor';
-import { Nurse } from './../Nurse/Nurse';
-import { Profile } from './../Profile/Profile';
-import { Appointments } from './../Appointments/Appointments';
+import { Patient } from "./../Patient/Patient";
+import { Doctor } from "./../Doctor/Doctor";
+import { Nurse } from "./../Nurse/Nurse";
+import { Profile } from "./../Profile/Profile";
+import { Appointments } from "./../Appointments/Appointments";
+import { Posts } from './Posts/Posts';
 
 export const Dashboard = () => {
   return (
@@ -23,15 +24,16 @@ export const Dashboard = () => {
       <Container>
         <Header />
         <Routes>
-          <Route index element={<DashHome />}/>
-            <Route path="adminDetails" element={<AdminDetails />} />
-            <Route path="management" element={<Management />} />
-            <Route path="content-team" element={<ContentTeam />} />
-            <Route path="patients" element={<Patient/>}/>
-          <Route path="doctors" element={<Doctor/>}/>
-          <Route path="appointments" element={<Appointments/>}/>
-          <Route path="nurses" element={<Nurse/>}/>
-          <Route path="profile" element={<Profile/>}/>
+          <Route index element={<DashHome />} />
+          <Route path="adminDetails" element={<AdminDetails />} />
+          <Route path="management" element={<Management />} />
+          <Route path="content-team" element={<ContentTeam />} />
+          <Route path="patients" element={<Patient />} />
+          <Route path="doctors" element={<Doctor />} />
+          <Route path="appointments" element={<Appointments />} />
+          <Route path="nurses" element={<Nurse />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="posts" element={<Posts />} />
         </Routes>
       </Container>
     </Wrapper>

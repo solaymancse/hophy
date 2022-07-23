@@ -31,6 +31,7 @@ import { IoMdNotifications } from "react-icons/io";
 import { BsChatLeft } from "react-icons/bs";
 import { authActions } from './../../../Store/index';
 import { useDispatch } from 'react-redux'
+import { swal } from 'sweetalert';
 axios.defaults.withCredentials= true;
 
 
@@ -43,7 +44,7 @@ const dispatch = useDispatch();
   }
 
   const sendLogoutReq = async () => {
-    const res = await axios.get("http://localhost:5000/api/adminlogout",null, {
+    const res = await axios.get("/api/adminlogout",null, {
       withCredentials: true
     });
     if(res.status === 200){
@@ -53,6 +54,12 @@ const dispatch = useDispatch();
   }
   const handleLogout = () => {
     sendLogoutReq().then(()=>dispatch(authActions.logout()))
+    swal({
+      title: "Logged Out",
+      text: "You Successfully Logged Out",
+      icon: "success",
+      button: "Aww yiss!",
+    });
   }
 
   return (

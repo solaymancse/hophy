@@ -1,28 +1,26 @@
 import React from "react";
-import { Card, CardGroup,Button} from "react-bootstrap";
-import { Title,Text } from './../DoctorCard/DoctorCardElements';
-
-
-
+import { Card, CardGroup } from "react-bootstrap";
+import { Title, Text, Button } from "./../DoctorCard/DoctorCardElements";
 
 export const NurseCard = (props) => {
-    const { name,title, img } = props;
+  const { name, title, img } = props;
   return (
     <div>
       <CardGroup>
-        <Card >
-          <Card.Img variant="top" style={{height:"300px",width:"100%"}} src={img} />
+        <Card>
+          <Card.Img
+            variant="top"
+            style={{ height: "300px", width: "100%",objectFit:"cover" }}
+            src={img}
+          />
           <Card.Body>
             <Title>{name}</Title>
             <Text>{title}</Text>
           </Card.Body>
-          
-            <Button style={{marginTop:"30px",backgroundColor: '#34ACE1',outLine:'none',border:'none'}}href="/">VIEW PROFILE</Button>
-         
+
+          <Button to="/">VIEW PROFILE</Button>
         </Card>
       </CardGroup>
     </div>
   );
 };
-
-

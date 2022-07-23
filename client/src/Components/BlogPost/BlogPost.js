@@ -23,8 +23,8 @@ export const BlogPost = () => {
     <Container>
       <H1>Health Blog</H1>
       <Wrapper>
-        {blogData.map((data) => (
-          <Card>
+        {blogData.map((data,index) => (
+          <Card key={index}>
             <Image>
               <Img src={data.img} alt="" />
             </Image>

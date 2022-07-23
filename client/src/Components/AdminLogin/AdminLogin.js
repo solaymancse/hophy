@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 
-import swal from 'sweetalert';
+import swal from "sweetalert";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import logo from "../../images/brand5.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosLock } from "react-icons/io";
 import { useDispatch } from "react-redux";
-import { authActions } from './../../Store/index';
+import { authActions } from "./../../Store/index";
+import logo from "../../images/brand5.png";
 import {
-
   Wrapper,
   Login,
   Left,
@@ -41,19 +40,28 @@ export const AdminLogin = () => {
       .catch((err) => console.log(err));
 
     const data = await res.data;
-
+    swal({
+      title: "Welcome Admin",
+      text: data.message,
+      icon: "success",
+      button: "Aww yiss!",
+    });
     return data;
   };
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    sendRequest().then(()=>dispatch(authActions.login())).then(() => history("/dashboard/admin"));
-    swal({
-      title: "Welcome Admin",
-      text: "You Successfully Logged In",
-      icon: "success",
-      button: "Aww yiss!",
-    });
+    sendRequest()
+      .then(() => dispatch(authActions.login()))
+      .then(() => history("/dashboard/admin"))
+      .catch((err) => {
+        swal({
+          title: "Oops!!",
+          text: err.data.message,
+          icon: "error",
+          button: "Ok!",
+        });
+      });
   };
   return (
     <Wrapper>
@@ -63,7 +71,7 @@ export const AdminLogin = () => {
         </Left>
         <Right>
           <div>
-           <h1 style={{ fontSize: "22px" }}>Login</h1>
+            <h1 style={{ fontSize: "22px" }}>Login</h1>
             <p>Access to Admin dashboard</p>
 
             <form onSubmit={handleSubmit}>
@@ -86,10 +94,10 @@ export const AdminLogin = () => {
                   name="password"
                   onChange={handleChange}
                 />
-              </Div> 
-                <Button className="btn btn-block" type="submit">
-                  Login
-                </Button>
+              </Div>
+              <Button className="btn btn-block" type="submit">
+                Login
+              </Button>
             </form>
 
             <div className="text-center forgotpass">

@@ -27,8 +27,8 @@ export const AllBlog = () => {
         <H1>All Blog Post</H1>
         <P>Blog/All Blog</P>
         <Wrapper>
-          {blogData.map((data) => (
-            <Card data-aos="fade-up">
+          {blogData.map((data,index) => (
+            <Card data-aos="fade-up" key={index}>
               <Image>
                 <Img src={data.img} alt="" />
               </Image>
@@ -49,8 +49,8 @@ export const AllBlog = () => {
           ))}
         </Wrapper>
         <Wrapper>
-          {blogData.map((data) => (
-            <Card data-aos="fade-up">
+          {blogData.map((data,index) => (
+            <Card data-aos="fade-up" key={index}>
               <Image>
                 <Img src={data.img} alt="" />
               </Image>

@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import img1 from '../../images/nurse1.png'
 import img2 from '../../images/nurse2.png'
 import img3 from '../../images/nurse3.png'
 
@@ -33,9 +32,9 @@ export const NurseSlider = () => {
         <FlexBox>
       
           <NurseCard
-            name="Ariful Islam"
-            title="Nurse at Chattogram Medical College Hospital"
-            img={img1}
+            name="Jupshi Barua"
+            title="Senior Nurse at Park view Hospital Chittagong"
+            img={img3}
             
           />
         </FlexBox>
@@ -47,14 +46,7 @@ export const NurseSlider = () => {
             img={img2}
           />
         </FlexBox>
-        <FlexBox>
        
-          <NurseCard
-            name="Jupshi Barua"
-            title="Senior Nurse at Park view Hospital"
-            img={img3}
-          />
-        </FlexBox>
        
       </Carousel>
     </div>

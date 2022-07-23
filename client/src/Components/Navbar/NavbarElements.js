@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-background: #34ace1;
+background: #34ace3;
   height: 150px;
   width: 100%;
   align-items: center;

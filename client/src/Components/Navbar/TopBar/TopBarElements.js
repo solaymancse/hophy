@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { GoThreeBars } from "react-icons/go";
 
 export const Wrapper = styled.div`
-  background: #34ace1;
+  background: #34ace3;
   
 
   
