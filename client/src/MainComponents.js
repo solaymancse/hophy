@@ -33,6 +33,7 @@ import { EventPage } from "./pages/EventPage";
 import { Posts } from './Components/Dashboard/Posts/Posts';
 
 export const MainComponents = () => {
+  
   const isLoggedIn = useSelector((state) => state.isLoggedIn);
   console.log(isLoggedIn);
   return (
