@@ -31,6 +31,8 @@ import { TeamLogin } from "./Components/Team/TeamLogin";
 import { Appointments } from "./Components/Appointments/Appointments";
 import { EventPage } from "./pages/EventPage";
 import { Posts } from './Components/Dashboard/Posts/Posts';
+import { SingleBlog } from './Components/AllBlog/SingleBlog';
+import { SingleEvent } from './Components/Event/SingleEvent';
 
 export const MainComponents = () => {
   
@@ -56,6 +58,8 @@ export const MainComponents = () => {
         <Route path="/Management/login" element={<ManagementLogin />} />
         <Route path="/team/login" element={<TeamLogin />} />
         <Route path="/event" element={<EventPage />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
+        <Route path="/event/:id" element={<SingleEvent />} />
         <Route path="*" element={<ErrorPage />} />
 
         {isLoggedIn && (

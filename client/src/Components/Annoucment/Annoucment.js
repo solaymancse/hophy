@@ -1,25 +1,47 @@
 import React from 'react'
 
-import img from '../../images/brand6.png'
-import { Container,Left, Right, Img ,H1,Button,Input } from './AnnoucmentElements'
+
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import img from '../../images/event1.jpg'
+
+// import { Container,Left, Img ,Button } from './AnnoucmentElements'
 
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 580,
+  bgcolor: 'background.paper',
+  border: 'none',
+  boxShadow: 24,
 
-export const Annoucment = ({closeModal}) => {
-   
+};
+
+export const Annoucment = ({closeModal,handleOpen,handleClose}) => {
+  
   
   return (
- <Container>
-        <Left>
-            <Img src={img} alt="logo"/>
-        </Left>
-        <Right>
-            <H1>The Site is Under Construction !</H1>
-            <p>Subscribe for notify</p>
-            <Input type="email" placeholder='Email'/> 
-            <Button color='#34ace3'>Subscribe</Button>
-            <Button color='red' onClick={()=> closeModal(false)}>Close</Button>
-        </Right>
-    </Container>
+    <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={handleOpen}
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={handleOpen}>
+          <Box sx={style}>
+            <img style={{width:'600px',height:"350px"}} src={img} alt="event"/>
+          </Box>
+        </Fade>
+      </Modal>
   )
 }

@@ -16,6 +16,7 @@ import { Nurse } from "./../Nurse/Nurse";
 import { Profile } from "./../Profile/Profile";
 import { Appointments } from "./../Appointments/Appointments";
 import { Posts } from './Posts/Posts';
+import { NewEvents } from './NewEvents/NewEvents';
 
 export const Dashboard = () => {
   return (
@@ -34,6 +35,7 @@ export const Dashboard = () => {
           <Route path="nurses" element={<Nurse />} />
           <Route path="profile" element={<Profile />} />
           <Route path="posts" element={<Posts />} />
+          <Route path="event" element={<NewEvents />} />
         </Routes>
       </Container>
     </Wrapper>

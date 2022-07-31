@@ -7,9 +7,9 @@ import {
   SiStyleshare,
 } from "react-icons/si";
 import { RiAppsFill } from "react-icons/ri";
-import { FaUserMd, FaUserNurse, FaUserTie } from "react-icons/fa";
+import { FaUserMd, FaUserNurse, FaUserTie,FaBlogger } from "react-icons/fa";
 import { BsPersonPlusFill } from "react-icons/bs";
-import { MdCall, MdMailOutline, MdWeb, MdLocationOn } from "react-icons/md";
+import { MdCall, MdMailOutline, MdWeb, MdLocationOn,MdEventAvailable } from "react-icons/md";
 import {
   AiOutlineMail,
   AiOutlineCalendar,
@@ -58,9 +58,14 @@ export const SidebarData = [
 
 export const dashSideData = [
   {
-    title: "Post",
+    title: "Blog",
     path: "posts",
-    icon: <BsPersonPlusFill />,
+    icon: <FaBlogger />,
+  },
+  {
+    title: "Event",
+    path: "event",
+    icon: <MdEventAvailable />,
   },
   {
     title: "Admin",

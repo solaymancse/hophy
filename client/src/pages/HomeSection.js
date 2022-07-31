@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar } from "../Components/Navbar/Navbar";
 import { ScrollBtn } from "./../Components/ScrollBtn/ScrollBtn";
 import { HeroSection } from "./../Components/HeroSection/HeroSection";
@@ -13,48 +13,32 @@ import { Footer } from "../Components/Footer/Footer";
 import { FooterBottom } from "./../Components/FooterBottom/FooterBottom";
 import { NurseArea } from "../Components/NurseArea/NurseArea";
 import { StickyNavbar } from "../Components/StickyNavbar/StickyNavbar";
-import styled from "styled-components";
-
-// import { Annoucment } from "../Components/Annoucment/Annoucment";
-import { TopColumn } from './../Components/TopColumn/TopColumn';
-import { GetInTouch } from './../Components/GetInTouch/GetInTouch';
-import { BlogPost } from './../Components/BlogPost/BlogPost';
-import { Event } from './../Components/Event/Event'
-
-
-
-
-const Div = styled.div`
-  position: relative;
-`;
-// const AnnoucmentContainer = styled.div`
-//   position: absolute;
-//   top: 550px;
-//   left: 50%;
-//   transform: translate(-50%,-50%);
-//   background-color: #fff;
-//   width: 600px;
-//   height: 400px;
-//   z-index: 1;
-// `;
+import { Annoucment } from "../Components/Annoucment/Annoucment";
+import { TopColumn } from "./../Components/TopColumn/TopColumn";
+import { GetInTouch } from "./../Components/GetInTouch/GetInTouch";
+import { BlogPost } from "./../Components/BlogPost/BlogPost";
+import { Event } from "./../Components/Event/Event";
 
 export const HomeSection = () => {
-  // const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(true);
 
- 
-
- 
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
-    <Div>
-     {/* { open &&  <AnnoucmentContainer>
-      <Annoucment closeModal={setOpen}/>
-      </AnnoucmentContainer>} */}
+    <>
+      {open && (
+        <Annoucment
+          closeModal={setOpen}
+          handleOpen={handleOpen}
+          handleClose={handleClose}
+        />
+      )}
       <StickyNavbar />
       <Navbar />
       <ScrollBtn />
       <HeroSection />
-      <TopColumn/>
+      <TopColumn />
       <StaticMedia />
       <FeatureSection />
       <BookAppointment />
@@ -62,12 +46,12 @@ export const HomeSection = () => {
       <NurseArea />
       <Testomonial />
       <OurPartnar />
-      <GetInTouch/>
+      <GetInTouch />
       <Blog />
-      <BlogPost/>
-      <Event/>
+      <BlogPost />
+      <Event />
       <Footer />
       <FooterBottom />
-    </Div>
+    </>
   );
 };

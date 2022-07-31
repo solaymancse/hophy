@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 200px;
+  left: 40%;
+ 
+  background: red;
+  width: 500px;
+  height: 300px;
+  z-index: 9999999;
 `;
 export const Left = styled.div`
   width: 100%;
@@ -18,31 +22,7 @@ export const Img = styled.img`
   width: 170px;
   height: 40px;
 `;
-export const Right = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  width: 100%;
-  font-family: "Oswald", sans-serif;
 
-  &:before {
-    content: "Notice";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-
-    width: 100px;
-    height: 40px;
-    background-color: red;
-    top: 10px;
-    right: 10px;
-  }
-`;
 export const H1 = styled.h1`
   font-size: 24px;
   font-family: "Oswald", sans-serif;

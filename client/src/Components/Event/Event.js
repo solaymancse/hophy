@@ -1,10 +1,11 @@
-import React from "react";
+import React ,{useState,useEffect} from "react";
 
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { AiFillCalendar } from "react-icons/ai";
 import { Container } from "react-bootstrap";
-import img from '../../images/e1.jpg'
+import axios  from 'axios';
 import {
+
   Wrapper,
   Card,
   Top,
@@ -16,63 +17,47 @@ import {
   Title,
   Heading
 } from "./EventElement";
-
+axios.defaults.withCredentials = true;
 export const Event = () => {
+  const [posts,setPosts] = useState([]);
+
+  const postRequest = async ()=> {
+    const res = await axios.get('http://localhost:5000/api/allposts',{
+      withCredentials:true
+    })
+    .catch((err) => console.log(err));
+    const data = await res.data;
+    return data;
+  }
+  console.log(posts);
+  useEffect(()=>{
+    postRequest().then((data)=> setPosts(data))
+  },[]);
   return (
     <Container>
         <Heading>EVENTS</Heading>
       <Wrapper>
-        <Card>
-          <Top bgImg={img}>
-            <Content >
-              <H1>Event Trends Live IMEX</H1>
-              <Desc>
-                Join us for the next webinar
-                <br />
-                on Octobar 16,2022
-              </Desc>
-            </Content>
-          </Top>
-          <Bottom>
-            <Date><AiFillCalendar/>16 Oct, 2022</Date>
-            <Title>Event Trends Live form IMex</Title>
-            <HiOutlineArrowNarrowRight />
-          </Bottom>
-        </Card>
-        <Card>
-          <Top bgImg={img}>
-            <Content >
-              <H1>Event Trends Live IMEX</H1>
-              <Desc>
-                Join us for the next webinar
-                <br />
-                on Octobar 16,2022
-              </Desc>
-            </Content>
-          </Top>
-          <Bottom>
-            <Date><AiFillCalendar/>16 Oct, 2022</Date>
-            <Title>Event Trends Live form IMex</Title>
-            <HiOutlineArrowNarrowRight />
-          </Bottom>
-        </Card>
-        <Card>
-          <Top bgImg={img}>
-            <Content >
-              <H1>Event Trends Live IMEX</H1>
-              <Desc>
-                Join us for the next webinar
-                <br />
-                on Octobar 16,2022
-              </Desc>
-            </Content>
-          </Top>
-          <Bottom>
-            <Date><AiFillCalendar/>16 Oct, 2022</Date>
-            <Title>Event Trends Live form IMex</Title>
-            <HiOutlineArrowNarrowRight />
-          </Bottom>
-        </Card>
+       {posts.map((post,index)=> (
+         <Card key={index}>
+         <Top bgImg={post.postImage}>
+           <Content >
+             <H1>{post.title}</H1>
+             <Desc>
+               {post.miniDesc}
+               <br />
+               on Octobar 16,2022
+             </Desc>
+           </Content>
+         </Top>
+         <Bottom>
+           <Date><AiFillCalendar/>16 Oct, 2022</Date>
+           <Title>{post.title}</Title>
+           <HiOutlineArrowNarrowRight />
+         </Bottom>
+       </Card>
+       ))}
+      
+       
       </Wrapper>
     </Container>
   );

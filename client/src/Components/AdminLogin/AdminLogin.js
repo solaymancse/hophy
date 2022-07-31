@@ -17,7 +17,7 @@ import {
   Button,
   Div,
 } from "./AdminLoginElements";
-
+const baseUrl = "http://localhost:5000/api";
 export const AdminLogin = () => {
   const dispatch = useDispatch();
   const history = useNavigate();
@@ -33,7 +33,7 @@ export const AdminLogin = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .post("http://localhost:5000/api/adminlogin", {
+      .post(`${baseUrl}/adminlogin`, {
         email: email,
         password: password,
       })
@@ -41,7 +41,7 @@ export const AdminLogin = () => {
 
     const data = await res.data;
     swal({
-      title: "Welcome Admin",
+      title: "Welcome Anik",
       text: data.message,
       icon: "success",
       button: "Aww yiss!",
