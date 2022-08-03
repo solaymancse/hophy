@@ -20,7 +20,7 @@ import logo from '../../images/brand5.png'
 import { MdCall } from 'react-icons/md';
 import { FaLock } from 'react-icons/fa';
 import { GrFormClose } from 'react-icons/gr';
-import  axios from 'axios';
+import {Axios} from '../../../src/config'
 import { useNavigate } from 'react-router-dom';
 
 export const SignUpForm = ({closeModal}) => {
@@ -38,7 +38,7 @@ export const SignUpForm = ({closeModal}) => {
   };
 
   const sendRequest = async () => {
-    const res = await axios.post("http://localhost:5000/api/patientSignup", {
+    const res = await Axios.post("patientSignup", {
       phone,
       password,
     })

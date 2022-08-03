@@ -8,9 +8,8 @@ import {
 } from "./../../Admin/AdminDetails/AdminDetailsElement";
 import { ListTable } from "../../Dashboard/ListTable/ListTable";
 import { ModalBox } from "./../../Modal/ModalBox";
-import axios from "axios";
+import {Axios} from '../../../config'
 
-axios.defaults.withCredentials = true;
 
 export const Management = () => {
   const [management, setManagement] = useState([]);
@@ -25,8 +24,8 @@ export const Management = () => {
   };
 
   const sendRequest = async () => {
-    const res = await axios
-      .get("http://localhost:5000/api/getallmanagements", {
+    const res = await Axios
+      .get("getallmanagements", {
         withCredentials: true,
       })
       .catch((err) => console.log(err));

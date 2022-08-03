@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Form } from 'react-bootstrap';
 import { Button } from '@mui/material';
-import axios from 'axios';
+import {Axios} from '../../httpServices/requests'
 import {
 
     Paper,
@@ -36,7 +36,7 @@ const handleFileChange = (e) => {
         formData.append('date', date);
         formData.append('time', time);
 
-        axios.post("http://localhost:5000/api/addevent", formData)
+        Axios.post("addevent", formData)
         .then((res)=> console.log(res.data))
         .catch((err) => {
             console.error(err);

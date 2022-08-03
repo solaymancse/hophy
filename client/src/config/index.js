@@ -1,4 +1,3 @@
-// 
 import axios from "axios";
 const isLocalhost = Boolean(
   window.location.hostname === "localhost" ||

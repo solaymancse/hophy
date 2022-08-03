@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 
+import {Axios} from '../../config';
 import { Wrapper } from "./PostsElement";
-import axios from 'axios';
 import { PostTable } from './PostTable';
 
 
@@ -9,7 +9,7 @@ export const Posts = () => {
   const [getPosts,setGetPosts] = useState([]);
 
   const postRequest = async ()=> {
-    const res = await axios.get('http://localhost:5000/api/allposts',{
+    const res = await Axios.get('allposts',{
       withCredentials:true
     })
     .catch((err) => console.log(err));
@@ -41,7 +41,7 @@ const {postImage,title,miniDesc,description} = post;
     formData.append("miniDesc", miniDesc);
     formData.append("description", description);
 
-   axios.post("http://localhost:5000/api/addpost", formData)
+   Axios.post("addpost", formData)
       .then((res) => console.log(res.data))
       .catch((err) => {
         console.error(err);

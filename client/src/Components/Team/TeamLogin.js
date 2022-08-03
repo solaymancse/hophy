@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-import axios from "axios";
+import {Axios} from '../../../src/config'
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/brand5.png";
 import { FaUserAlt } from "react-icons/fa";
@@ -29,8 +28,8 @@ export const TeamLogin = () => {
   };
 
   const sendRequest = async () => {
-    const res = await axios
-      .post("http://localhost:5000/api/adminlogin", {
+    const res = await Axios
+      .post("adminlogin", {
         email: email,
         password: password,
       })

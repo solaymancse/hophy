@@ -3,7 +3,7 @@ import React ,{useState,useEffect} from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { AiFillCalendar } from "react-icons/ai";
 import { Container } from "react-bootstrap";
-import axios  from 'axios';
+import {Axios} from '../../httpServices/requests'
 import {
 
   Wrapper,
@@ -17,12 +17,12 @@ import {
   Title,
   Heading
 } from "./EventElement";
-axios.defaults.withCredentials = true;
+
 export const Event = () => {
   const [posts,setPosts] = useState([]);
 
   const postRequest = async ()=> {
-    const res = await axios.get('http://localhost:5000/api/allposts',{
+    const res = await Axios.get('allposts',{
       withCredentials:true
     })
     .catch((err) => console.log(err));

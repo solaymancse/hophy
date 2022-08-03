@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
+import {Axios} from '../../config/index';
 import swal from "sweetalert";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosLock } from "react-icons/io";
@@ -17,7 +17,7 @@ import {
   Button,
   Div,
 } from "./AdminLoginElements";
-const baseUrl = "http://localhost:5000/api";
+
 export const AdminLogin = () => {
   const dispatch = useDispatch();
   const history = useNavigate();
@@ -32,8 +32,8 @@ export const AdminLogin = () => {
   };
 
   const sendRequest = async () => {
-    const res = await axios
-      .post(`${baseUrl}/adminlogin`, {
+    const res = await Axios
+      .post(`adminlogin`, {
         email: email,
         password: password,
       })

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import axios from "axios";
+import {Axios} from '../../../src/config'
 import { PaginationPage } from "./../Pagination/PaginationPage";
 import { ListTable } from './../Dashboard/ListTable/ListTable';
 import styled from 'styled-components';
-axios.defaults.withCredentials = true;
+
 
 export const Patient = () => {
   const [patient, setPatient] = useState([]);
@@ -13,8 +13,8 @@ export const Patient = () => {
   const [postPerPage, setPostPerPage] = useState(5);
 
   const sendRequest = async () => {
-    const res = await axios
-      .get("http://localhost:5000/api/getallpatients", {
+    const res = await Axios
+      .get("getallpatients", {
         withCredentials: true,
       })
       .catch((err) => console.log(err));

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 
+import {Axios} from '../../../src/config'
 import {
   Date,
   Title,
@@ -18,12 +19,12 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import axios  from 'axios';
 axios.defaults.withCredentials = true;
-const baseUrl = "http://localhost:5000/api";
+
 export const AllBlog = () => {
   const [posts,setPosts] = useState([]);
 
   const postRequest = async ()=> {
-    const res = await axios.get(`${baseUrl}/allposts`,{
+    const res = await Axios.get(`allposts`,{
       withCredentials:true
     })
     .catch((err) => console.log(err));

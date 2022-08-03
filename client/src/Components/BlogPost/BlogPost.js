@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 
+import {Axios} from '../../../src/config'
 import {
   Wrapper,
   Date,
@@ -18,12 +19,12 @@ import { FaUserMd } from "react-icons/fa";
 import { BiComment } from "react-icons/bi";
 import axios  from 'axios';
 axios.defaults.withCredentials = true;
-const baseUrl = "http://localhost:5000/api";
+
 export const BlogPost = () => {
   const [posts,setPosts] = useState([]);
 
   const postRequest = async ()=> {
-    const res = await axios.get(`${baseUrl}/postslimit`,{
+    const res = await Axios.get(`postslimit`,{
       withCredentials:true
     })
     .catch((err) => console.log(err));

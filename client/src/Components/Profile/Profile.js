@@ -36,17 +36,17 @@ import { MdLocationPin } from "react-icons/md";
 import { contactInfoData, rightDivData } from "../../Data";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { engagedData } from "./../../Data";
-import axios from "axios";
+import {Axios} from '../../httpServices/requests'
 
-axios.defaults.withCredentials = true;
+
 
 export const Profile = () => {
   const [admin, setAdmin] = useState();
   console.log(admin);
 
   const sendRequest = async () => {
-    const res = await axios
-      .get("http://localhost:5000/api/user", {
+    const res = await Axios
+      .get("user", {
         withCredentials: true,
       })
       .catch((err) => console.log(err));

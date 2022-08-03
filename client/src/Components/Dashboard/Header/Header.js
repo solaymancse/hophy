@@ -8,7 +8,7 @@ import { FaUserTie } from "react-icons/fa";
 import { FiEdit, FiMail, FiHelpCircle } from "react-icons/fi";
 import { AiFillSetting } from "react-icons/ai";
 import { BiExit } from "react-icons/bi";
-import axios from "axios";
+import {Axios} from '../../../config'
 import {
   Navbar,
   Button,
@@ -32,7 +32,7 @@ import { BsChatLeft } from "react-icons/bs";
 import { authActions } from "./../../../Store/index";
 import { useDispatch } from "react-redux";
 import { swal } from "sweetalert";
-axios.defaults.withCredentials = true;
+
 
 export const Header = () => {
   const dispatch = useDispatch();
@@ -43,7 +43,7 @@ export const Header = () => {
   };
 
   const sendLogoutReq = async () => {
-    const res = await axios.get("/api/adminlogout", null, {
+    const res = await Axios.get("adminlogout", null, {
       withCredentials: true,
     });
     if (res.status === 200) {

@@ -6,10 +6,10 @@ import {
   Button,
 } from "./../../Admin/AdminDetails/AdminDetailsElement";
 import { ModalBox } from "./../../Modal/ModalBox";
-import axios from "axios";
+import {Axios} from '../../../config'
 import { TeamCard } from './../TeamCard/TeamCard';
 import styled from 'styled-components';
-axios.defaults.withCredentials = true;
+
 
 export const ContentTeam = () => {
   const [contentTeam, setContentTeam] = useState([]);
@@ -25,8 +25,8 @@ export const ContentTeam = () => {
 
   const sendRequest = async () => {
     
-    const res = await axios
-      .get("http://localhost:5000/api/getallContentTeams", {
+    const res = await Axios
+      .get("getallContentTeams", {
         withCredentials: true,
       })
       .catch((err) => console.log(err));

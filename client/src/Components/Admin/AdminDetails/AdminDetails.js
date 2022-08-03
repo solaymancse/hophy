@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+import {Axios} from '../../../config';
 import { ModalBox } from "../../Modal/ModalBox";
 import { ListTable } from "./../../Dashboard/ListTable/ListTable";
 import { Top, Left, Button,Div } from "./AdminDetailsElement";
-import axios from "axios";
 
-axios.defaults.withCredentials = true;
+
 
 export const AdminDetails = () => {
   const [admin, setAdmin] = useState([]);
@@ -21,8 +21,8 @@ export const AdminDetails = () => {
   };
 
   const sendRequest = async () => {
-    const res = await axios
-      .get("http://localhost:5000/api/getalladmins", {
+    const res = await Axios
+      .get("getalladmins", {
         withCredentials: true,
       })
       .catch((err) => console.log(err));
@@ -32,7 +32,7 @@ export const AdminDetails = () => {
     return data;
   };
 
-  const url = "http://localhost:5000/api/adminSignup";
+  const url = Axios.get("adminSignup");
 
   useEffect(() => {
     sendRequest().then((data) => setAdmin(data));
