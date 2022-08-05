@@ -1,4 +1,5 @@
 // 
+
 import axios from "axios";
 const isLocalhost = Boolean(
   window.location.hostname === "localhost" ||
@@ -9,7 +10,7 @@ const isLocalhost = Boolean(
 );
 const API_URL = isLocalhost
   ? "http://localhost:5000/api/"
-  : "https://server.hophycare.com/api/";
+  : "http://server.hophycare.com/api/";
 export const Axios = axios.create({
   withCredentials: true,
   baseURL: API_URL,

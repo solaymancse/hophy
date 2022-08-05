@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Navbar } from "./../Navbar/Navbar";
 import { Footer } from "./../Footer/Footer";
+import {Axios} from '../../httpServices/requests';
 import {
   EventContainer,
   Top,
@@ -12,7 +13,7 @@ import {
   Link,
 } from "./AllBlogElement";
 import { Container } from "react-bootstrap";
-import { GetBlogById } from "../../httpServices/requests";
+
 
 export const SingleBlog = () => {
   const history = useNavigate();
@@ -21,7 +22,7 @@ export const SingleBlog = () => {
   console.log(id);
 
   useEffect(() => {
-    GetBlogById({ id })
+    Axios.get(`blog/${id}`)
       .then(({ data }) => setBlog(data))
       .catch((err) => {
         console.log(err);

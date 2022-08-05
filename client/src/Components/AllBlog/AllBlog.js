@@ -29,6 +29,7 @@ export const AllBlog = () => {
     })
     .catch((err) => console.log(err));
     const data = await res.data;
+    console.log(data);
     return data;
   }
   console.log(posts);

@@ -39,6 +39,7 @@
     "recharts": "^2.1.10",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
+    "sweetalert": "^2.1.2",
     "sweetalert2": "^11.4.17",
     "swiper": "^8.2.6",
     "web-vitals": "^2.1.4"

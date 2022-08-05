@@ -7,8 +7,8 @@ const isLocalhost = Boolean(
     )
 );
 const API_URL = isLocalhost
-  ? "http://localhost:5000/api/"
-  : "https://server.hophycare.com/api/";
+  ? "http://localhost:5000/"
+  : "https://server.hophycare.com/";
 export const Axios = axios.create({
   withCredentials: true,
   baseURL: API_URL,

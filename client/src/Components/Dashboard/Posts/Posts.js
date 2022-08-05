@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
 
-import {Axios} from '../../config';
+import {Axios} from '../../../httpServices/requests';
 import { Wrapper } from "./PostsElement";
 import { PostTable } from './PostTable';
 
